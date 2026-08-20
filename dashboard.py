@@ -16,6 +16,9 @@ from html import escape as hesc
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT_PATH = os.path.join(ROOT, "dashboard.html")
+# GitHub Pages serves index.html at the site root — write both so the repo's
+# own dashboard.html link keeps working and the Pages URL resolves directly.
+INDEX_PATH = os.path.join(ROOT, "index.html")
 
 ECHA_STATE = os.path.join(ROOT, "formulation", "echa_state.json")
 ECHA_REPORT = os.path.join(ROOT, "formulation", "echa_report.json")
@@ -668,7 +671,9 @@ def main():
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write(page)
-    print(f"wrote {OUT_PATH}")
+    with open(INDEX_PATH, "w", encoding="utf-8") as f:
+        f.write(page)
+    print(f"wrote {OUT_PATH} and {INDEX_PATH}")
 
 
 if __name__ == "__main__":
