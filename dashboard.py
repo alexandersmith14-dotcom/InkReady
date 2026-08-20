@@ -29,6 +29,8 @@ CANADA_STATE = os.path.join(ROOT, "formulation", "canada_state.json")
 CANADA_REPORT = os.path.join(ROOT, "formulation", "canada_report.json")
 AUSTRALIA_STATE = os.path.join(ROOT, "formulation", "australia_state.json")
 AUSTRALIA_REPORT = os.path.join(ROOT, "formulation", "australia_report.json")
+BRAZIL_STATE = os.path.join(ROOT, "formulation", "brazil_state.json")
+BRAZIL_REPORT = os.path.join(ROOT, "formulation", "brazil_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
@@ -213,6 +215,34 @@ def australia_card():
     else:
         body += '<p class="empty">No tattoo-related recalls found yet — watching for the first one.</p>'
     return card("Australia — Product Safety recalls", "Australia &middot; recall/enforcement radar", body)
+
+
+def brazil_card():
+    state = load_json(BRAZIL_STATE)
+    report = load_json(BRAZIL_REPORT) or {}
+    state = state if state is not None else {}
+    new_items = report.get("new_items", [])
+
+    body = ('<p class="stat">RDC 55/2008 (in force since 2010) requires individual ANVISA '
+            'registration for tattoo pigments — a registration regime, not a substance '
+            'restriction list. ANVISA\'s registry/legal-text hosts are unreachable; tracked via '
+            'Diário Oficial search instead.</p>')
+    body += f'<p class="stat">{len(state)} ANVISA resolutions tracked, {len(new_items)} new since last check</p>'
+
+    items = sorted(state.values(), key=lambda x: x.get("pub_date", ""), reverse=True)
+    if items:
+        body += '<div class="doc-list">'
+        for i in items:
+            flagged = i["class_pk"] in {n["class_pk"] for n in new_items}
+            url = hesc(i.get("url", ""))
+            body += f"""
+            <div class="doc-row{' flagged' if flagged else ''}">
+              <a class="doc-title" href="{url}" target="_blank" rel="noopener">{hesc(i['title'])}</a>
+              <div class="doc-meta">{hesc(i.get('pub_date', ''))}
+                {'&middot; <span class="flag">NEW</span>' if flagged else ''}</div>
+            </div>"""
+        body += "</div>"
+    return card("Brazil — ANVISA (via Diário Oficial)", "Brazil &middot; registration regime", body)
 
 
 def card(title, subtitle, body_html):
@@ -426,6 +456,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {uk_reach_card}
     {canada_card}
     {australia_card}
+    {brazil_card}
   </div>
 
   <h2>Commerce — rules on selling it</h2>
@@ -447,6 +478,7 @@ def main():
         uk_reach_card=uk_reach_card(),
         canada_card=canada_card(),
         australia_card=australia_card(),
+        brazil_card=brazil_card(),
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:

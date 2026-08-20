@@ -12,7 +12,7 @@ Tracks what's legally allowed *in* tattoo ink — substance restriction lists. T
 | [UK REACH](sources/uk_reach.md) | UK | Tracked (no restriction in force) | HSE status page (hash-diff) + legislation.gov.uk REACH SI watch |
 | [Health Canada](sources/canada.md) | Canada | Partial — recalls tracked, Hotlist unreachable | Recalls & Safety Alerts open JSON (tattoo-filtered); Hotlist substance list is blocked at the source, not machine-accessible |
 | [AICIS / Product Safety Australia](sources/australia.md) | Australia | Partial — recalls tracked, no binding restriction exists | Product Safety Australia recall RSS (tattoo-filtered); AICIS/Queensland sources unreachable |
-| ANVISA | Brazil | Status-only | Weaker enforcement data available |
+| [ANVISA](sources/brazil.md) | Brazil | Tracked (via DOU search, no direct API) | ANVISA registry/legal-text hosts unreachable; DOU search for ANVISA resolutions instead |
 | Japan / Korea / China | Various | Status-only | Often customs-level restriction rather than dedicated ink law — absence of a feed is itself tracked, not silently skipped |
 
 "Status-only" sources show as a tracked/not-tracked flag rather than a monitored feed until built out.
