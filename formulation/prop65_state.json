@@ -1,0 +1,6610 @@
+{
+  "--": {
+    "cas_no": "--",
+    "chemical": "Arsenic (inorganic arsenic compounds)",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": "0.06 (inhalation)\n10 (except inhalation)",
+    "type_of_toxicity": "cancer"
+  },
+  "---": {
+    "cas_no": "---",
+    "chemical": "Wood dust",
+    "date_listed": "2009-12-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "100-00-5": {
+    "cas_no": "100-00-5",
+    "chemical": "1-Chloro-4-nitrobenzene",
+    "date_listed": "1999-10-29",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "100-17-4": {
+    "cas_no": "100-17-4",
+    "chemical": "para-Nitroanisole",
+    "date_listed": "2019-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "100-25-4": {
+    "cas_no": "100-25-4",
+    "chemical": "p-Dinitrobenzene",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male"
+  },
+  "100-40-3": {
+    "cas_no": "100-40-3",
+    "chemical": "4-Vinylcyclohexene [Click here for the basis for the removal of male reproductive endpoint, effective December 20, 2013 ]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female, male "
+  },
+  "100-41-4": {
+    "cas_no": "100-41-4",
+    "chemical": "Ethylbenzene",
+    "date_listed": "2004-06-11",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "54 (inhalation)\n41 (oral)",
+    "type_of_toxicity": "cancer "
+  },
+  "100-42-5": {
+    "cas_no": "100-42-5",
+    "chemical": "Styrene",
+    "date_listed": "2016-04-22",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 27,
+    "type_of_toxicity": "cancer"
+  },
+  "100-44-7": {
+    "cas_no": "100-44-7",
+    "chemical": "Benzyl chloride",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 4,
+    "type_of_toxicity": "cancer"
+  },
+  "100-75-4": {
+    "cas_no": "100-75-4",
+    "chemical": "N-Nitrosopiperidine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.07,
+    "type_of_toxicity": "cancer"
+  },
+  "10024-97-2": {
+    "cas_no": "10024-97-2",
+    "chemical": "Nitrous oxide [Basis for listing changed effective November 8, 2013]",
+    "date_listed": "2008-08-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female"
+  },
+  "10026-24-1": {
+    "cas_no": "10026-24-1",
+    "chemical": "Cobalt sulfate heptahydrate",
+    "date_listed": "2000-06-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "10034-93-2": {
+    "cas_no": "10034-93-2",
+    "chemical": "Hydrazine sulfate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "10043-66-0": {
+    "cas_no": "10043-66-0",
+    "chemical": "Iodine-131",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "10048-13-2": {
+    "cas_no": "10048-13-2",
+    "chemical": "Sterigmatocystin",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.02,
+    "type_of_toxicity": "cancer"
+  },
+  "1007-28-9": {
+    "cas_no": "1007-28-9",
+    "chemical": "Des-isopropyl atrazine (DIA)",
+    "date_listed": "2016-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "100 (oral)",
+    "type_of_toxicity": "developmental, female"
+  },
+  "101-14-4": {
+    "cas_no": "101-14-4",
+    "chemical": "4,4'-Methylene bis(2-chloroaniline)",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "101-61-1": {
+    "cas_no": "101-61-1",
+    "chemical": "4,4'-Methylene bis(N,N-dimethyl)benzenamine",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "101-77-9": {
+    "cas_no": "101-77-9",
+    "chemical": "4,4'-Methylenedianiline",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.4,
+    "type_of_toxicity": "cancer"
+  },
+  "101-80-4": {
+    "cas_no": "101-80-4",
+    "chemical": "4,4'-Diaminodiphenyl ether (4,4'-Oxydianiline)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "101-90-6": {
+    "cas_no": "101-90-6",
+    "chemical": "Diglycidyl resorcinol ether (DGRE)",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.4,
+    "type_of_toxicity": "cancer"
+  },
+  "10124-43-3": {
+    "cas_no": "10124-43-3",
+    "chemical": "Cobalt sulfate",
+    "date_listed": "2005-05-20",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "1024-57-3": {
+    "cas_no": "1024-57-3",
+    "chemical": "Heptachlor epoxide",
+    "date_listed": "1988-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.08,
+    "type_of_toxicity": "cancer"
+  },
+  "103-11-7": {
+    "cas_no": "103-11-7",
+    "chemical": "2-Ethylhexyl acrylate",
+    "date_listed": "2021-12-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "103-33-3": {
+    "cas_no": "103-33-3",
+    "chemical": "Azobenzene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 6,
+    "type_of_toxicity": "cancer"
+  },
+  "10418-03-8": {
+    "cas_no": "10418-03-8",
+    "chemical": "Stanozolol",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "10453-86-8": {
+    "cas_no": "10453-86-8",
+    "chemical": "Resmethrin",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "104987-11-3": {
+    "cas_no": "104987-11-3",
+    "chemical": "Tacrolimus",
+    "date_listed": "2026-07-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "10540-29-1": {
+    "cas_no": "10540-29-1",
+    "chemical": "Tamoxifen and its salts",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "105650-23-5": {
+    "cas_no": "105650-23-5",
+    "chemical": "PhiP(2-Amino-1-methyl-6-phenylimidazol[4,5-b]pyridine)",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "105735-71-5": {
+    "cas_no": "105735-71-5",
+    "chemical": "3,7-Dinitrofluoranthene",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "10595-95-6": {
+    "cas_no": "10595-95-6",
+    "chemical": "N-Nitrosomethylethylamine",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.03,
+    "type_of_toxicity": "cancer"
+  },
+  "106-46-7": {
+    "cas_no": "106-46-7",
+    "chemical": "p-Dichlorobenzene",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "106-47-8": {
+    "cas_no": "106-47-8",
+    "chemical": "p-Chloroaniline",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 1.5,
+    "type_of_toxicity": "cancer"
+  },
+  "106-49-0": {
+    "cas_no": "106-49-0",
+    "chemical": "para-Toluidine  Delisted October 29, 1999 [Click here for the basis for delisting]",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "106-87-6": {
+    "cas_no": "106-87-6",
+    "chemical": "Vinyl cyclohexene dioxide (4-Vinyl-1-cyclohexene diepoxide) [Click here for the basis for the removal of male reproductive endpoint, effective December 20, 2013]",
+    "date_listed": "2008-08-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female, male "
+  },
+  "106-89-8": {
+    "cas_no": "106-89-8",
+    "chemical": "Epichlorohydrin",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male"
+  },
+  "106-91-2": {
+    "cas_no": "106-91-2",
+    "chemical": "Glycidyl methacrylate",
+    "date_listed": "2023-01-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "106-93-4": {
+    "cas_no": "106-93-4",
+    "chemical": "Ethylene dibromide",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "106-94-5": {
+    "cas_no": "106-94-5",
+    "chemical": "1-Bromopropane (1-BP)",
+    "date_listed": "2004-12-07",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "106-99-0": {
+    "cas_no": "106-99-0",
+    "chemical": "1,3-Butadiene",
+    "date_listed": "2004-04-16",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "107-05-1": {
+    "cas_no": "107-05-1",
+    "chemical": "Allyl chloride  Delisted October 29, 1999 [Click here for the basis for delisting]",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "107-06-2": {
+    "cas_no": "107-06-2",
+    "chemical": "Ethylene dichloride (1,2-Dichloroethane)",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer"
+  },
+  "107-13-1": {
+    "cas_no": "107-13-1",
+    "chemical": "Acrylonitrile",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": 0.7,
+    "type_of_toxicity": "cancer"
+  },
+  "107-21-1": {
+    "cas_no": "107-21-1",
+    "chemical": "Ethylene glycol (ingested)",
+    "date_listed": "2015-06-19",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "8700 (oral)",
+    "type_of_toxicity": "developmental"
+  },
+  "107-30-2": {
+    "cas_no": "107-30-2",
+    "chemical": "Chloromethyl methyl ether (technical grade)",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "1071-83-6": {
+    "cas_no": "1071-83-6",
+    "chemical": "Glyphosate",
+    "date_listed": "2017-07-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 1100,
+    "type_of_toxicity": "cancer"
+  },
+  "107910-75-8": {
+    "cas_no": "107910-75-8",
+    "chemical": "Ganciclovir sodium",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "108-05-4": {
+    "cas_no": "108-05-4",
+    "chemical": "Vinyl acetate",
+    "date_listed": "2025-01-03",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "108-10-1": {
+    "cas_no": "108-10-1",
+    "chemical": "Methyl isobutyl ketone (MIBK)",
+    "date_listed": "2014-03-28",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "108-88-3": {
+    "cas_no": "108-88-3",
+    "chemical": "Toluene [Click here for the basis for the removal of female reproductive endpoint effective March 7, 2014]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female "
+  },
+  "108-93-0": {
+    "cas_no": "108-93-0",
+    "chemical": "Cyclohexanol  Delisted January 25, 2002 [Click here for the basis for delisting]",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "108171-26-2": {
+    "cas_no": "108171-26-2",
+    "chemical": "Chlorinated paraffins (Average chain length, C12;approximately 60 percent chlorine by weight)",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 8,
+    "type_of_toxicity": "cancer"
+  },
+  "109-70-6": {
+    "cas_no": "109-70-6",
+    "chemical": "1-Bromo-3-chloropropane",
+    "date_listed": "2023-01-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "109-86-4": {
+    "cas_no": "109-86-4",
+    "chemical": "Ethylene glycol monomethyl ether",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "63 (oral)",
+    "type_of_toxicity": "developmental, male"
+  },
+  "109-99-9": {
+    "cas_no": "109-99-9",
+    "chemical": "Tetrahydrofuran",
+    "date_listed": "2021-12-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "110-00-9": {
+    "cas_no": "110-00-9",
+    "chemical": "Furan",
+    "date_listed": "1993-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "110-13-4": {
+    "cas_no": "110-13-4",
+    "chemical": "2,5-Hexanedione",
+    "date_listed": "2015-12-04",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male"
+  },
+  "110-49-6": {
+    "cas_no": "110-49-6",
+    "chemical": "Ethylene glycol monomethyl ether acetate",
+    "date_listed": "1993-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "98 (oral)",
+    "type_of_toxicity": "developmental, male"
+  },
+  "110-54-3": {
+    "cas_no": "110-54-3",
+    "chemical": "n-Hexane",
+    "date_listed": "2017-12-15",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "28,000 (oral)\n20,000 (inhalation)",
+    "type_of_toxicity": "male"
+  },
+  "110-80-5": {
+    "cas_no": "110-80-5",
+    "chemical": "Ethylene glycol monoethyl ether",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "750 (oral)\n960 (inhalation)",
+    "type_of_toxicity": "developmental, male"
+  },
+  "110-86-1": {
+    "cas_no": "110-86-1",
+    "chemical": "Pyridine",
+    "date_listed": "2002-05-17",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "110235-47-7": {
+    "cas_no": "110235-47-7",
+    "chemical": "Mepanipyrim",
+    "date_listed": "2008-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "111-15-9": {
+    "cas_no": "111-15-9",
+    "chemical": "Ethylene glycol monoethyl ether acetate",
+    "date_listed": "1993-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "1100 (oral)\n1400 (inhalation)",
+    "type_of_toxicity": "developmental, male"
+  },
+  "111-42-2": {
+    "cas_no": "111-42-2",
+    "chemical": "Diethanolamine",
+    "date_listed": "2012-06-22",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "111-44-4": {
+    "cas_no": "111-44-4",
+    "chemical": "Bis(2-chloroethyl)ether",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "111025-46-8": {
+    "cas_no": "111025-46-8",
+    "chemical": "Pioglitazone",
+    "date_listed": "2014-04-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "111406-87-2": {
+    "cas_no": "111406-87-2",
+    "chemical": "Zileuton",
+    "date_listed": "2000-12-22",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer, developmental, female"
+  },
+  "1116-54-7": {
+    "cas_no": "1116-54-7",
+    "chemical": "N-Nitrosodiethanolamine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "1120-71-4": {
+    "cas_no": "1120-71-4",
+    "chemical": "1,3-Propane sultone",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "1134-23-2": {
+    "cas_no": "1134-23-2",
+    "chemical": "Cycloate",
+    "date_listed": "1999-03-19",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "113803-47-7": {
+    "cas_no": "113803-47-7",
+    "chemical": "MOPP (vincristine-prednisone-nitrogen mustard-procarbazine mixture)",
+    "date_listed": "2011-11-04",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "113852-37-2": {
+    "cas_no": "113852-37-2",
+    "chemical": "Cidofovir",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer, developmental, female, male"
+  },
+  "114-26-1": {
+    "cas_no": "114-26-1",
+    "chemical": "Propoxur",
+    "date_listed": "2006-08-11",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "115-02-6": {
+    "cas_no": "115-02-6",
+    "chemical": "Azaserine",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.06,
+    "type_of_toxicity": "cancer"
+  },
+  "115-28-6": {
+    "cas_no": "115-28-6",
+    "chemical": "Chlorendic acid",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 8,
+    "type_of_toxicity": "cancer"
+  },
+  "115-67-3": {
+    "cas_no": "115-67-3",
+    "chemical": "Paramethadione",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "115-96-8": {
+    "cas_no": "115-96-8",
+    "chemical": "Tris(2-chloroethyl) phosphate",
+    "date_listed": "1992-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "116-14-3": {
+    "cas_no": "116-14-3",
+    "chemical": "Tetrafluoroethylene",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "116355-83-0": {
+    "cas_no": "116355-83-0",
+    "chemical": "Fumonisin B1",
+    "date_listed": "2003-11-14",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "117-10-2": {
+    "cas_no": "117-10-2",
+    "chemical": "Dantron (Chrysazin; 1,8-Dihydroxyanthraquinone)",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 9,
+    "type_of_toxicity": "cancer"
+  },
+  "117-37-3": {
+    "cas_no": "117-37-3",
+    "chemical": "Anisindione",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "117-79-3": {
+    "cas_no": "117-79-3",
+    "chemical": "2-Aminoanthraquinone",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "117-81-7": {
+    "cas_no": "117-81-7",
+    "chemical": "Di(2-ethylhexyl)phthalate (DEHP)",
+    "date_listed": "2003-10-24",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "1172-18-5": {
+    "cas_no": "1172-18-5",
+    "chemical": "Flurazepam hydrochloride",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "118-74-1": {
+    "cas_no": "118-74-1",
+    "chemical": "Hexachlorobenzene",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "118-96-7": {
+    "cas_no": "118-96-7",
+    "chemical": "2,4,6-Trinitrotoluene (TNT)",
+    "date_listed": "2008-12-19",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 8.2,
+    "type_of_toxicity": "cancer "
+  },
+  "119-34-6": {
+    "cas_no": "119-34-6",
+    "chemical": "4-Amino-2-nitrophenol",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "119-61-9": {
+    "cas_no": "119-61-9",
+    "chemical": "Benzophenone",
+    "date_listed": "2012-06-22",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "119-90-4": {
+    "cas_no": "119-90-4",
+    "chemical": "3,3'-Dimethoxybenzidine (o-Dianisidine)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.15,
+    "type_of_toxicity": "cancer"
+  },
+  "119-93-7": {
+    "cas_no": "119-93-7",
+    "chemical": "3,3'-Dimethylbenzidine (ortho-Tolidine)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.044,
+    "type_of_toxicity": "cancer"
+  },
+  "120-12-7": {
+    "cas_no": "120-12-7",
+    "chemical": "Anthracene",
+    "date_listed": "2023-08-11",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "120-36-5": {
+    "cas_no": "120-36-5",
+    "chemical": "2,4-DP (dichloroprop)  Delisted January 25, 2002 [Click here for the basis for delisting]",
+    "date_listed": "1999-04-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "120-58-1": {
+    "cas_no": "120-58-1",
+    "chemical": "Isosafrole Delisted December 8, 2006 [Click here for the basis for delisting]",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC    ",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "120-71-8": {
+    "cas_no": "120-71-8",
+    "chemical": "p-Cresidine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "120-80-9": {
+    "cas_no": "120-80-9",
+    "chemical": "Catechol",
+    "date_listed": "2003-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "120-97-8": {
+    "cas_no": "120-97-8",
+    "chemical": "Dichlorphenamide",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "12035-72-2": {
+    "cas_no": "12035-72-2",
+    "chemical": "Nickel subsulfide",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.4,
+    "type_of_toxicity": "cancer"
+  },
+  "12054-48-7; 12125-56-3": {
+    "cas_no": "12054-48-7; 12125-56-3",
+    "chemical": "Nickel hydroxide",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "121-14-2": {
+    "cas_no": "121-14-2",
+    "chemical": "2,4-Dinitrotoluene",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "121-75-5": {
+    "cas_no": "121-75-5",
+    "chemical": "Malathion",
+    "date_listed": "2016-05-20",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 180,
+    "type_of_toxicity": "cancer"
+  },
+  "121181-53-1": {
+    "cas_no": "121181-53-1",
+    "chemical": "Filgrastim",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "12122-67-7": {
+    "cas_no": "12122-67-7",
+    "chemical": "Zineb  Delisted October 29, 1999 [Click here for the basis for delisting]",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "12174-11-7": {
+    "cas_no": "12174-11-7",
+    "chemical": "Palygorskite fibers (> 5\u00b5m in length)",
+    "date_listed": "1999-12-28",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "121776-33-8": {
+    "cas_no": "121776-33-8",
+    "chemical": "MON 13900 (furilazole)",
+    "date_listed": "2011-03-22",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "122-34-9": {
+    "cas_no": "122-34-9",
+    "chemical": "Simazine",
+    "date_listed": "2016-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "100 (oral)",
+    "type_of_toxicity": "developmental, female"
+  },
+  "122-60-1": {
+    "cas_no": "122-60-1",
+    "chemical": "Phenyl glycidyl ether   \nDelisted April 4, 2014 [Click here  for the basis for delisting]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "122-66-7": {
+    "cas_no": "122-66-7",
+    "chemical": "Hydrazobenzene (1,2-Diphenylhydrazine)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.8,
+    "type_of_toxicity": "cancer"
+  },
+  "123-35-3": {
+    "cas_no": "123-35-3",
+    "chemical": "beta-Myrcene",
+    "date_listed": "2015-03-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "123-91-1": {
+    "cas_no": "123-91-1",
+    "chemical": "1,4-Dioxane",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 30,
+    "type_of_toxicity": "cancer"
+  },
+  "123312-89-0": {
+    "cas_no": "123312-89-0",
+    "chemical": "Pymetrozine",
+    "date_listed": "2011-03-22",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "124-48-1": {
+    "cas_no": "124-48-1",
+    "chemical": "Chlorodibromomethane  Delisted October 29, 1999 [Click here for the basis for delisting]",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "12427-38-2": {
+    "cas_no": "12427-38-2",
+    "chemical": "Maneb",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "125-02-0": {
+    "cas_no": "125-02-0",
+    "chemical": "Prednisolone sodium phosphate",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "125-33-7": {
+    "cas_no": "125-33-7",
+    "chemical": "Primidone",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "125-84-8": {
+    "cas_no": "125-84-8",
+    "chemical": "Aminoglutethimide",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "12510-42-8; 66733-21-9": {
+    "cas_no": "12510-42-8; 66733-21-9",
+    "chemical": "Erionite",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "126-07-8": {
+    "cas_no": "126-07-8",
+    "chemical": "Griseofulvin",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "126-72-7": {
+    "cas_no": "126-72-7",
+    "chemical": "Tris(2,3-dibromopropyl)phosphate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "126-85-2": {
+    "cas_no": "126-85-2",
+    "chemical": "Nitrogen mustard N-oxide",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "126-99-8": {
+    "cas_no": "126-99-8",
+    "chemical": "Chloroprene",
+    "date_listed": "2000-06-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "127-07-1": {
+    "cas_no": "127-07-1",
+    "chemical": "Hydroxyurea",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "127-18-4": {
+    "cas_no": "127-18-4",
+    "chemical": "Tetrachloroethylene (Perchloroethylene)",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 14,
+    "type_of_toxicity": "cancer"
+  },
+  "127-19-5": {
+    "cas_no": "127-19-5",
+    "chemical": "N,N-Dimethylacetamide [Click here for the basis for addition of male reproductive endpoint, effective December 20, 2013]",
+    "date_listed": "2010-05-21",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "127-48-0": {
+    "cas_no": "127-48-0",
+    "chemical": "Trimethadione",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1271-28-9": {
+    "cas_no": "1271-28-9",
+    "chemical": "Nickelocene",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "128-03-0": {
+    "cas_no": "128-03-0",
+    "chemical": "Potassium dimethyldithiocarbamate",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 720,
+    "type_of_toxicity": "developmental "
+  },
+  "128-04-1": {
+    "cas_no": "128-04-1",
+    "chemical": "Sodium dimethyldithiocarbamate",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "23 (oral)\n58 (oral) as a 40% pesticidal formulation",
+    "type_of_toxicity": "developmental "
+  },
+  "128-44-9": {
+    "cas_no": "128-44-9",
+    "chemical": "Saccharin, sodium  Delisted January 17, 2003 [Click here for the basis for delisting]",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "129-15-7": {
+    "cas_no": "129-15-7",
+    "chemical": "2-Methyl-1-nitroanthraquinone (of uncertain purity)",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "129-43-1": {
+    "cas_no": "129-43-1",
+    "chemical": "1-Hydroxyanthraquinone",
+    "date_listed": "2005-05-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "129-73-7": {
+    "cas_no": "129-73-7",
+    "chemical": "Leucomalachite green",
+    "date_listed": "2023-04-21",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "13010-47-4": {
+    "cas_no": "13010-47-4",
+    "chemical": "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1303-00-0": {
+    "cas_no": "1303-00-0",
+    "chemical": "Gallium arsenide",
+    "date_listed": "2008-08-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "1307-96-6": {
+    "cas_no": "1307-96-6",
+    "chemical": "Cobalt [II] oxide",
+    "date_listed": "1992-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1309-64-4": {
+    "cas_no": "1309-64-4",
+    "chemical": "Antimony oxide (Antimony trioxide)",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "0.13 (inhalation)",
+    "type_of_toxicity": "cancer"
+  },
+  "13121-70-5": {
+    "cas_no": "13121-70-5",
+    "chemical": "Cyhexatin",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1313-27-5": {
+    "cas_no": "1313-27-5",
+    "chemical": "Molybdenum trioxide",
+    "date_listed": "2021-03-19",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1313-99-1": {
+    "cas_no": "1313-99-1",
+    "chemical": "Nickel oxide",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1314-20-1": {
+    "cas_no": "1314-20-1",
+    "chemical": "Thorium dioxide",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1314-62-1": {
+    "cas_no": "1314-62-1",
+    "chemical": "Vanadium pentoxide (orthorhombic crystalline form)",
+    "date_listed": "2005-02-11",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "13194-48-4": {
+    "cas_no": "13194-48-4",
+    "chemical": "Ethoprop",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "132-27-4": {
+    "cas_no": "132-27-4",
+    "chemical": "o-Phenylphenate, sodium",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 200,
+    "type_of_toxicity": "cancer"
+  },
+  "13256-07-0": {
+    "cas_no": "13256-07-0",
+    "chemical": "N-Nitrosomethyl-n-pentylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "13256-22-9": {
+    "cas_no": "13256-22-9",
+    "chemical": "N-Nitrososarcosine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "13292-46-1": {
+    "cas_no": "13292-46-1",
+    "chemical": "Rifampin",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "133-06-2": {
+    "cas_no": "133-06-2",
+    "chemical": "Captan",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 300,
+    "type_of_toxicity": "cancer"
+  },
+  "133-07-3": {
+    "cas_no": "133-07-3",
+    "chemical": "Folpet",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 200,
+    "type_of_toxicity": "cancer"
+  },
+  "13311-84-7": {
+    "cas_no": "13311-84-7",
+    "chemical": "Flutamide",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1332-21-4": {
+    "cas_no": "1332-21-4",
+    "chemical": "Asbestos",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": "100 fibers/day (inhalation)",
+    "type_of_toxicity": "cancer"
+  },
+  "1333-86-4": {
+    "cas_no": "1333-86-4",
+    "chemical": "Carbon black (airborne, unbound particles of respirable size)",
+    "date_listed": "2003-02-21",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "1335-32-6": {
+    "cas_no": "1335-32-6",
+    "chemical": "Lead subacetate",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": "41 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "134-29-2": {
+    "cas_no": "134-29-2",
+    "chemical": "o-Anisidine hydrochloride",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 7,
+    "type_of_toxicity": "cancer"
+  },
+  "134-32-7": {
+    "cas_no": "134-32-7",
+    "chemical": "1-Naphthylamine",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "13463-39-3": {
+    "cas_no": "13463-39-3",
+    "chemical": "Nickel carbonyl",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "135-20-6": {
+    "cas_no": "135-20-6",
+    "chemical": "Cupferron",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "135319-73-2": {
+    "cas_no": "135319-73-2",
+    "chemical": "Epoxiconazole",
+    "date_listed": "2011-04-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "13552-44-8": {
+    "cas_no": "13552-44-8",
+    "chemical": "4,4'-Methylenedianiline dihydrochloride",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.6,
+    "type_of_toxicity": "cancer"
+  },
+  "136-35-6": {
+    "cas_no": "136-35-6",
+    "chemical": "Diazoaminobenzene",
+    "date_listed": "2005-05-20",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "136-40-3": {
+    "cas_no": "136-40-3",
+    "chemical": "Phenazopyridine hydrochloride",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "136-45-8": {
+    "cas_no": "136-45-8",
+    "chemical": "Di-n-propyl isocinchomeronate (MGK Repellent 326)",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "13614-98-7": {
+    "cas_no": "13614-98-7",
+    "chemical": "Minocycline hydrochloride (internal use)",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "13647-35-3": {
+    "cas_no": "13647-35-3",
+    "chemical": "Trilostane",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "13674-87-8": {
+    "cas_no": "13674-87-8",
+    "chemical": "Tris(1,3-dichloro-2-propyl) phosphate (TDCPP)",
+    "date_listed": "2011-10-28",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5.4,
+    "type_of_toxicity": "cancer"
+  },
+  "137-41-7": {
+    "cas_no": "137-41-7",
+    "chemical": "Metam potassium",
+    "date_listed": "2010-12-31",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "137-42-8": {
+    "cas_no": "137-42-8",
+    "chemical": "Metham sodium",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 290,
+    "type_of_toxicity": "developmental "
+  },
+  "137234-62-9; 188416-29-7; 173967-54-9": {
+    "cas_no": "137234-62-9; 188416-29-7; 173967-54-9",
+    "chemical": "Voriconazole",
+    "date_listed": "2026-07-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "138-93-2": {
+    "cas_no": "138-93-2",
+    "chemical": "Disodium cyanodithioimidocarbonate",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "56 (oral)\n170 (oral) as 32% pesticidal formulation",
+    "type_of_toxicity": "developmental "
+  },
+  "139-13-9": {
+    "cas_no": "139-13-9",
+    "chemical": "Nitrilotriacetic acid",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 100,
+    "type_of_toxicity": "cancer"
+  },
+  "139-40-2": {
+    "cas_no": "139-40-2",
+    "chemical": "Propazine",
+    "date_listed": "2016-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "100 (oral)",
+    "type_of_toxicity": "developmental, female"
+  },
+  "139-65-1": {
+    "cas_no": "139-65-1",
+    "chemical": "4,4'-Thiodianiline",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.05,
+    "type_of_toxicity": "cancer"
+  },
+  "139-91-3": {
+    "cas_no": "139-91-3",
+    "chemical": "5-(Morpholinomethyl)-3-[(5-nitrofurfuryl-idene)-amino]-2-oxazolidinone",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.18,
+    "type_of_toxicity": "cancer"
+  },
+  "13909-09-6": {
+    "cas_no": "13909-09-6",
+    "chemical": "1-(2-Chloroethyl)-3-(4-methylcyclohexyl)-1-nitrosourea (Methyl-CCNU)",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "140-57-8": {
+    "cas_no": "140-57-8",
+    "chemical": "Aramite",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "140-67-0": {
+    "cas_no": "140-67-0",
+    "chemical": "Estragole",
+    "date_listed": "1999-10-29",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "140-88-5": {
+    "cas_no": "140-88-5",
+    "chemical": "Ethyl acrylate",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "14028-44-5": {
+    "cas_no": "14028-44-5",
+    "chemical": "Amoxapine",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "14047-09-7": {
+    "cas_no": "14047-09-7",
+    "chemical": "3,3',4,4'-Tetrachloroazobenzene",
+    "date_listed": "2012-07-24",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1405-10-3": {
+    "cas_no": "1405-10-3",
+    "chemical": "Neomycin sulfate (internal use)",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "140923-17-7/ 140923-25-7": {
+    "cas_no": "140923-17-7/ 140923-25-7",
+    "chemical": "Iprovalicarb",
+    "date_listed": "2007-06-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "141-90-2": {
+    "cas_no": "141-90-2",
+    "chemical": "Thiouracil",
+    "date_listed": "2004-06-11",
+    "listing_mechanism": " ",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "141112-29-0": {
+    "cas_no": "141112-29-0",
+    "chemical": "Isoxaflutole",
+    "date_listed": "2000-12-22",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "142-04-1": {
+    "cas_no": "142-04-1",
+    "chemical": "Aniline hydrochloride",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "142-59-6": {
+    "cas_no": "142-59-6",
+    "chemical": "Nabam",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "143-50-0": {
+    "cas_no": "143-50-0",
+    "chemical": "Chlordecone (Kepone)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "143-67-9": {
+    "cas_no": "143-67-9",
+    "chemical": "Vinblastine sulfate",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "143-81-7": {
+    "cas_no": "143-81-7",
+    "chemical": "Butabarbital sodium",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "143390-89-0": {
+    "cas_no": "143390-89-0",
+    "chemical": "Kresoxim-methyl",
+    "date_listed": "2012-02-03",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1456-28-6": {
+    "cas_no": "1456-28-6",
+    "chemical": "2,6-Dimethyl-N-nitrosomorpholine (DMNM)",
+    "date_listed": "2013-02-08",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1464-53-5": {
+    "cas_no": "1464-53-5",
+    "chemical": "Diepoxybutane",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "147-94-4": {
+    "cas_no": "147-94-4",
+    "chemical": "Cytarabine",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "148-82-3": {
+    "cas_no": "148-82-3",
+    "chemical": "Melphalan",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "148477-71-8": {
+    "cas_no": "148477-71-8",
+    "chemical": "Spirodiclofen",
+    "date_listed": "2010-10-08",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "149-30-4": {
+    "cas_no": "149-30-4",
+    "chemical": "2\u2011Mercaptobenzothiazole",
+    "date_listed": "2017-10-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "149-57-5": {
+    "cas_no": "149-57-5",
+    "chemical": "2-Ethylhexanoic acid  Delisted December 13, 2013 [Click here for the basis for delisting]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "14901-08-7": {
+    "cas_no": "14901-08-7",
+    "chemical": "Cycasin",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "151-56-4": {
+    "cas_no": "151-56-4",
+    "chemical": "Ethyleneimine (Aziridine)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.01,
+    "type_of_toxicity": "cancer"
+  },
+  "151-67-7": {
+    "cas_no": "151-67-7",
+    "chemical": "Halothane",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "153-78-6": {
+    "cas_no": "153-78-6",
+    "chemical": "2-Aminofluorene",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "154-42-7": {
+    "cas_no": "154-42-7",
+    "chemical": "Thioguanine",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "154-93-8": {
+    "cas_no": "154-93-8",
+    "chemical": "Bischloroethyl nitrosourea (BCNU) (Carmustine)",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "154229-18-2": {
+    "cas_no": "154229-18-2",
+    "chemical": "Abiraterone acetate",
+    "date_listed": "2016-04-08",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "15475-56-6": {
+    "cas_no": "15475-56-6",
+    "chemical": "Methotrexate sodium",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "15541-45-4": {
+    "cas_no": "15541-45-4",
+    "chemical": "Bromate",
+    "date_listed": "2002-05-31",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "156-10-5": {
+    "cas_no": "156-10-5",
+    "chemical": "p-Nitrosodiphenylamine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 30,
+    "type_of_toxicity": "cancer"
+  },
+  "15663-27-1": {
+    "cas_no": "15663-27-1",
+    "chemical": "Cisplatin",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1596-84-5": {
+    "cas_no": "1596-84-5",
+    "chemical": "Daminozide",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 40,
+    "type_of_toxicity": "cancer"
+  },
+  "15972-60-8": {
+    "cas_no": "15972-60-8",
+    "chemical": "Alachlor",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "16071-86-6": {
+    "cas_no": "16071-86-6",
+    "chemical": "Direct Brown 95 (technical grade)",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": "cancer"
+  },
+  "1615-80-1": {
+    "cas_no": "1615-80-1",
+    "chemical": "1,2-Diethylhydrazine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1620-21-9": {
+    "cas_no": "1620-21-9",
+    "chemical": "Chlorcyclizine hydrochloride",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "16338-99-1": {
+    "cas_no": "16338-99-1",
+    "chemical": "N-Nitrosomethyl-n-heptylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "16543-55-8": {
+    "cas_no": "16543-55-8",
+    "chemical": "N-Nitrosonornicotine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "16568-02-8": {
+    "cas_no": "16568-02-8",
+    "chemical": "Gyromitrin (Acetaldehyde methylformylhydrazone)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.07,
+    "type_of_toxicity": "cancer"
+  },
+  "1689-84-5": {
+    "cas_no": "1689-84-5",
+    "chemical": "Bromoxynil",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1689-99-2": {
+    "cas_no": "1689-99-2",
+    "chemical": "Bromoxynil octanoate",
+    "date_listed": "1999-05-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "1694-09-3": {
+    "cas_no": "1694-09-3",
+    "chemical": "Benzyl violet 4B",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 30,
+    "type_of_toxicity": "cancer"
+  },
+  "17086-28-1": {
+    "cas_no": "17086-28-1",
+    "chemical": "Doxycycline monohydrate (internal use)",
+    "date_listed": "1991-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "17230-88-5": {
+    "cas_no": "17230-88-5",
+    "chemical": "Danazol",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1746-01-6": {
+    "cas_no": "1746-01-6",
+    "chemical": "2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD)",
+    "date_listed": "1991-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "1763-23-1": {
+    "cas_no": "1763-23-1",
+    "chemical": "Perfluorooctane sulfonate (PFOS)",
+    "date_listed": "2017-11-10",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "177406-68-7": {
+    "cas_no": "177406-68-7",
+    "chemical": "Benthiavalicarb-isopropyl",
+    "date_listed": "2008-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "17804-35-2": {
+    "cas_no": "17804-35-2",
+    "chemical": "Benomyl",
+    "date_listed": "1991-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male"
+  },
+  "1836-75-5": {
+    "cas_no": "1836-75-5",
+    "chemical": "Nitrofen (technical grade)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 9,
+    "type_of_toxicity": "cancer"
+  },
+  "18378-89-7": {
+    "cas_no": "18378-89-7",
+    "chemical": "Plicamycin",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "18662-53-8": {
+    "cas_no": "18662-53-8",
+    "chemical": "Nitrilotriacetic acid, trisodium salt monohydrate",
+    "date_listed": "1989-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 70,
+    "type_of_toxicity": "cancer"
+  },
+  "18883-66-4": {
+    "cas_no": "18883-66-4",
+    "chemical": "Streptozotocin (streptozocin)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.006,
+    "type_of_toxicity": "cancer"
+  },
+  "189-55-9": {
+    "cas_no": "189-55-9",
+    "chemical": "Dibenzo[a,i]pyrene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.0050 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "189-64-0": {
+    "cas_no": "189-64-0",
+    "chemical": "Dibenzo[a,h]pyrene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.0054 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "1897-45-6": {
+    "cas_no": "1897-45-6",
+    "chemical": "Chlorothalonil",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 41,
+    "type_of_toxicity": "cancer"
+  },
+  "19044-88-3": {
+    "cas_no": "19044-88-3",
+    "chemical": "Oryzalin",
+    "date_listed": "2008-09-12",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "191-30-0": {
+    "cas_no": "191-30-0",
+    "chemical": "Dibenzo[a,l]pyrene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1912-24-9": {
+    "cas_no": "1912-24-9",
+    "chemical": "Atrazine",
+    "date_listed": "2016-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "100 (oral)",
+    "type_of_toxicity": "developmental, female"
+  },
+  "1918-16-7": {
+    "cas_no": "1918-16-7",
+    "chemical": "Propachlor",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "192-65-4": {
+    "cas_no": "192-65-4",
+    "chemical": "Dibenzo[a,e]pyrene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1929-82-4": {
+    "cas_no": "1929-82-4",
+    "chemical": "Nitrapyrin",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "193-39-5": {
+    "cas_no": "193-39-5",
+    "chemical": "Indeno[1,2,3-cd]pyrene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "1937-37-7": {
+    "cas_no": "1937-37-7",
+    "chemical": "Direct Black 38 (technical grade)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.09,
+    "type_of_toxicity": "cancer"
+  },
+  "194-59-2": {
+    "cas_no": "194-59-2",
+    "chemical": "7H-Dibenzo[c,g]carbazole",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.0030 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "19666-30-9": {
+    "cas_no": "19666-30-9",
+    "chemical": "Oxadiazon",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "19774-82-4": {
+    "cas_no": "19774-82-4",
+    "chemical": "Amiodarone hydrochloride",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "20265-96-7": {
+    "cas_no": "20265-96-7",
+    "chemical": "p-Chloroaniline hydrochloride",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 1.9,
+    "type_of_toxicity": "cancer "
+  },
+  "20325-40-0": {
+    "cas_no": "20325-40-0",
+    "chemical": "3,3'-Dimethoxybenzidine dihydrochloride",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.19,
+    "type_of_toxicity": "cancer"
+  },
+  "20354-26-1": {
+    "cas_no": "20354-26-1",
+    "chemical": "Methazole",
+    "date_listed": "1999-12-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "205-82-3": {
+    "cas_no": "205-82-3",
+    "chemical": "Benzo[j]fluoranthene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.11 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "205-99-2": {
+    "cas_no": "205-99-2",
+    "chemical": "Benzo[b]fluoranthene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.096 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "2058-46-0": {
+    "cas_no": "2058-46-0",
+    "chemical": "Oxytetracycline hydrochloride (internal use)",
+    "date_listed": "1991-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "2062-78-4": {
+    "cas_no": "2062-78-4",
+    "chemical": "Pimozide",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "2068-78-2": {
+    "cas_no": "2068-78-2",
+    "chemical": "Vincristine sulfate",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "207-08-9": {
+    "cas_no": "207-08-9",
+    "chemical": "Benzo[k]fluoranthene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "20830-81-3": {
+    "cas_no": "20830-81-3",
+    "chemical": "Daunomycin",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2092-56-0": {
+    "cas_no": "2092-56-0",
+    "chemical": "D&C Red No. 8",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "215-58-7": {
+    "cas_no": "215-58-7",
+    "chemical": "Dibenz[a,c]anthracene",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2155-70-6": {
+    "cas_no": "2155-70-6",
+    "chemical": "Tributyltin methacrylate",
+    "date_listed": "1999-12-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "216974-75-3": {
+    "cas_no": "216974-75-3",
+    "chemical": "Bevacizumab",
+    "date_listed": "2019-03-08",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female"
+  },
+  "21725-46-2": {
+    "cas_no": "21725-46-2",
+    "chemical": "Cyanazine",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "21739-91-3": {
+    "cas_no": "21739-91-3",
+    "chemical": "Cytembena",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "218-01-9": {
+    "cas_no": "218-01-9",
+    "chemical": "Chrysene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "0.35 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "21829-25-4": {
+    "cas_no": "21829-25-4",
+    "chemical": "Nifedipine",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "2212-67-1": {
+    "cas_no": "2212-67-1",
+    "chemical": "Molinate",
+    "date_listed": "2009-12-11",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "22248-79-9": {
+    "cas_no": "22248-79-9",
+    "chemical": "Tetrachlorvinphos",
+    "date_listed": "2016-05-20",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2238-07-5": {
+    "cas_no": "2238-07-5",
+    "chemical": "Diglycidyl ether Delisted April 4, 2014 [Click here for the basis for delisting]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "22398-80-7": {
+    "cas_no": "22398-80-7",
+    "chemical": "Indium phosphide",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "224-41-9": {
+    "cas_no": "224-41-9",
+    "chemical": "Dibenz[a,j]anthracene",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "224-42-0": {
+    "cas_no": "224-42-0",
+    "chemical": "Dibenz[a,j]acridine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "22494-42-4": {
+    "cas_no": "22494-42-4",
+    "chemical": "Diflunisal",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "22506-53-2": {
+    "cas_no": "22506-53-2",
+    "chemical": "3,9-Dinitrofluoranthene",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "226-36-8": {
+    "cas_no": "226-36-8",
+    "chemical": "Dibenz[a,h]acridine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "23092-17-3": {
+    "cas_no": "23092-17-3",
+    "chemical": "Halazepam",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "23103-98-2": {
+    "cas_no": "23103-98-2",
+    "chemical": "Pirimicarb",
+    "date_listed": "2008-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "2312-35-8": {
+    "cas_no": "2312-35-8",
+    "chemical": "Propargite",
+    "date_listed": "1999-06-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "23246-96-0": {
+    "cas_no": "23246-96-0",
+    "chemical": "Riddelliine",
+    "date_listed": "2004-12-03",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "23541-50-6": {
+    "cas_no": "23541-50-6",
+    "chemical": "Daunorubicin hydrochloride",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "23564-05-8": {
+    "cas_no": "23564-05-8",
+    "chemical": "Thiophanate methyl",
+    "date_listed": "1999-05-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "600 (oral)",
+    "type_of_toxicity": "female, male "
+  },
+  "2385-85-5": {
+    "cas_no": "2385-85-5",
+    "chemical": "Mirex",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.04,
+    "type_of_toxicity": "cancer"
+  },
+  "23950-58-5": {
+    "cas_no": "23950-58-5",
+    "chemical": "Pronamide",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2425-06-1": {
+    "cas_no": "2425-06-1",
+    "chemical": "Captafol",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "2426-08-6": {
+    "cas_no": "2426-08-6",
+    "chemical": "n-Butyl glycidyl ether Delisted April 4, 2014 [Click here for the basis for delisting]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "2429-74-5": {
+    "cas_no": "2429-74-5",
+    "chemical": "C.I. Direct Blue 15",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "24382-04-5": {
+    "cas_no": "24382-04-5",
+    "chemical": "Malonaldehyde, sodium salt",
+    "date_listed": "2011-05-03",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2439-01-2": {
+    "cas_no": "2439-01-2",
+    "chemical": "Oxythioquinox (Chinomethionat)",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "24390-14-5": {
+    "cas_no": "24390-14-5",
+    "chemical": "Doxycycline hyclate (internal use)",
+    "date_listed": "1991-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "2451-62-9": {
+    "cas_no": "2451-62-9",
+    "chemical": "1,3,5-Triglycidyl-s-triazinetrione  Delisted December 13, 2013 [Click here for the basis for delisting]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "2475-45-8": {
+    "cas_no": "2475-45-8",
+    "chemical": "Disperse Blue 1",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 200,
+    "type_of_toxicity": "cancer"
+  },
+  "25013-16-5": {
+    "cas_no": "25013-16-5",
+    "chemical": "Butylated hydroxyanisole",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 4000,
+    "type_of_toxicity": "cancer"
+  },
+  "25122-46-7": {
+    "cas_no": "25122-46-7",
+    "chemical": "Clobetasol propionate",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "25316-40-9": {
+    "cas_no": "25316-40-9",
+    "chemical": "Doxorubicin hydrochloride (Adriamycin)",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "25812-30-0": {
+    "cas_no": "25812-30-0",
+    "chemical": "Gemfibrozil",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female, male "
+  },
+  "2593-15-9": {
+    "cas_no": "2593-15-9",
+    "chemical": "Terrazole",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2602-46-2": {
+    "cas_no": "2602-46-2",
+    "chemical": "Direct Blue 6 (technical grade)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.09,
+    "type_of_toxicity": "cancer"
+  },
+  "26148-68-5": {
+    "cas_no": "26148-68-5",
+    "chemical": "A-alpha-C (2-Amino-9H-pyrido[2,3-b]indole)",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 2,
+    "type_of_toxicity": "cancer"
+  },
+  "2646-17-5": {
+    "cas_no": "2646-17-5",
+    "chemical": "Oil Orange SS",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "26471-62-5": {
+    "cas_no": "26471-62-5",
+    "chemical": "Toluene diisocyanate",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "26644-46-2": {
+    "cas_no": "26644-46-2",
+    "chemical": "Triforine",
+    "date_listed": "1999-06-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "271-89-6": {
+    "cas_no": "271-89-6",
+    "chemical": "Benzofuran",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 1.1,
+    "type_of_toxicity": "cancer"
+  },
+  "27208-37-3": {
+    "cas_no": "27208-37-3",
+    "chemical": "Cyclopenta[cd]pyrene",
+    "date_listed": "2011-04-29",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "2784-94-3": {
+    "cas_no": "2784-94-3",
+    "chemical": "HC Blue 1",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer"
+  },
+  "2832-40-8": {
+    "cas_no": "2832-40-8",
+    "chemical": "C.I. Disperse Yellow 3",
+    "date_listed": "2013-02-08",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "28407-37-6": {
+    "cas_no": "28407-37-6",
+    "chemical": "C.I. Direct Blue 218",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 50,
+    "type_of_toxicity": "cancer "
+  },
+  "28434-86-8": {
+    "cas_no": "28434-86-8",
+    "chemical": "3,3'-Dichloro-4,4'-diamino-diphenyl ether",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "28538-70-7": {
+    "cas_no": "28538-70-7",
+    "chemical": "N-Nitrosomethyl-n-hexylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "28911-01-5": {
+    "cas_no": "28911-01-5",
+    "chemical": "Triazolam",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "28981-97-7": {
+    "cas_no": "28981-97-7",
+    "chemical": "Alprazolam",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "29122-68-7": {
+    "cas_no": "29122-68-7",
+    "chemical": "Atenolol",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "2921-88-2": {
+    "cas_no": "2921-88-2",
+    "chemical": "Chlorpyrifos",
+    "date_listed": "2017-12-15",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.58 (oral and inhalation) 7.2 (dermal)",
+    "type_of_toxicity": "developmental"
+  },
+  "2973-10-6": {
+    "cas_no": "2973-10-6",
+    "chemical": "Diisopropyl sulfate",
+    "date_listed": "1993-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "29767-20-2": {
+    "cas_no": "29767-20-2",
+    "chemical": "Teniposide",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "298-46-4": {
+    "cas_no": "298-46-4",
+    "chemical": "Carbamazepine",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "298-81-7": {
+    "cas_no": "298-81-7",
+    "chemical": "8-Methoxypsoralen with ultraviolet A therapy",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "299-75-2": {
+    "cas_no": "299-75-2",
+    "chemical": "Treosulfan",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "301-04-2": {
+    "cas_no": "301-04-2",
+    "chemical": "Lead acetate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "23 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "301-12-2": {
+    "cas_no": "301-12-2",
+    "chemical": "Oxydemeton methyl",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female, male "
+  },
+  "302-01-2": {
+    "cas_no": "302-01-2",
+    "chemical": "Hydrazine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.04,
+    "type_of_toxicity": "cancer"
+  },
+  "302-17-0": {
+    "cas_no": "302-17-0",
+    "chemical": "Chloral hydrate",
+    "date_listed": "2013-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "302-70-5": {
+    "cas_no": "302-70-5",
+    "chemical": "Nitrogen mustard N-oxide hydrochloride",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "302-79-4": {
+    "cas_no": "302-79-4",
+    "chemical": "All-trans retinoic acid",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "303-34-4": {
+    "cas_no": "303-34-4",
+    "chemical": "Lasiocarpine",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.09,
+    "type_of_toxicity": "cancer"
+  },
+  "303-47-9": {
+    "cas_no": "303-47-9",
+    "chemical": "Ochratoxin A",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "305-03-3": {
+    "cas_no": "305-03-3",
+    "chemical": "Chlorambucil",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "30516-87-1": {
+    "cas_no": "30516-87-1",
+    "chemical": "Zidovudine (AZT)",
+    "date_listed": "2009-12-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "3068-88-0": {
+    "cas_no": "3068-88-0",
+    "chemical": "beta-Butyrolactone",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.7,
+    "type_of_toxicity": "cancer"
+  },
+  "309-00-2": {
+    "cas_no": "309-00-2",
+    "chemical": "Aldrin",
+    "date_listed": "1988-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.04,
+    "type_of_toxicity": "cancer"
+  },
+  "309-43-3": {
+    "cas_no": "309-43-3",
+    "chemical": "Secobarbital sodium",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "31431-39-7": {
+    "cas_no": "31431-39-7",
+    "chemical": "Mebendazole",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "315-22-0": {
+    "cas_no": "315-22-0",
+    "chemical": "Monocrotaline",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.07,
+    "type_of_toxicity": "cancer"
+  },
+  "315-37-7": {
+    "cas_no": "315-37-7",
+    "chemical": "Testosterone enanthate",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "320-67-2": {
+    "cas_no": "320-67-2",
+    "chemical": "Azacitidine",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "3252-43-5": {
+    "cas_no": "3252-43-5",
+    "chemical": "Dibromoacetonitrile",
+    "date_listed": "2011-05-03",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "32809-16-8": {
+    "cas_no": "32809-16-8",
+    "chemical": "Procymidone",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "3296-90-0": {
+    "cas_no": "3296-90-0",
+    "chemical": "2,2-Bis(bromomethyl)-1,3-propanediol",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "330-54-1": {
+    "cas_no": "330-54-1",
+    "chemical": "Diuron",
+    "date_listed": "2002-05-31",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "330-55-2": {
+    "cas_no": "330-55-2",
+    "chemical": "Linuron",
+    "date_listed": "1999-03-19",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 460,
+    "type_of_toxicity": "developmental "
+  },
+  "33069-62-4": {
+    "cas_no": "33069-62-4",
+    "chemical": "Paclitaxel",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "33089-61-1": {
+    "cas_no": "33089-61-1",
+    "chemical": "Amitraz",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "331-39-5": {
+    "cas_no": "331-39-5",
+    "chemical": "Caffeic acid",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "33286-22-5": {
+    "cas_no": "33286-22-5",
+    "chemical": "Diltiazem hydrochloride",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "3333-67-3": {
+    "cas_no": "3333-67-3",
+    "chemical": "Nickel carbonate",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "33419-42-0": {
+    "cas_no": "33419-42-0",
+    "chemical": "Etoposide",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "335-67-1": {
+    "cas_no": "335-67-1",
+    "chemical": "Perfluorooctanoic acid (PFOA)",
+    "date_listed": "2017-11-10",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "3385-03-3": {
+    "cas_no": "3385-03-3",
+    "chemical": "Flunisolide",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "3397-62-4": {
+    "cas_no": "3397-62-4",
+    "chemical": "2,4-Diamino-6-chloro-s-triazine (DACT)",
+    "date_listed": "2016-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "100 (oral)",
+    "type_of_toxicity": "developmental, female"
+  },
+  "34031-32-8": {
+    "cas_no": "34031-32-8",
+    "chemical": "Auranofin",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "34256-82-1": {
+    "cas_no": "34256-82-1",
+    "chemical": "Acetochlor",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "34423-54-6": {
+    "cas_no": "34423-54-6",
+    "chemical": "N-Nitrosomethyl-n-octylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "34465-46- 8": {
+    "cas_no": "34465-46- 8",
+    "chemical": "Hexachlorodibenzodioxin",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.0002,
+    "type_of_toxicity": "cancer"
+  },
+  "3468-63-1": {
+    "cas_no": "3468-63-1",
+    "chemical": "D&C Orange No. 17",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "3546-10-9": {
+    "cas_no": "3546-10-9",
+    "chemical": "Phenesterin",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.005,
+    "type_of_toxicity": "cancer"
+  },
+  "35554-44-0": {
+    "cas_no": "35554-44-0",
+    "chemical": "Imazalil",
+    "date_listed": "2011-05-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 11,
+    "type_of_toxicity": "cancer"
+  },
+  "3564-09-8": {
+    "cas_no": "3564-09-8",
+    "chemical": "Ponceau 3R",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 40,
+    "type_of_toxicity": "cancer"
+  },
+  "3570-75-0": {
+    "cas_no": "3570-75-0",
+    "chemical": "2-(2-Formylhydrazino)-4-(5-nitro-2-furyl)thiazole",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "364-98-7": {
+    "cas_no": "364-98-7",
+    "chemical": "Diazoxide",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "366-70-1": {
+    "cas_no": "366-70-1",
+    "chemical": "Procarbazine hydrochloride",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "36734-19-7": {
+    "cas_no": "36734-19-7",
+    "chemical": "Iprodione",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "36735-22-5": {
+    "cas_no": "36735-22-5",
+    "chemical": "Quazepam",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "36791-04-5": {
+    "cas_no": "36791-04-5",
+    "chemical": "Ribavirin",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "3688-53-7": {
+    "cas_no": "3688-53-7",
+    "chemical": "AF-2;[2-(2-furyl)-3-(5-nitro-2-furyl)]acrylamide",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "3697-24-3": {
+    "cas_no": "3697-24-3",
+    "chemical": "5-Methylchrysene",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.0084 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "373-02-4": {
+    "cas_no": "373-02-4",
+    "chemical": "Nickel acetate",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "3761-53-3": {
+    "cas_no": "3761-53-3",
+    "chemical": "Ponceau MX",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 200,
+    "type_of_toxicity": "cancer"
+  },
+  "3771-19-5": {
+    "cas_no": "3771-19-5",
+    "chemical": "Nafenopin",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "3778-73-2": {
+    "cas_no": "3778-73-2",
+    "chemical": "Ifosfamide",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "379-79-3": {
+    "cas_no": "379-79-3",
+    "chemical": "Ergotamine tartrate",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "380610-27-5": {
+    "cas_no": "380610-27-5",
+    "chemical": "Pertuzumab",
+    "date_listed": "2017-01-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "3810-74-0": {
+    "cas_no": "3810-74-0",
+    "chemical": "Streptomycin sulfate",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "38194-50-2": {
+    "cas_no": "38194-50-2",
+    "chemical": "Sulindac",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "38260-01-4": {
+    "cas_no": "38260-01-4",
+    "chemical": "Trientine hydrochloride",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "389-08-2": {
+    "cas_no": "389-08-2",
+    "chemical": "Nalidixic acid",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 28,
+    "type_of_toxicity": "cancer "
+  },
+  "39156-41-7": {
+    "cas_no": "39156-41-7",
+    "chemical": "2,4-Diaminoanisole sulfate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 50,
+    "type_of_toxicity": "cancer"
+  },
+  "39300-45-3": {
+    "cas_no": "39300-45-3",
+    "chemical": "Dinocap",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "396-01-0": {
+    "cas_no": "396-01-0",
+    "chemical": "Triamterene",
+    "date_listed": "2014-04-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "3963-95-9": {
+    "cas_no": "3963-95-9",
+    "chemical": "Methacycline hydrochloride",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "39831-55-5": {
+    "cas_no": "39831-55-5",
+    "chemical": "Amikacin sulfate",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "41340-25-4": {
+    "cas_no": "41340-25-4",
+    "chemical": "Etodolac",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female  "
+  },
+  "41575-94-4": {
+    "cas_no": "41575-94-4",
+    "chemical": "Carboplatin",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "42397-64-8": {
+    "cas_no": "42397-64-8",
+    "chemical": "1,6-Dinitropyrene",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "42397-65-9": {
+    "cas_no": "42397-65-9",
+    "chemical": "1,8-Dinitropyrene",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "4291-63-8": {
+    "cas_no": "4291-63-8",
+    "chemical": "Cladribine",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "43121-43-3": {
+    "cas_no": "43121-43-3",
+    "chemical": "Triadimefon",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "434-07-1": {
+    "cas_no": "434-07-1",
+    "chemical": "Oxymetholone",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "4342-03-4": {
+    "cas_no": "4342-03-4",
+    "chemical": "Dacarbazine",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "435-97-2": {
+    "cas_no": "435-97-2",
+    "chemical": "Phenprocoumon",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "438-41-5": {
+    "cas_no": "438-41-5",
+    "chemical": "Chlordiazepoxide hydrochloride",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "439-14-5": {
+    "cas_no": "439-14-5",
+    "chemical": "Diazepam",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "443-48-1": {
+    "cas_no": "443-48-1",
+    "chemical": "Metronidazole",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "446-86-6": {
+    "cas_no": "446-86-6",
+    "chemical": "Azathioprine",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "4549-40-0": {
+    "cas_no": "4549-40-0",
+    "chemical": "N-Nitrosomethylvinylamine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "474-25-9": {
+    "cas_no": "474-25-9",
+    "chemical": "Chenodiol",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "4759-48-2": {
+    "cas_no": "4759-48-2",
+    "chemical": "Isotretinoin",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "484-20-8": {
+    "cas_no": "484-20-8",
+    "chemical": "5-Methoxypsoralen with ultraviolet A therapy",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "492-80-8": {
+    "cas_no": "492-80-8",
+    "chemical": "Auramine",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.8,
+    "type_of_toxicity": "cancer"
+  },
+  "494-03-1": {
+    "cas_no": "494-03-1",
+    "chemical": "N,N-Bis(2-chloroethyl)-2-naphthylamine  (Chlornapazine)",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "49842-07-1": {
+    "cas_no": "49842-07-1",
+    "chemical": "Tobramycin sulfate",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "50-00-0": {
+    "cas_no": "50-00-0",
+    "chemical": "Formaldehyde (gas)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 40,
+    "type_of_toxicity": "cancer"
+  },
+  "50-06-6": {
+    "cas_no": "50-06-6",
+    "chemical": "Phenobarbital",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 2,
+    "type_of_toxicity": "cancer"
+  },
+  "50-07-7": {
+    "cas_no": "50-07-7",
+    "chemical": "Mitomycin C",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 9e-05,
+    "type_of_toxicity": "cancer"
+  },
+  "50-18-0": {
+    "cas_no": "50-18-0",
+    "chemical": "Cyclophosphamide (anhydrous)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE - developmental    FR - female, male ",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male"
+  },
+  "50-28-2": {
+    "cas_no": "50-28-2",
+    "chemical": "Estradiol 17B",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.02,
+    "type_of_toxicity": "cancer"
+  },
+  "50-29-3": {
+    "cas_no": "50-29-3",
+    "chemical": "p,p'-DDT",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "50-32-8": {
+    "cas_no": "50-32-8",
+    "chemical": "Benzo[a]pyrene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.06,
+    "type_of_toxicity": "cancer"
+  },
+  "50-35-1": {
+    "cas_no": "50-35-1",
+    "chemical": "Thalidomide",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "50-36-2": {
+    "cas_no": "50-36-2",
+    "chemical": "Cocaine",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female"
+  },
+  "50-41-9": {
+    "cas_no": "50-41-9",
+    "chemical": "Clomiphene citrate",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "50-55-5": {
+    "cas_no": "50-55-5",
+    "chemical": "Reserpine",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.06,
+    "type_of_toxicity": "cancer"
+  },
+  "50-76-0": {
+    "cas_no": "50-76-0",
+    "chemical": "Actinomycin D",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "50-78-2": {
+    "cas_no": "50-78-2",
+    "chemical": "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female"
+  },
+  "50471-44-8": {
+    "cas_no": "50471-44-8",
+    "chemical": "Vinclozolin",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "505-60-2": {
+    "cas_no": "505-60-2",
+    "chemical": "Mustard Gas",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "509-14-8": {
+    "cas_no": "509-14-8",
+    "chemical": "Tetranitromethane",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.059,
+    "type_of_toxicity": "cancer"
+  },
+  "50926-11-9": {
+    "cas_no": "50926-11-9",
+    "chemical": "Indium tin oxide",
+    "date_listed": "2021-03-19",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "51-21-8": {
+    "cas_no": "51-21-8",
+    "chemical": "Fluorouracil",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "51-52-5": {
+    "cas_no": "51-52-5",
+    "chemical": "Propylthiouracil",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "51-75-2": {
+    "cas_no": "51-75-2",
+    "chemical": "Nitrogen mustard (Mechlorethamine)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "51-79-6": {
+    "cas_no": "51-79-6",
+    "chemical": "Urethane (Ethyl carbamate)",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "51-98-9": {
+    "cas_no": "51-98-9",
+    "chemical": "Norethisterone acetate (Norethindrone acetate)",
+    "date_listed": "1991-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "510-15-6": {
+    "cas_no": "510-15-6",
+    "chemical": "Ethyl-4,4'-dichlorobenzilate",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 7,
+    "type_of_toxicity": "cancer"
+  },
+  "5104-49-4": {
+    "cas_no": "5104-49-4",
+    "chemical": "Flurbiprofen",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "512-56-1": {
+    "cas_no": "512-56-1",
+    "chemical": "Trimethyl phosphate",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 24,
+    "type_of_toxicity": "cancer"
+  },
+  "51264-14-3": {
+    "cas_no": "51264-14-3",
+    "chemical": "Amsacrine",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "513-37-1": {
+    "cas_no": "513-37-1",
+    "chemical": "Dimethylvinylchloride",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "51338-27-3": {
+    "cas_no": "51338-27-3",
+    "chemical": "Diclofop methyl",
+    "date_listed": "1999-03-05",
+    "listing_mechanism": "AB                        ",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "5160-02-1": {
+    "cas_no": "5160-02-1",
+    "chemical": "D&C Red No. 9",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 100,
+    "type_of_toxicity": "cancer"
+  },
+  "52-01-7": {
+    "cas_no": "52-01-7",
+    "chemical": "Spironolactone",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "52-24-4": {
+    "cas_no": "52-24-4",
+    "chemical": "Tris(1-aziridinyl)phosphine sulfide (Thiotepa)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.06,
+    "type_of_toxicity": "cancer"
+  },
+  "52-28-8": {
+    "cas_no": "52-28-8",
+    "chemical": "Codeine phosphate",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "52-67-5": {
+    "cas_no": "52-67-5",
+    "chemical": "Penicillamine",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "52-76-6": {
+    "cas_no": "52-76-6",
+    "chemical": "Lynestrenol",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "52-86-8": {
+    "cas_no": "52-86-8",
+    "chemical": "Haloperidol",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "5216-25-1": {
+    "cas_no": "5216-25-1",
+    "chemical": "p-a,a,a-Tetrachlorotoluene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "52232-67-4": {
+    "cas_no": "52232-67-4",
+    "chemical": "Teriparatide",
+    "date_listed": "2015-08-14",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "528-29-0": {
+    "cas_no": "528-29-0",
+    "chemical": "o-Dinitrobenzene",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male"
+  },
+  "53-16-7": {
+    "cas_no": "53-16-7",
+    "chemical": "Estrone",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "53-70-3": {
+    "cas_no": "53-70-3",
+    "chemical": "Dibenz[a,h]anthracene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "53-96-3": {
+    "cas_no": "53-96-3",
+    "chemical": "2-Acetylaminofluorene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "531-76-0": {
+    "cas_no": "531-76-0",
+    "chemical": "Merphalan",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "531-82-8": {
+    "cas_no": "531-82-8",
+    "chemical": "N-[4-(5-Nitro-2-furyl)-2-thiazolyl]acetamide",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "53404-19-6": {
+    "cas_no": "53404-19-6",
+    "chemical": "Bromacil lithium salt",
+    "date_listed": "2003-01-17",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "536-33-4": {
+    "cas_no": "536-33-4",
+    "chemical": "Ethionamide",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "53910-25-1": {
+    "cas_no": "53910-25-1",
+    "chemical": "Pentostatin",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "53973-98-1": {
+    "cas_no": "53973-98-1",
+    "chemical": "Polygeenan",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 1200,
+    "type_of_toxicity": "cancer"
+  },
+  "54-11-5": {
+    "cas_no": "54-11-5",
+    "chemical": "Nicotine",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "54-62-6": {
+    "cas_no": "54-62-6",
+    "chemical": "Aminopterin",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female"
+  },
+  "54-91-1": {
+    "cas_no": "54-91-1",
+    "chemical": "Pipobroman",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "540-73-8": {
+    "cas_no": "540-73-8",
+    "chemical": "1,2-Dimethylhydrazine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.001,
+    "type_of_toxicity": "cancer"
+  },
+  "5411-22-3": {
+    "cas_no": "5411-22-3",
+    "chemical": "Benzphetamine hydrochloride",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "542-56-3": {
+    "cas_no": "542-56-3",
+    "chemical": "Isobutyl nitrite",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 7.4,
+    "type_of_toxicity": "cancer"
+  },
+  "542-75-6": {
+    "cas_no": "542-75-6",
+    "chemical": "1,3-Dichloropropene",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "3.7 (oral and inhalation)",
+    "type_of_toxicity": "cancer"
+  },
+  "542-88-1": {
+    "cas_no": "542-88-1",
+    "chemical": "Bis(chloromethyl)ether",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.02,
+    "type_of_toxicity": "cancer"
+  },
+  "54350-48-0": {
+    "cas_no": "54350-48-0",
+    "chemical": "Etretinate",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "546-88-3": {
+    "cas_no": "546-88-3",
+    "chemical": "Acetohydroxamic acid",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "54749-90-5": {
+    "cas_no": "54749-90-5",
+    "chemical": "Chlorozotocin",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.003,
+    "type_of_toxicity": "cancer"
+  },
+  "548-62-9": {
+    "cas_no": "548-62-9",
+    "chemical": "Gentian violet (Crystal violet)",
+    "date_listed": "2018-11-23",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "54965-24-1": {
+    "cas_no": "54965-24-1",
+    "chemical": "Tamoxifen citrate",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "55-18-5": {
+    "cas_no": "55-18-5",
+    "chemical": "N-Nitrosodiethylamine",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.02,
+    "type_of_toxicity": "cancer"
+  },
+  "55-86-7": {
+    "cas_no": "55-86-7",
+    "chemical": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "55-98-1": {
+    "cas_no": "55-98-1",
+    "chemical": "1,4-Butanediol dimethanesulfonate (Busulfan)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "55090-44-3": {
+    "cas_no": "55090-44-3",
+    "chemical": "N-Nitrosomethyl-n-dodecylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "5522-43-0": {
+    "cas_no": "5522-43-0",
+    "chemical": "1-Nitropyrene",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "5534-09-8": {
+    "cas_no": "5534-09-8",
+    "chemical": "Beclomethasone dipropionate",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "554-13-2": {
+    "cas_no": "554-13-2",
+    "chemical": "Lithium carbonate",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "555-84-0": {
+    "cas_no": "555-84-0",
+    "chemical": "1-[(5-Nitrofurfurylidene)-amino]-2-imidazolidinone",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.4,
+    "type_of_toxicity": "cancer"
+  },
+  "556-52-5": {
+    "cas_no": "556-52-5",
+    "chemical": "Glycidol",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.54,
+    "type_of_toxicity": "cancer"
+  },
+  "55738-54-0": {
+    "cas_no": "55738-54-0",
+    "chemical": "trans-2-[(Dimethylamino)methylimino]-5-[2-(5-nitro-2-furyl)vinyl]-1,3,4-oxadiazole",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 2,
+    "type_of_toxicity": "cancer"
+  },
+  "5589-96-8": {
+    "cas_no": "5589-96-8",
+    "chemical": "Bromochloroacetic acid",
+    "date_listed": "2010-04-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.7,
+    "type_of_toxicity": "cancer "
+  },
+  "56-04-2": {
+    "cas_no": "56-04-2",
+    "chemical": "Methylthiouracil",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 2,
+    "type_of_toxicity": "cancer"
+  },
+  "56-23-5": {
+    "cas_no": "56-23-5",
+    "chemical": "Carbon tetrachloride",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "56-38-2": {
+    "cas_no": "56-38-2",
+    "chemical": "Parathion",
+    "date_listed": "2016-05-20",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "56-49-5": {
+    "cas_no": "56-49-5",
+    "chemical": "3-Methylcholanthrene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.03,
+    "type_of_toxicity": "cancer"
+  },
+  "56-53-1": {
+    "cas_no": "56-53-1",
+    "chemical": "Diethylstilbestrol (DES)",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "56-55-3": {
+    "cas_no": "56-55-3",
+    "chemical": "Benz[a]anthracene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "0.033 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "56-75-7": {
+    "cas_no": "56-75-7",
+    "chemical": "Chloramphenicol Delisted January 4, 2013 [Click here for the basis for delisting]",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "563-47-3": {
+    "cas_no": "563-47-3",
+    "chemical": "3-Chloro-2-methylpropene",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "563-80-4": {
+    "cas_no": "563-80-4",
+    "chemical": "Methyl isopropyl ketone Delisted April 4, 2014 [Click for the basis for delisting]",
+    "date_listed": "2012-02-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "56391-57-2": {
+    "cas_no": "56391-57-2",
+    "chemical": "Netilmicin sulfate",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "564-25-0": {
+    "cas_no": "564-25-0",
+    "chemical": "Doxycycline (internal use)",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "569-57-3": {
+    "cas_no": "569-57-3",
+    "chemical": "Chlorotrianisene",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "569-61-9": {
+    "cas_no": "569-61-9",
+    "chemical": "C.I. Basic Red 9 monohydrochloride",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "57-14-7": {
+    "cas_no": "57-14-7",
+    "chemical": "1,1-Dimethylhydrazine (UDMH)",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "57-33-0": {
+    "cas_no": "57-33-0",
+    "chemical": "Pentobarbital sodium",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "57-41-0": {
+    "cas_no": "57-41-0",
+    "chemical": "Diphenylhydantoin (Phenytoin)",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "57-53-4": {
+    "cas_no": "57-53-4",
+    "chemical": "Meprobamate",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "57-57-8": {
+    "cas_no": "57-57-8",
+    "chemical": "beta-Propiolactone",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.05,
+    "type_of_toxicity": "cancer"
+  },
+  "57-63-6": {
+    "cas_no": "57-63-6",
+    "chemical": "Ethinylestradiol",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "57-74-9": {
+    "cas_no": "57-74-9",
+    "chemical": "Chlordane",
+    "date_listed": "1988-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "57-83-0": {
+    "cas_no": "57-83-0",
+    "chemical": "Progesterone",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "57-97-6": {
+    "cas_no": "57-97-6",
+    "chemical": "7,12-Dimethylbenz(a)anthracene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.003,
+    "type_of_toxicity": "cancer"
+  },
+  "57018-52-7": {
+    "cas_no": "57018-52-7",
+    "chemical": "Propylene glycol mono-t-butyl ether",
+    "date_listed": "2004-06-11",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "57109-90-7": {
+    "cas_no": "57109-90-7",
+    "chemical": "Clorazepate dipotassium",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "57835-92-4": {
+    "cas_no": "57835-92-4",
+    "chemical": "4-Nitropyrene",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "57852-57-0": {
+    "cas_no": "57852-57-0",
+    "chemical": "Idarubicin hydrochloride",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "58-14-0": {
+    "cas_no": "58-14-0",
+    "chemical": "Pyrimethamine",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "58-18-4": {
+    "cas_no": "58-18-4",
+    "chemical": "Methyltestosterone",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "58-20-8": {
+    "cas_no": "58-20-8",
+    "chemical": "Testosterone cypionate",
+    "date_listed": "1991-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "58-22-0": {
+    "cas_no": "58-22-0",
+    "chemical": "Testosterone and its esters",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "58-25-3": {
+    "cas_no": "58-25-3",
+    "chemical": "Chlordiazepoxide",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "58-93-5; 125727-50-6; 8049-49-8": {
+    "cas_no": "58-93-5; 125727-50-6; 8049-49-8",
+    "chemical": "Hydrochlorothiazide",
+    "date_listed": "2026-07-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "59-05-2": {
+    "cas_no": "59-05-2",
+    "chemical": "Methotrexate",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "59-66-5": {
+    "cas_no": "59-66-5",
+    "chemical": "Acetazolamide",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental  "
+  },
+  "59-87-0": {
+    "cas_no": "59-87-0",
+    "chemical": "Nitrofurazone",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "59-89-2": {
+    "cas_no": "59-89-2",
+    "chemical": "N-Nitrosomorpholine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": "cancer"
+  },
+  "59-92-7": {
+    "cas_no": "59-92-7",
+    "chemical": "Levodopa",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "59-96-1": {
+    "cas_no": "59-96-1",
+    "chemical": "Phenoxybenzamine",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "590-96-5": {
+    "cas_no": "590-96-5",
+    "chemical": "Methylazoxymethanol",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "5902-51-2": {
+    "cas_no": "5902-51-2",
+    "chemical": "Terbacil",
+    "date_listed": "1999-05-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "591-78-6": {
+    "cas_no": "591-78-6",
+    "chemical": "Methyl-n-butyl ketone [Basis for listing changed effective November 9, 2015]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "59122-46-2": {
+    "cas_no": "59122-46-2",
+    "chemical": "Misoprostol",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "592-62-1": {
+    "cas_no": "592-62-1",
+    "chemical": "Methylazoxymethanol acetate",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "593-60-2": {
+    "cas_no": "593-60-2",
+    "chemical": "Vinyl bromide",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "59467-96-8": {
+    "cas_no": "59467-96-8",
+    "chemical": "Midazolam hydrochloride",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "595-33-5": {
+    "cas_no": "595-33-5",
+    "chemical": "Megestrol acetate",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "59669-26-0": {
+    "cas_no": "59669-26-0",
+    "chemical": "Thiodicarb",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "598-55-0": {
+    "cas_no": "598-55-0",
+    "chemical": "Methyl carbamate",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 160,
+    "type_of_toxicity": "cancer "
+  },
+  "598-78-7": {
+    "cas_no": "598-78-7",
+    "chemical": "2-Chloropropionic acid [Basis for listing changed effective December 20, 2013]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "59865-13-3; 79217-60-0": {
+    "cas_no": "59865-13-3; 79217-60-0",
+    "chemical": "Ciclosporin (Cyclosporin A; Cyclosporine)",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "599-79-1": {
+    "cas_no": "599-79-1",
+    "chemical": "Sulfasalazine (Salicylazosulfapyridine)",
+    "date_listed": "1999-01-29",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "60-09-3": {
+    "cas_no": "60-09-3",
+    "chemical": "p-Aminoazobenzene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "60-11-7": {
+    "cas_no": "60-11-7",
+    "chemical": "4-Dimethylaminoazobenzene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "60-35-5": {
+    "cas_no": "60-35-5",
+    "chemical": "Acetamide",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer "
+  },
+  "60-54-8": {
+    "cas_no": "60-54-8",
+    "chemical": "Tetracycline (internal use)",
+    "date_listed": "1991-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "60-56-0": {
+    "cas_no": "60-56-0",
+    "chemical": "Methimazole",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "60-57-1": {
+    "cas_no": "60-57-1",
+    "chemical": "Dieldrin",
+    "date_listed": "1988-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.04,
+    "type_of_toxicity": "cancer"
+  },
+  "60153-49-3": {
+    "cas_no": "60153-49-3",
+    "chemical": "3-(N-Nitrosomethylamino) propionitrile",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "602-87-9": {
+    "cas_no": "602-87-9",
+    "chemical": "5-Nitroacenaphthene",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 6,
+    "type_of_toxicity": "cancer"
+  },
+  "60391-92-6": {
+    "cas_no": "60391-92-6",
+    "chemical": "N-Carboxymethyl-N-nitrosourea",
+    "date_listed": "2002-01-25",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.7,
+    "type_of_toxicity": "cancer"
+  },
+  "604-75-1": {
+    "cas_no": "604-75-1",
+    "chemical": "Oxazepam",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "6055-19-2": {
+    "cas_no": "6055-19-2",
+    "chemical": "Cyclophosphamide (hydrated)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE - developmental     FR - female, male ",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male"
+  },
+  "60568-05-0": {
+    "cas_no": "60568-05-0",
+    "chemical": "Furmecyclox",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "606-20-2": {
+    "cas_no": "606-20-2",
+    "chemical": "2,6-Dinitrotoluene",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "607-57-8": {
+    "cas_no": "607-57-8",
+    "chemical": "2-Nitrofluorene",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "61-57-4": {
+    "cas_no": "61-57-4",
+    "chemical": "Niridazole",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "61-82-5": {
+    "cas_no": "61-82-5",
+    "chemical": "Amitrole",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.7,
+    "type_of_toxicity": "cancer"
+  },
+  "6109-97-3": {
+    "cas_no": "6109-97-3",
+    "chemical": "3-Amino-9-ethylcarbazole hydrochloride",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 9,
+    "type_of_toxicity": "cancer"
+  },
+  "611-06-3": {
+    "cas_no": "611-06-3",
+    "chemical": "2,4-Dichloro-1-nitrobenzene",
+    "date_listed": "2019-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "6112-76-1": {
+    "cas_no": "6112-76-1",
+    "chemical": "Mercaptopurine",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "612-82-8": {
+    "cas_no": "612-82-8",
+    "chemical": "3,3'-Dimethylbenzidine dihydrochloride",
+    "date_listed": "1992-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.059,
+    "type_of_toxicity": "cancer"
+  },
+  "612-83-9": {
+    "cas_no": "612-83-9",
+    "chemical": "3,3'-Dichlorobenzidine dihydrochloride",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "613-35-4": {
+    "cas_no": "613-35-4",
+    "chemical": "N,N'-Diacetylbenzidine",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "615-05-4": {
+    "cas_no": "615-05-4",
+    "chemical": "2,4-Diaminoanisole",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": 30,
+    "type_of_toxicity": "cancer"
+  },
+  "615-53-2": {
+    "cas_no": "615-53-2",
+    "chemical": "N-Nitroso-N-methylurethane",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.006,
+    "type_of_toxicity": "cancer"
+  },
+  "6164-98-3": {
+    "cas_no": "6164-98-3",
+    "chemical": "Chlordimeform",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "6190-39-2": {
+    "cas_no": "6190-39-2",
+    "chemical": "Dihydroergotamine mesylate",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "6190-65-4": {
+    "cas_no": "6190-65-4",
+    "chemical": "Des-ethyl atrazine (DEA)",
+    "date_listed": "2016-07-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "100 (oral)",
+    "type_of_toxicity": "developmental, female"
+  },
+  "62-44-2": {
+    "cas_no": "62-44-2",
+    "chemical": "Phenacetin",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 300,
+    "type_of_toxicity": "cancer"
+  },
+  "62-50-0": {
+    "cas_no": "62-50-0",
+    "chemical": "Ethyl methanesulfonate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "62-53-3": {
+    "cas_no": "62-53-3",
+    "chemical": "Aniline",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 100,
+    "type_of_toxicity": "cancer"
+  },
+  "62-55-5": {
+    "cas_no": "62-55-5",
+    "chemical": "Thioacetamide",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": "cancer"
+  },
+  "62-56-6": {
+    "cas_no": "62-56-6",
+    "chemical": "Thiourea",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer"
+  },
+  "62-73-7": {
+    "cas_no": "62-73-7",
+    "chemical": "DDVP (Dichlorvos)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 2,
+    "type_of_toxicity": "cancer"
+  },
+  "62-74-8": {
+    "cas_no": "62-74-8",
+    "chemical": "Sodium fluoroacetate",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "62-75-9": {
+    "cas_no": "62-75-9",
+    "chemical": "N-Nitrosodimethylamine",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.04,
+    "type_of_toxicity": "cancer"
+  },
+  "621-64-7": {
+    "cas_no": "621-64-7",
+    "chemical": "N-Nitrosodi-n-propylamine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": "cancer"
+  },
+  "624-83-9": {
+    "cas_no": "624-83-9",
+    "chemical": "Methyl isocyanate (MIC)",
+    "date_listed": "2010-11-12",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female "
+  },
+  "62450-06-0": {
+    "cas_no": "62450-06-0",
+    "chemical": "Trp-P-1 (Tryptophan-P-1)",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.03,
+    "type_of_toxicity": "cancer"
+  },
+  "62450-07-1": {
+    "cas_no": "62450-07-1",
+    "chemical": "Trp-P-2 (Tryptophan-P-2)",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "62476-59-9": {
+    "cas_no": "62476-59-9",
+    "chemical": "Acifluorfen sodium",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "63-05-8": {
+    "cas_no": "63-05-8",
+    "chemical": "Androstenedione",
+    "date_listed": "2011-05-03",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "63-25-2": {
+    "cas_no": "63-25-2",
+    "chemical": "Carbaryl [Basis for listing changed effective December 27, 2013]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male"
+  },
+  "63-92-3": {
+    "cas_no": "63-92-3",
+    "chemical": "Phenoxybenzamine hydrochloride",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "63-98-9": {
+    "cas_no": "63-98-9",
+    "chemical": "Phenacemide",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "630-08-0": {
+    "cas_no": "630-08-0",
+    "chemical": "Carbon monoxide",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "630-20-6": {
+    "cas_no": "630-20-6",
+    "chemical": "1,1,1,2-Tetrachloroethane",
+    "date_listed": "2013-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "630-93-3": {
+    "cas_no": "630-93-3",
+    "chemical": "Diphenylhydantoin (Phenytoin), sodium salt",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "631-64-1": {
+    "cas_no": "631-64-1",
+    "chemical": "Dibromoacetic acid",
+    "date_listed": "2008-06-17",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 2.8,
+    "type_of_toxicity": "cancer"
+  },
+  "6358-53-8": {
+    "cas_no": "6358-53-8",
+    "chemical": "Citrus Red No. 2",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "636-21-5": {
+    "cas_no": "636-21-5",
+    "chemical": "o-Toluidine hydrochloride",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "637-07-0": {
+    "cas_no": "637-07-0",
+    "chemical": "Clofibrate",
+    "date_listed": "1996-09-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "637-92-3": {
+    "cas_no": "637-92-3",
+    "chemical": "Ethyl-tert-butyl ether  Delisted December 13, 2013 [Click here for the basis for delisting]",
+    "date_listed": "2009-12-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "638-21-1": {
+    "cas_no": "638-21-1",
+    "chemical": "Phenylphosphine [Basis for listing changed effective June 6, 2014]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental male"
+  },
+  "64-67-5": {
+    "cas_no": "64-67-5",
+    "chemical": "Diethyl sulfate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "64-73-3": {
+    "cas_no": "64-73-3",
+    "chemical": "Demeclocycline hydrochloride (internal use)",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "64-75-5": {
+    "cas_no": "64-75-5",
+    "chemical": "Tetracycline hydrochloride (internal use)",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "64-86-8": {
+    "cas_no": "64-86-8",
+    "chemical": "Colchicine",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male"
+  },
+  "64091-91-4": {
+    "cas_no": "64091-91-4",
+    "chemical": "4-(N-Nitrosomethylamino)-1-(3-pyridyl)1-butanone",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.014,
+    "type_of_toxicity": "cancer"
+  },
+  "645-05-6": {
+    "cas_no": "645-05-6",
+    "chemical": "Altretamine",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "6459-94-5": {
+    "cas_no": "6459-94-5",
+    "chemical": "C.I. Acid Red 114",
+    "date_listed": "1992-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "64902-72-3": {
+    "cas_no": "64902-72-3",
+    "chemical": "Chlorsulfuron Delisted June 6, 2014 [Click here for the basis for delisting]",
+    "date_listed": "1999-05-14",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "6533-00-2": {
+    "cas_no": "6533-00-2",
+    "chemical": "Norgestrel",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "65807-02-5": {
+    "cas_no": "65807-02-5",
+    "chemical": "Goserelin acetate",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "66-27-3": {
+    "cas_no": "66-27-3",
+    "chemical": "Methyl methanesulfonate",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 7,
+    "type_of_toxicity": "cancer"
+  },
+  "66-75-1": {
+    "cas_no": "66-75-1",
+    "chemical": "Uracil mustard",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male"
+  },
+  "66-76-2": {
+    "cas_no": "66-76-2",
+    "chemical": "Dicumarol",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "66-81-9": {
+    "cas_no": "66-81-9",
+    "chemical": "Cycloheximide",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "66085-59-4": {
+    "cas_no": "66085-59-4",
+    "chemical": "Nimodipine",
+    "date_listed": "2001-04-24",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "66441-23-4": {
+    "cas_no": "66441-23-4",
+    "chemical": "Fenoxaprop ethyl",
+    "date_listed": "1999-03-26",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "665-66-7": {
+    "cas_no": "665-66-7",
+    "chemical": "Amantadine hydrochloride",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "66852-54-8": {
+    "cas_no": "66852-54-8",
+    "chemical": "Halobetasol propionate",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "67-20-9": {
+    "cas_no": "67-20-9",
+    "chemical": "Nitrofurantoin",
+    "date_listed": "1991-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male"
+  },
+  "67-45-8": {
+    "cas_no": "67-45-8",
+    "chemical": "Furazolidone",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "67-56-1": {
+    "cas_no": "67-56-1",
+    "chemical": "Methanol",
+    "date_listed": "2012-03-16",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "47,000 (inhalation)  \n23,000 (oral)",
+    "type_of_toxicity": "developmental"
+  },
+  "67-66-3": {
+    "cas_no": "67-66-3",
+    "chemical": "Chloroform [Basis for listing changed effective December 23, 2016]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "67-72-1": {
+    "cas_no": "67-72-1",
+    "chemical": "Hexachloroethane",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "671-16-9": {
+    "cas_no": "671-16-9",
+    "chemical": "Procarbazine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.05,
+    "type_of_toxicity": "cancer"
+  },
+  "67485-29-4": {
+    "cas_no": "67485-29-4",
+    "chemical": "Hydramethylnon",
+    "date_listed": "1999-03-05",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "120 (oral)",
+    "type_of_toxicity": "developmental, male "
+  },
+  "67730-10-3": {
+    "cas_no": "67730-10-3",
+    "chemical": "Glu-P-2 (2-Aminodipyrido[1,2-a:3',2'-d]imidazole)",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "67730-11-4": {
+    "cas_no": "67730-11-4",
+    "chemical": "Glu-P-1 (2-Amino-6-methyldipyrido[1,2- a:3',2'-d]imidazole)",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": "cancer"
+  },
+  "68-12-2": {
+    "cas_no": "68-12-2",
+    "chemical": "N,N-Dimethylformamide",
+    "date_listed": "2017-10-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "68-22-4": {
+    "cas_no": "68-22-4",
+    "chemical": "Norethisterone (Norethindrone)",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "68-22-4/               57-63-6": {
+    "cas_no": "68-22-4/               57-63-6",
+    "chemical": "Norethisterone (Norethindrone) /Ethinyl estradiol",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "68-22-4/           72-33-3": {
+    "cas_no": "68-22-4/           72-33-3",
+    "chemical": "Norethisterone (Norethindrone) /Mestranol",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "68-23-5": {
+    "cas_no": "68-23-5",
+    "chemical": "Norethynodrel",
+    "date_listed": "2001-02-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "68-76-8": {
+    "cas_no": "68-76-8",
+    "chemical": "Tris(aziridinyl)-p-benzoquinone (Triaziquone) Delisted December 8, 2006 [Click here for the basis for delisting]",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "680-31-9": {
+    "cas_no": "680-31-9",
+    "chemical": "Hexamethylphosphoramide",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male"
+  },
+  "68006-83-7": {
+    "cas_no": "68006-83-7",
+    "chemical": "Me-A-alpha-C (2-Amino-3-methyl-9H-pyrido[2,3-b]indole)",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.6,
+    "type_of_toxicity": "cancer"
+  },
+  "68107-26-6": {
+    "cas_no": "68107-26-6",
+    "chemical": "N-Nitrosomethyl-n-undecylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "6814-58-0": {
+    "cas_no": "6814-58-0",
+    "chemical": "CMNP (pyrazachlor)",
+    "date_listed": "2015-08-25",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "68308-34-9": {
+    "cas_no": "68308-34-9",
+    "chemical": "Shale-oils",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "684-16-2": {
+    "cas_no": "684-16-2",
+    "chemical": "Hexafluoroacetone [Basis for listing changed effective June 6, 2014]",
+    "date_listed": "2008-08-01",
+    "listing_mechanism": "LC SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male"
+  },
+  "684-93-5": {
+    "cas_no": "684-93-5",
+    "chemical": "N-Nitroso-N-methylurea",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.006,
+    "type_of_toxicity": "cancer"
+  },
+  "68515-49-1/      26761-40-0": {
+    "cas_no": "68515-49-1/      26761-40-0",
+    "chemical": "Di-isodecyl phthalate (DIDP)",
+    "date_listed": "2007-04-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 2200,
+    "type_of_toxicity": "developmental "
+  },
+  "693-98-1": {
+    "cas_no": "693-98-1",
+    "chemical": "2-Methylimidazole",
+    "date_listed": "2012-06-22",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "69409-94-5": {
+    "cas_no": "69409-94-5",
+    "chemical": "Fluvalinate",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "69806-50-4": {
+    "cas_no": "69806-50-4",
+    "chemical": "Fluazifop butyl",
+    "date_listed": "1998-11-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "70-25-7": {
+    "cas_no": "70-25-7",
+    "chemical": "N-Methyl-N'-nitro-N-nitrosoguanidine",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.08,
+    "type_of_toxicity": "cancer "
+  },
+  "70476-82-3": {
+    "cas_no": "70476-82-3",
+    "chemical": "Mitoxantrone hydrochloride",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "7068-83-9": {
+    "cas_no": "7068-83-9",
+    "chemical": "N-Nitrosomethyl-n-butylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "71-43-2": {
+    "cas_no": "71-43-2",
+    "chemical": "Benzene",
+    "date_listed": "1997-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "24 (oral)\n49 (inhalation)",
+    "type_of_toxicity": "developmental, male "
+  },
+  "71-55-6": {
+    "cas_no": "71-55-6",
+    "chemical": "1,1,1-Trichloroethane",
+    "date_listed": "2023-04-21",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "71-58-9": {
+    "cas_no": "71-58-9",
+    "chemical": "Medroxyprogesterone acetate",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "71133-14-7": {
+    "cas_no": "71133-14-7",
+    "chemical": "Bromodichloroacetic acid",
+    "date_listed": "2016-07-29",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.95,
+    "type_of_toxicity": "cancer"
+  },
+  "712-68-5": {
+    "cas_no": "712-68-5",
+    "chemical": "2-Amino-5-(5-nitro-2-furyl)-1,3,4-thiadiazole",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.04,
+    "type_of_toxicity": "cancer"
+  },
+  "71526-07-3": {
+    "cas_no": "71526-07-3",
+    "chemical": "MON 4660 (dichloroacetyl-1-oxa-4-azaspiro(4,5)-decane",
+    "date_listed": "2011-03-22",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "71751-41-2": {
+    "cas_no": "71751-41-2",
+    "chemical": "Avermectin B1 (Abamectin)",
+    "date_listed": "2010-12-03",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 4.4,
+    "type_of_toxicity": "developmental"
+  },
+  "72-20-8": {
+    "cas_no": "72-20-8",
+    "chemical": "Endrin",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "72-33-3": {
+    "cas_no": "72-33-3",
+    "chemical": "Mestranol",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "72-54-8": {
+    "cas_no": "72-54-8",
+    "chemical": "DDD (Dichlorodiphenyl-dichloroethane)",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "2 (DDT, DDE, DDD in combination)",
+    "type_of_toxicity": "cancer"
+  },
+  "72-55-9": {
+    "cas_no": "72-55-9",
+    "chemical": "1,1-Dichloro-2,2-bis(p-chloropheny)ethylene (DDE)",
+    "date_listed": "2010-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "72-57-1": {
+    "cas_no": "72-57-1",
+    "chemical": "Trypan blue (commercial grade)",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "72490-01-8": {
+    "cas_no": "72490-01-8",
+    "chemical": "Fenoxycarb",
+    "date_listed": "2000-06-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "7280-37-7": {
+    "cas_no": "7280-37-7",
+    "chemical": "Estropipate",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer, developmental "
+  },
+  "74-83-9": {
+    "cas_no": "74-83-9",
+    "chemical": "Methyl bromide, as a structural fumigant",
+    "date_listed": "1993-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": "810 (inhalation)",
+    "type_of_toxicity": "developmental"
+  },
+  "74-87-3": {
+    "cas_no": "74-87-3",
+    "chemical": "Methyl chloride [Basis for listing changed effective March 7, 2014]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "74-88-4": {
+    "cas_no": "74-88-4",
+    "chemical": "Methyl iodide",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "74-96-4": {
+    "cas_no": "74-96-4",
+    "chemical": "Bromoethane",
+    "date_listed": "2000-12-22",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 96,
+    "type_of_toxicity": "cancer"
+  },
+  "74381-53-6": {
+    "cas_no": "74381-53-6",
+    "chemical": "Leuprolide acetate",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "7440-02-0": {
+    "cas_no": "7440-02-0",
+    "chemical": "Nickel (Metallic)",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "7440-48-4": {
+    "cas_no": "7440-48-4",
+    "chemical": "Cobalt metal powder",
+    "date_listed": "1992-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "7446-09-5": {
+    "cas_no": "7446-09-5",
+    "chemical": "Sulfur dioxidee",
+    "date_listed": "2011-07-29",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 10000,
+    "type_of_toxicity": "developmental"
+  },
+  "7446-27-7": {
+    "cas_no": "7446-27-7",
+    "chemical": "Lead phosphate",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "58 (oral)",
+    "type_of_toxicity": "cancer"
+  },
+  "7446-34-6": {
+    "cas_no": "7446-34-6",
+    "chemical": "Selenium sulfide",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "7481-89-2": {
+    "cas_no": "7481-89-2",
+    "chemical": "Zalcitabine",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "7496-02-8": {
+    "cas_no": "7496-02-8",
+    "chemical": "6-Nitrochrysene",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75-00-3": {
+    "cas_no": "75-00-3",
+    "chemical": "Chloroethane (Ethyl chloride)",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 150,
+    "type_of_toxicity": "cancer"
+  },
+  "75-01-4": {
+    "cas_no": "75-01-4",
+    "chemical": "Vinyl chloride",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "75-02-5": {
+    "cas_no": "75-02-5",
+    "chemical": "Vinyl fluoride",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75-07-0": {
+    "cas_no": "75-07-0",
+    "chemical": "Acetaldehyde",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "90 (inhalation)",
+    "type_of_toxicity": "cancer"
+  },
+  "75-09-2": {
+    "cas_no": "75-09-2",
+    "chemical": "Dichloromethane (Methylene chloride)",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": "50\n200 (inhalation)",
+    "type_of_toxicity": "cancer"
+  },
+  "75-15-0": {
+    "cas_no": "75-15-0",
+    "chemical": "Carbon disulfide",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male"
+  },
+  "75-21-8": {
+    "cas_no": "75-21-8",
+    "chemical": "Ethylene oxide [Basis for listing changed effective November 22, 2013]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "FR",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "developmental, male "
+  },
+  "75-25-2": {
+    "cas_no": "75-25-2",
+    "chemical": "Bromoform",
+    "date_listed": "1991-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 64,
+    "type_of_toxicity": "cancer"
+  },
+  "75-26-3": {
+    "cas_no": "75-26-3",
+    "chemical": "2-Bromopropane (2-BP)",
+    "date_listed": "2005-05-31",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female, male "
+  },
+  "75-27-4": {
+    "cas_no": "75-27-4",
+    "chemical": "Bromodichloromethane",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "75-34-3": {
+    "cas_no": "75-34-3",
+    "chemical": "1,1-Dichloroethane",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 100,
+    "type_of_toxicity": "cancer"
+  },
+  "75-35-4": {
+    "cas_no": "75-35-4",
+    "chemical": "Vinylidene chloride \n(1,1-Dichloroethylene)",
+    "date_listed": "2017-12-29",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.88,
+    "type_of_toxicity": "cancer"
+  },
+  "75-52-5": {
+    "cas_no": "75-52-5",
+    "chemical": "Nitromethane",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 39,
+    "type_of_toxicity": "cancer "
+  },
+  "75-55-8": {
+    "cas_no": "75-55-8",
+    "chemical": "2-Methylaziridine (Propyleneimine)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.028,
+    "type_of_toxicity": "cancer"
+  },
+  "75-56-9": {
+    "cas_no": "75-56-9",
+    "chemical": "Propylene oxide",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75-60-5": {
+    "cas_no": "75-60-5",
+    "chemical": "Cacodylic acid",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75-87-6": {
+    "cas_no": "75-87-6",
+    "chemical": "Chloral",
+    "date_listed": "2013-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75321-20-9": {
+    "cas_no": "75321-20-9",
+    "chemical": "1,3-Dinitropyrene",
+    "date_listed": "2012-11-02",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75330-75-5": {
+    "cas_no": "75330-75-5",
+    "chemical": "Lovastatin",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "758-17-8": {
+    "cas_no": "758-17-8",
+    "chemical": "N-Methyl-N-Formylhydrazine",
+    "date_listed": "2025-12-08",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75881-19-5": {
+    "cas_no": "75881-19-5",
+    "chemical": "N-Nitrosomethyl-n-nonylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75881-20-8": {
+    "cas_no": "75881-20-8",
+    "chemical": "N-Nitrosomethyl-n-tetradecylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "75881-22-0": {
+    "cas_no": "75881-22-0",
+    "chemical": "N-Nitrosomethyl-n-decylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "759-73-9": {
+    "cas_no": "759-73-9",
+    "chemical": "N-Nitroso-N-ethylurea",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.03,
+    "type_of_toxicity": "cancer"
+  },
+  "759-94-4": {
+    "cas_no": "759-94-4",
+    "chemical": "Ethyl dipropylthiocarbamate",
+    "date_listed": "1999-04-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "700 (oral and inhalation)\n6700 (dermal)",
+    "type_of_toxicity": "developmental "
+  },
+  "76-03-9": {
+    "cas_no": "76-03-9",
+    "chemical": "Trichloroacetic acid",
+    "date_listed": "2013-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 9.9,
+    "type_of_toxicity": "cancer"
+  },
+  "76-43-7": {
+    "cas_no": "76-43-7",
+    "chemical": "Fluoxymesterone",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "76-44-8": {
+    "cas_no": "76-44-8",
+    "chemical": "Heptachlor",
+    "date_listed": "1999-08-20",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "76-87-9": {
+    "cas_no": "76-87-9",
+    "chemical": "Triphenyltin hydroxide",
+    "date_listed": "2002-03-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "76180-96-6": {
+    "cas_no": "76180-96-6",
+    "chemical": "IQ (2-Amino-3-methylimidazo[4,5-f] quinoline)",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": "cancer"
+  },
+  "764-41-0": {
+    "cas_no": "764-41-0",
+    "chemical": "1,4-Dichloro-2-butene",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "765-34-4": {
+    "cas_no": "765-34-4",
+    "chemical": "Glycidaldehyde",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "76578-14-8": {
+    "cas_no": "76578-14-8",
+    "chemical": "Quizalofop-ethyl",
+    "date_listed": "1999-12-24",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 590,
+    "type_of_toxicity": "male "
+  },
+  "77-09-8": {
+    "cas_no": "77-09-8",
+    "chemical": "Phenolphthalein",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer  "
+  },
+  "77-78-1": {
+    "cas_no": "77-78-1",
+    "chemical": "Dimethyl sulfate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "77094-11-2": {
+    "cas_no": "77094-11-2",
+    "chemical": "MeIQ (2-Amino-3,4-dimethylimidazo[4,5-f]quinoline)",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.46,
+    "type_of_toxicity": "cancer"
+  },
+  "77439-76-0": {
+    "cas_no": "77439-76-0",
+    "chemical": "MX (3-chloro-4-dichloromethyl-5-hydroxy-2(5H)-furanone)",
+    "date_listed": "2000-12-22",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.11,
+    "type_of_toxicity": "cancer"
+  },
+  "77500-04-0": {
+    "cas_no": "77500-04-0",
+    "chemical": "MeIQx (2-Amino-3,8-dimethylimidazo[4,5-f]quinoxaline)",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 0.41,
+    "type_of_toxicity": "cancer"
+  },
+  "77501-63-4": {
+    "cas_no": "77501-63-4",
+    "chemical": "Lactofen",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "7758-01-2": {
+    "cas_no": "7758-01-2",
+    "chemical": "Potassium bromate",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 1,
+    "type_of_toxicity": "cancer"
+  },
+  "78-48-8": {
+    "cas_no": "78-48-8",
+    "chemical": "S,S,S-Tributyl phosphorotrithioate (Tribufos, DEF)",
+    "date_listed": "2011-02-25",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "78-79-5": {
+    "cas_no": "78-79-5",
+    "chemical": "Isoprene",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "78-87-5": {
+    "cas_no": "78-87-5",
+    "chemical": "1,2-Dichloropropane",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 9.7,
+    "type_of_toxicity": "cancer"
+  },
+  "789-02-6": {
+    "cas_no": "789-02-6",
+    "chemical": "o,p'-DDT",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "79-00-5": {
+    "cas_no": "79-00-5",
+    "chemical": "Vinyl trichloride (1,1,2-Trichloroethane)",
+    "date_listed": "1990-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer"
+  },
+  "79-01-6": {
+    "cas_no": "79-01-6",
+    "chemical": "Trichloroethylene",
+    "date_listed": "2014-01-31",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male"
+  },
+  "79-06-1": {
+    "cas_no": "79-06-1",
+    "chemical": "Acrylamide",
+    "date_listed": "2011-02-25",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 140,
+    "type_of_toxicity": "developmental, male "
+  },
+  "79-34-5": {
+    "cas_no": "79-34-5",
+    "chemical": "1,1,2,2-Tetrachloroethane",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "79-43-6": {
+    "cas_no": "79-43-6",
+    "chemical": "Dichloroacetic acid",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male"
+  },
+  "79-44-7": {
+    "cas_no": "79-44-7",
+    "chemical": "Dimethylcarbamoyl chloride",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.05,
+    "type_of_toxicity": "cancer"
+  },
+  "79-46-9": {
+    "cas_no": "79-46-9",
+    "chemical": "2-Nitropropane",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "79-57-2": {
+    "cas_no": "79-57-2",
+    "chemical": "Oxytetracycline (internal use)",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "79-94-7": {
+    "cas_no": "79-94-7",
+    "chemical": "Tetrabromobisphenol A",
+    "date_listed": "2017-10-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "794-93-4": {
+    "cas_no": "794-93-4",
+    "chemical": "Panfuran S",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "797-63-7": {
+    "cas_no": "797-63-7",
+    "chemical": "Levonorgestrel implants",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female "
+  },
+  "79748-81-5": {
+    "cas_no": "79748-81-5",
+    "chemical": "Fusarin C",
+    "date_listed": "1995-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "80-05-7": {
+    "cas_no": "80-05-7",
+    "chemical": "Bisphenol A (BPA)",
+    "date_listed": "2020-12-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "80-09-1": {
+    "cas_no": "80-09-1",
+    "chemical": "Bisphenol S (BPS)",
+    "date_listed": "2025-12-08",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "80-51-3": {
+    "cas_no": "80-51-3",
+    "chemical": "p,p'-Oxybis(benzenesulfonyl hydrazide)  Delisted December 13, 2013 [Click here for the basis for delisting]",
+    "date_listed": "2009-08-07",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "8001-35-2": {
+    "cas_no": "8001-35-2",
+    "chemical": "Toxaphene (Polychlorinated camphenes)",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.6,
+    "type_of_toxicity": "cancer"
+  },
+  "8018-01-7": {
+    "cas_no": "8018-01-7",
+    "chemical": "Mancozeb",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "80474-14-2": {
+    "cas_no": "80474-14-2",
+    "chemical": "Fluticasone propionate",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "81-07-2": {
+    "cas_no": "81-07-2",
+    "chemical": "Saccharin  Delisted April 6, 2001  [Click here for the basis for delisting]",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "81-49-2": {
+    "cas_no": "81-49-2",
+    "chemical": "1-Amino-2,4-dibromoanthraquinone",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "81-81-2": {
+    "cas_no": "81-81-2",
+    "chemical": "Warfarin",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "81-88-9": {
+    "cas_no": "81-88-9",
+    "chemical": "D&C Red No. 19",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "81103-11-9": {
+    "cas_no": "81103-11-9",
+    "chemical": "Clarithromycin",
+    "date_listed": "1997-05-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "81131-70-6": {
+    "cas_no": "81131-70-6",
+    "chemical": "Pravastatin sodium",
+    "date_listed": "2000-03-03",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "817-09-4": {
+    "cas_no": "817-09-4",
+    "chemical": "Trichlormethine (Trimustine hydrochloride)",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "82-28-0": {
+    "cas_no": "82-28-0",
+    "chemical": "1-Amino-2-methylanthraquinone",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "822-36-6": {
+    "cas_no": "822-36-6",
+    "chemical": "4-Methylimidazole",
+    "date_listed": "2011-01-07",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 29,
+    "type_of_toxicity": "cancer"
+  },
+  "82410-32-0": {
+    "cas_no": "82410-32-0",
+    "chemical": "Ganciclovir",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer, developmental, male "
+  },
+  "82952-64-5": {
+    "cas_no": "82952-64-5",
+    "chemical": "Trimetrexate glucuronate",
+    "date_listed": "1997-08-26",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "838-88-0": {
+    "cas_no": "838-88-0",
+    "chemical": "4,4'-Methylene bis(2-methylaniline)",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.8,
+    "type_of_toxicity": "cancer"
+  },
+  "84-17-3": {
+    "cas_no": "84-17-3",
+    "chemical": "Dienestrol Delisted January 4, 2013 [Click here for the basis for delisting]",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "84-65-1": {
+    "cas_no": "84-65-1",
+    "chemical": "Anthraquinone",
+    "date_listed": "2007-09-28",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "84-74-2": {
+    "cas_no": "84-74-2",
+    "chemical": "Di-n-butyl phthalate (DBP)",
+    "date_listed": "2005-12-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 8.7,
+    "type_of_toxicity": "developmental, female, male "
+  },
+  "84-75-3": {
+    "cas_no": "84-75-3",
+    "chemical": "Di-n-hexyl phthalate (DnHP)",
+    "date_listed": "2005-12-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "2200 (oral)",
+    "type_of_toxicity": "female, male "
+  },
+  "842-07-9": {
+    "cas_no": "842-07-9",
+    "chemical": "C.I. Solvent Yellow 14",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "846-49-1": {
+    "cas_no": "846-49-1",
+    "chemical": "Lorazepam",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "846-50-4": {
+    "cas_no": "846-50-4",
+    "chemical": "Temazepam",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "85-68-7": {
+    "cas_no": "85-68-7",
+    "chemical": "Butyl benzyl phthalate (BBP)d",
+    "date_listed": "2005-12-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "1200 (oral)",
+    "type_of_toxicity": "developmental "
+  },
+  "86-30-6": {
+    "cas_no": "86-30-6",
+    "chemical": "N-Nitrosodiphenylamine",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 80,
+    "type_of_toxicity": "cancer"
+  },
+  "86-74-8": {
+    "cas_no": "86-74-8",
+    "chemical": "Carbazole",
+    "date_listed": "1996-05-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 4.1,
+    "type_of_toxicity": "cancer"
+  },
+  "86220-42-0": {
+    "cas_no": "86220-42-0",
+    "chemical": "Nafarelin acetate",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "868-85-9": {
+    "cas_no": "868-85-9",
+    "chemical": "Dimethyl hydrogen phosphite",
+    "date_listed": "2023-08-11",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "87-29-6": {
+    "cas_no": "87-29-6",
+    "chemical": "Cinnamyl anthranilate",
+    "date_listed": "1989-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 200,
+    "type_of_toxicity": "cancer"
+  },
+  "87-62-7": {
+    "cas_no": "87-62-7",
+    "chemical": "2,6-Xylidine (2,6-Dimethylaniline)",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 110,
+    "type_of_toxicity": "cancer"
+  },
+  "87-68-3": {
+    "cas_no": "87-68-3",
+    "chemical": "Hexachlorobutadiene",
+    "date_listed": "2011-05-03",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "87-86-5": {
+    "cas_no": "87-86-5",
+    "chemical": "Pentachlorophenol",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 40,
+    "type_of_toxicity": "cancer"
+  },
+  "872-50-4": {
+    "cas_no": "872-50-4",
+    "chemical": "N-Methylpyrrolidone",
+    "date_listed": "2001-06-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": "3200 (inhalation)\n17000 (dermal)",
+    "type_of_toxicity": "developmental"
+  },
+  "874967-67-6": {
+    "cas_no": "874967-67-6",
+    "chemical": "Sedaxane",
+    "date_listed": "2016-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "879085-55-9": {
+    "cas_no": "879085-55-9",
+    "chemical": "Vismodegib",
+    "date_listed": "2017-01-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, female, male"
+  },
+  "88-06-2": {
+    "cas_no": "88-06-2",
+    "chemical": "2,4,6-Trichlorophenol",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer"
+  },
+  "88-72-2": {
+    "cas_no": "88-72-2",
+    "chemical": "o-Nitrotoluene",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "88-73-3": {
+    "cas_no": "88-73-3",
+    "chemical": "2-Chloronitrobenzene",
+    "date_listed": "2019-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "88-85-7": {
+    "cas_no": "88-85-7",
+    "chemical": "Dinoseb",
+    "date_listed": "1989-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male"
+  },
+  "881685-58-1": {
+    "cas_no": "881685-58-1",
+    "chemical": "Isopyrazam",
+    "date_listed": "2012-07-24",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "88671-89-0": {
+    "cas_no": "88671-89-0",
+    "chemical": "Myclobutanil",
+    "date_listed": "1999-04-16",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental, male "
+  },
+  "89-61-2": {
+    "cas_no": "89-61-2",
+    "chemical": "1,4-Dichloro-2-nitrobenzene",
+    "date_listed": "2019-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "89-82-7": {
+    "cas_no": "89-82-7",
+    "chemical": "Pulegone",
+    "date_listed": "2014-04-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "90-04-0": {
+    "cas_no": "90-04-0",
+    "chemical": "o-Anisidine",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 5,
+    "type_of_toxicity": "cancer"
+  },
+  "90-43-7": {
+    "cas_no": "90-43-7",
+    "chemical": "o-Phenylphenol",
+    "date_listed": "2000-08-04",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "90-94-8": {
+    "cas_no": "90-94-8",
+    "chemical": "Michler's ketone",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.8,
+    "type_of_toxicity": "cancer"
+  },
+  "9002-68-0": {
+    "cas_no": "9002-68-0",
+    "chemical": "Menotropins",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "9004-66-4": {
+    "cas_no": "9004-66-4",
+    "chemical": "Iron dextran complex",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "9006-42-2": {
+    "cas_no": "9006-42-2",
+    "chemical": "Metiram",
+    "date_listed": "1999-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "91-20-3": {
+    "cas_no": "91-20-3",
+    "chemical": "Naphthalene",
+    "date_listed": "2002-04-19",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 5.8,
+    "type_of_toxicity": "cancer "
+  },
+  "91-23-6": {
+    "cas_no": "91-23-6",
+    "chemical": "o-Nitroanisole",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "91-59-8": {
+    "cas_no": "91-59-8",
+    "chemical": "2-Naphthylamine",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.4,
+    "type_of_toxicity": "cancer"
+  },
+  "91-94-1": {
+    "cas_no": "91-94-1",
+    "chemical": "3,3'-Dichlorobenzidine",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.6,
+    "type_of_toxicity": "cancer"
+  },
+  "919-16-4": {
+    "cas_no": "919-16-4",
+    "chemical": "Lithium citrate",
+    "date_listed": "1991-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "92-67-1": {
+    "cas_no": "92-67-1",
+    "chemical": "4-Aminobiphenyl (4-aminodiphenyl)",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.03,
+    "type_of_toxicity": "cancer"
+  },
+  "92-87-5": {
+    "cas_no": "92-87-5",
+    "chemical": "Benzidine [and its salts]",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 0.001,
+    "type_of_toxicity": "cancer"
+  },
+  "92-93-3": {
+    "cas_no": "92-93-3",
+    "chemical": "4-Nitrobiphenyl",
+    "date_listed": "1988-04-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "924-16-3": {
+    "cas_no": "924-16-3",
+    "chemical": "N-Nitrosodi-n-butylamine",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.06,
+    "type_of_toxicity": "cancer"
+  },
+  "924-42-5": {
+    "cas_no": "924-42-5",
+    "chemical": "N-Methylolacrylamide",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "924-46-9": {
+    "cas_no": "924-46-9",
+    "chemical": "N-Nitrosomethyl-n-propylamine",
+    "date_listed": "2014-12-26",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "93-15-2": {
+    "cas_no": "93-15-2",
+    "chemical": "Methyleugenol",
+    "date_listed": "2001-11-16",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "930-55-2": {
+    "cas_no": "930-55-2",
+    "chemical": "N-Nitrosopyrrolidine",
+    "date_listed": "1987-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": "cancer"
+  },
+  "932-83-2": {
+    "cas_no": "932-83-2",
+    "chemical": "N-Nitrosohexamethyleneimine",
+    "date_listed": "2018-11-23",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "94-58-6": {
+    "cas_no": "94-58-6",
+    "chemical": "Dihydrosafrole",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 20,
+    "type_of_toxicity": "cancer"
+  },
+  "94-59-7": {
+    "cas_no": "94-59-7",
+    "chemical": "Safrole",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "94-78-0": {
+    "cas_no": "94-78-0",
+    "chemical": "Phenazopyridine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 4,
+    "type_of_toxicity": "cancer"
+  },
+  "94-82-6": {
+    "cas_no": "94-82-6",
+    "chemical": "2,4-D butyric acid [Click here for the basis for the removal of developmental endpoint, effective June 22, 2001]",
+    "date_listed": "1999-06-18",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 910,
+    "type_of_toxicity": "developmental,   male   "
+  },
+  "94088-85-4": {
+    "cas_no": "94088-85-4",
+    "chemical": "Doxycycline calcium (internal use)",
+    "date_listed": "1992-01-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "95-06-7": {
+    "cas_no": "95-06-7",
+    "chemical": "Sulfallate",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 4,
+    "type_of_toxicity": "cancer"
+  },
+  "95-53-4": {
+    "cas_no": "95-53-4",
+    "chemical": "o-Toluidine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 4,
+    "type_of_toxicity": "cancer"
+  },
+  "95-54-5": {
+    "cas_no": "95-54-5",
+    "chemical": "o-Phenylenediamine and its salts",
+    "date_listed": "1998-05-15",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "95-69-2": {
+    "cas_no": "95-69-2",
+    "chemical": "p-Chloro-o-toluidine",
+    "date_listed": "1990-01-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 3,
+    "type_of_toxicity": "cancer"
+  },
+  "95-80-7": {
+    "cas_no": "95-80-7",
+    "chemical": "2,4-Diaminotoluene",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "95-83-0": {
+    "cas_no": "95-83-0",
+    "chemical": "4-Chloro-o-phenylenediamine",
+    "date_listed": "1988-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 40,
+    "type_of_toxicity": "cancer"
+  },
+  "95-85-2": {
+    "cas_no": "95-85-2",
+    "chemical": "2-Amino-4-chlorophenol",
+    "date_listed": "2019-09-13",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "96-09-3": {
+    "cas_no": "96-09-3",
+    "chemical": "Styrene oxide",
+    "date_listed": "1988-10-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 4,
+    "type_of_toxicity": "cancer"
+  },
+  "96-12-8": {
+    "cas_no": "96-12-8",
+    "chemical": "1,2-Dibromo-3-chloropropane  (DBCP) [Basis for listing changed effective November 22, 2013]",
+    "date_listed": "1987-02-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": "3.1 (oral)\n4.3 (inhalation) ",
+    "type_of_toxicity": "male"
+  },
+  "96-13-9": {
+    "cas_no": "96-13-9",
+    "chemical": "2,3-Dibromo-1-propanol",
+    "date_listed": "1994-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "96-18-4": {
+    "cas_no": "96-18-4",
+    "chemical": "1,2,3-Trichloropropane",
+    "date_listed": "1992-10-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "96-23-1": {
+    "cas_no": "96-23-1",
+    "chemical": "1,3-Dichloro-2-propanol (1,3-DCP)",
+    "date_listed": "2010-10-08",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "96-24-2": {
+    "cas_no": "96-24-2",
+    "chemical": "3-Monochloropropane-1,2-diol (3-MCPD)",
+    "date_listed": "2010-10-08",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "96-33-3": {
+    "cas_no": "96-33-3",
+    "chemical": "Methyl acrylate",
+    "date_listed": "2021-12-17",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "96-45-7": {
+    "cas_no": "96-45-7",
+    "chemical": "Ethylene thiourea",
+    "date_listed": "1993-01-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "97-23-4": {
+    "cas_no": "97-23-4",
+    "chemical": "Dichlorophene",
+    "date_listed": "1999-04-27",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "97-56-3": {
+    "cas_no": "97-56-3",
+    "chemical": "o-Aminoazotoluene",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": 0.2,
+    "type_of_toxicity": "cancer"
+  },
+  "97048-13-0": {
+    "cas_no": "97048-13-0",
+    "chemical": "Urofollitropin",
+    "date_listed": "1990-04-01",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "97240-79-4": {
+    "cas_no": "97240-79-4",
+    "chemical": "Topiramate",
+    "date_listed": "2015-11-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "98-00-0": {
+    "cas_no": "98-00-0",
+    "chemical": "Furfuryl alcohol",
+    "date_listed": "2016-09-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "98-07-7": {
+    "cas_no": "98-07-7",
+    "chemical": "Benzotrichloride",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "98-56-6": {
+    "cas_no": "98-56-6",
+    "chemical": "p-chloro-\u03b1,\u03b1,\u03b1-trifluorotoluene (para-Chlorobenzotrifluoride, PCBTF)",
+    "date_listed": "2019-06-28",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 23,
+    "type_of_toxicity": "cancer"
+  },
+  "98-82-8": {
+    "cas_no": "98-82-8",
+    "chemical": "Cumene",
+    "date_listed": "2010-04-06",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer "
+  },
+  "98-83-9": {
+    "cas_no": "98-83-9",
+    "chemical": "\u03b1-Methyl styrene Delisted April 4, 2014 [Click for the basis for delisting]",
+    "date_listed": "2011-07-29",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "female"
+  },
+  "98-95-3": {
+    "cas_no": "98-95-3",
+    "chemical": "Nitrobenzene",
+    "date_listed": "2010-03-30",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "male "
+  },
+  "982-57-0": {
+    "cas_no": "982-57-0",
+    "chemical": "Chloramphenicol sodium succinate",
+    "date_listed": "2013-09-27",
+    "listing_mechanism": "FR",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "99-59-2": {
+    "cas_no": "99-59-2",
+    "chemical": "5-Nitro-o-anisidine Delisted December 8, 2006 [Click here for the basis for delisting]",
+    "date_listed": "1989-10-01",
+    "listing_mechanism": "LC",
+    "nsrl_madl": 10,
+    "type_of_toxicity": "cancer"
+  },
+  "99-65-0": {
+    "cas_no": "99-65-0",
+    "chemical": "m-Dinitrobenzene",
+    "date_listed": "1990-07-01",
+    "listing_mechanism": "AB",
+    "nsrl_madl": 38,
+    "type_of_toxicity": "male"
+  },
+  "99-66-1": {
+    "cas_no": "99-66-1",
+    "chemical": "Valproate (Valproic acid)",
+    "date_listed": "1987-07-01",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  },
+  "99-97-8": {
+    "cas_no": "99-97-8",
+    "chemical": "N,N-Dimethyl-p-toluidine",
+    "date_listed": "2014-05-02",
+    "listing_mechanism": "AB",
+    "nsrl_madl": null,
+    "type_of_toxicity": "cancer"
+  },
+  "994-05-8": {
+    "cas_no": "994-05-8",
+    "chemical": "tert-Amyl methyl ether  Delisted December 13, 2013 [Click here for the basis for delisting]",
+    "date_listed": "2009-12-18",
+    "listing_mechanism": "LC",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental "
+  },
+  "Adultb": {
+    "cas_no": null,
+    "chemical": "Adultb",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "410 (oral)",
+    "type_of_toxicity": null
+  },
+  "Beryllium": {
+    "cas_no": null,
+    "chemical": "Beryllium",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": null
+  },
+  "Beryllium oxide": {
+    "cas_no": null,
+    "chemical": "Beryllium oxide",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.1,
+    "type_of_toxicity": null
+  },
+  "Beryllium sulfate": {
+    "cas_no": null,
+    "chemical": "Beryllium sulfate",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.0002,
+    "type_of_toxicity": null
+  },
+  "Cadmium": {
+    "cas_no": null,
+    "chemical": "Cadmium",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "0.05 (inhalation)",
+    "type_of_toxicity": null
+  },
+  "Cyanide salts that readily dissociate in solution (expressed as cyanide)f": {
+    "cas_no": null,
+    "chemical": "Cyanide salts that readily dissociate in solution (expressed as cyanide)f",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 9.8,
+    "type_of_toxicity": null
+  },
+  "Hexachlorocyclohexane (alpha isomer)": {
+    "cas_no": null,
+    "chemical": "Hexachlorocyclohexane (alpha isomer)",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.3,
+    "type_of_toxicity": null
+  },
+  "Hexachlorocyclohexane (beta isomer)": {
+    "cas_no": null,
+    "chemical": "Hexachlorocyclohexane (beta isomer)",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.5,
+    "type_of_toxicity": null
+  },
+  "Hexachlorocyclohexane (gamma isomer)": {
+    "cas_no": null,
+    "chemical": "Hexachlorocyclohexane (gamma isomer)",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.6,
+    "type_of_toxicity": null
+  },
+  "Hydrogen cyanidef": {
+    "cas_no": null,
+    "chemical": "Hydrogen cyanidef",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "10 (oral)",
+    "type_of_toxicity": null
+  },
+  "Infant boys, age 29 days to 24 monthsb": {
+    "cas_no": null,
+    "chemical": "Infant boys, age 29 days to 24 monthsb",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "58 (oral)",
+    "type_of_toxicity": null
+  },
+  "Lead": {
+    "cas_no": null,
+    "chemical": "Lead",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "15 (oral)",
+    "type_of_toxicity": null
+  },
+  "Methylhydrazine": {
+    "cas_no": null,
+    "chemical": "Methylhydrazine",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "0.058 (oral)\n0.090 (inhalation)",
+    "type_of_toxicity": null
+  },
+  "Methylhydrazine sulfate": {
+    "cas_no": null,
+    "chemical": "Methylhydrazine sulfate",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 0.18,
+    "type_of_toxicity": null
+  },
+  "Neonatal infant boys, age 0 to 28 daysb": {
+    "cas_no": null,
+    "chemical": "Neonatal infant boys, age 0 to 28 daysb",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "20 (oral)",
+    "type_of_toxicity": null
+  },
+  "Phenylhydrazine": {
+    "cas_no": null,
+    "chemical": "Phenylhydrazine",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 1,
+    "type_of_toxicity": null
+  },
+  "Phenylhydrazine hydrochloride": {
+    "cas_no": null,
+    "chemical": "Phenylhydrazine hydrochloride",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 1.4,
+    "type_of_toxicity": null
+  },
+  "Potassium cyanidef": {
+    "cas_no": null,
+    "chemical": "Potassium cyanidef",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "25 (oral)",
+    "type_of_toxicity": null
+  },
+  "Sodium cyanidef": {
+    "cas_no": null,
+    "chemical": "Sodium cyanidef",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": "19 (oral)",
+    "type_of_toxicity": null
+  },
+  "a Where a source or product results in exposures by multiple routes, the total exposure must be considered.  For example, the MADL for benzene is exceeded when the absorbed dose exceeds 24 \u00b5g/day.  If only inhalation and oral exposure occurs, the benzene MADL is exceeded when:  (oral dose \u00f7 24 \u00b5g/day) + (inhalation dose \u00f7 49 \u00b5g/day) > 1.0.": {
+    "cas_no": null,
+    "chemical": "a Where a source or product results in exposures by multiple routes, the total exposure must be considered.  For example, the MADL for benzene is exceeded when the absorbed dose exceeds 24 \u00b5g/day.  If only inhalation and oral exposure occurs, the benzene MADL is exceeded when:  (oral dose \u00f7 24 \u00b5g/day) + (inhalation dose \u00f7 49 \u00b5g/day) > 1.0.",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": null,
+    "type_of_toxicity": null
+  },
+  "b Levels for male children and adolescents were calculated by application of the default bodyweights specified in Section 25703(a)(8) to the procedure specified in Sections 25801 and 25803": {
+    "cas_no": null,
+    "chemical": "b Levels for male children and adolescents were calculated by application of the default bodyweights specified in Section 25703(a)(8) to the procedure specified in Sections 25801 and 25803",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": null,
+    "type_of_toxicity": null
+  },
+  "c Level represents absorbed dose (rounded from 6,525 \u00b5g/day ).  Since 100% of ingested toluene is absorbed, oral dose is equivalent to administered dose.  It is assumed that roughly 50% of the dose administered by the inhalation route is absorbed.  Therefore the MADL for inhaled toluene is 13,000 \u00b5g/day (rounded from 13,050 \u00b5g/day ), corresponding to an absorbed dose of 6,525 \u00b5g/day.": {
+    "cas_no": null,
+    "chemical": "c Level represents absorbed dose (rounded from 6,525 \u00b5g/day ).  Since 100% of ingested toluene is absorbed, oral dose is equivalent to administered dose.  It is assumed that roughly 50% of the dose administered by the inhalation route is absorbed.  Therefore the MADL for inhaled toluene is 13,000 \u00b5g/day (rounded from 13,050 \u00b5g/day ), corresponding to an absorbed dose of 6,525 \u00b5g/day.",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": null,
+    "type_of_toxicity": null
+  },
+  "d Butyl benzyl phthalate MADL was adopted June 25, 2013, but pursuant to Government Code section 11343.4 it becomes effective October 1, 2013.": {
+    "cas_no": null,
+    "chemical": "d Butyl benzyl phthalate MADL was adopted June 25, 2013, but pursuant to Government Code section 11343.4 it becomes effective October 1, 2013.",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": null,
+    "type_of_toxicity": null
+  },
+  "e Sulfur dioxide MADL was adopted July 11, 2013, but pursuant to Government Code section 11343.4 it becomes effective October 1, 2013.": {
+    "cas_no": null,
+    "chemical": "e Sulfur dioxide MADL was adopted July 11, 2013, but pursuant to Government Code section 11343.4 it becomes effective October 1, 2013.",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": null,
+    "type_of_toxicity": null
+  },
+  "f Hydrogen cyanide and cyanide salts MADLs were adopted on August 7, 2013, but pursuant to Government Code section 11343.4 they become effective October 1, 2013.": {
+    "cas_no": null,
+    "chemical": "f Hydrogen cyanide and cyanide salts MADLs were adopted on August 7, 2013, but pursuant to Government Code section 11343.4 they become effective October 1, 2013.",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": null,
+    "type_of_toxicity": null
+  },
+  "o-Phenylenediamine": {
+    "cas_no": null,
+    "chemical": "o-Phenylenediamine",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 26,
+    "type_of_toxicity": null
+  },
+  "o-Phenylenediamine dihydrochloride": {
+    "cas_no": null,
+    "chemical": "o-Phenylenediamine dihydrochloride",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 44,
+    "type_of_toxicity": null
+  },
+  "p-Chloro-o-toluidine, hydrochloride": {
+    "cas_no": null,
+    "chemical": "p-Chloro-o-toluidine, hydrochloride",
+    "date_listed": null,
+    "listing_mechanism": null,
+    "nsrl_madl": 3.3,
+    "type_of_toxicity": null
+  },
+  "\u03949-Tetrahydrocannabinol (\u03949-THC)": {
+    "cas_no": null,
+    "chemical": "\u03949-Tetrahydrocannabinol (\u03949-THC)",
+    "date_listed": "2020-01-03",
+    "listing_mechanism": "SQE",
+    "nsrl_madl": null,
+    "type_of_toxicity": "developmental"
+  }
+}

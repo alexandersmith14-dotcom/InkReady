@@ -7,5 +7,7 @@ node_modules/
 .DS_Store
 
 # Timestamped every run — committing it would produce a commit on every fetch
-# even with zero changes. echa_state.json (the actual hash ledger) IS committed.
+# even with zero changes. echa_state.json / prop65_state.json (the actual
+# ledgers) ARE committed.
 formulation/echa_report.json
+formulation/prop65_report.json
