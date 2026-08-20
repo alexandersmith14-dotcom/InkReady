@@ -648,7 +648,15 @@ def build_country_browser(tracker_cards, global_recalls_state):
       padding: 8px;
     }}
     #world-map-svg {{ width: 100%; height: auto; display: block; }}
-    #world-map-svg path, #world-map-svg g {{
+    /* 37 of the 179 countries (US, Canada, Indonesia, ...) are <g id="xx">
+       wrapping several UN-id'd child <path>s (mainland, islands, etc).
+       Styling with a blanket "path, g" selector paints those inner paths
+       directly, which beats SVG's inherited fill from the id'd parent group
+       — the country silently stays gray even though its <g> has the right
+       class. Fix: only style elements that actually carry an id (real
+       country nodes); un-id'd children then correctly inherit from their
+       parent group instead of getting their own conflicting fill. */
+    #world-map-svg [id] {{
       fill: #e0e0e0;
       stroke: var(--white);
       stroke-width: 0.5;
