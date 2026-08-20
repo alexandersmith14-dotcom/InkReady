@@ -69,8 +69,11 @@ def filter_tattoo(recalls):
 
 
 def load_state():
+    # None (never run) vs {} (ran before, found zero matches) must stay
+    # distinguishable, or a legitimate 0-match baseline never graduates to
+    # "OK, checked, still zero" on the next run.
     if not os.path.exists(STATE_FILE):
-        return {}
+        return None
     with open(STATE_FILE, encoding="utf-8") as f:
         return json.load(f)
 
@@ -93,9 +96,9 @@ def main():
                        "error": str(e)}, f, indent=2)
         raise
 
-    new_items = [v for k, v in current.items() if k not in prior]
+    new_items = [v for k, v in current.items() if prior is None or k not in prior]
 
-    if not prior:
+    if prior is None:
         print(f"  NEW   Canada recalls  baseline recorded — {len(current)} tattoo-related recalls "
               f"(of {len(recalls)} total)")
     else:

@@ -27,6 +27,8 @@ UK_REACH_STATE = os.path.join(ROOT, "formulation", "uk_reach_state.json")
 UK_REACH_REPORT = os.path.join(ROOT, "formulation", "uk_reach_report.json")
 CANADA_STATE = os.path.join(ROOT, "formulation", "canada_state.json")
 CANADA_REPORT = os.path.join(ROOT, "formulation", "canada_report.json")
+AUSTRALIA_STATE = os.path.join(ROOT, "formulation", "australia_state.json")
+AUSTRALIA_REPORT = os.path.join(ROOT, "formulation", "australia_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
@@ -178,6 +180,39 @@ def canada_card():
             </div>"""
         body += "</div>"
     return card("Canada — Health Canada recalls", "Canada &middot; recall/enforcement radar", body)
+
+
+def australia_card():
+    state = load_json(AUSTRALIA_STATE)
+    report = load_json(AUSTRALIA_REPORT) or {}
+    state = state if state is not None else {}
+    new_items = report.get("new_items", [])
+    total_window = report.get("total_recalls_in_window")
+
+    body = ('<p class="stat">No binding federal restriction list exists — Australia relies on '
+            'voluntary compliance. AICIS, Queensland Health, and Queensland legislation sites are '
+            'all unreachable; documented gaps, not tracked here.</p>')
+    body += f'<p class="stat">{len(state)} tattoo-related recalls tracked'
+    if total_window:
+        body += f' (of {total_window} in feed window)'
+    body += f', {len(new_items)} new since last check</p>'
+
+    items = sorted(state.values(), key=lambda x: x.get("pub_date", ""), reverse=True)
+    if items:
+        body += '<div class="doc-list">'
+        for i in items:
+            flagged = i["guid"] in {n["guid"] for n in new_items}
+            url = hesc(i.get("url", ""))
+            body += f"""
+            <div class="doc-row{' flagged' if flagged else ''}">
+              <a class="doc-title" href="{url}" target="_blank" rel="noopener">{hesc(i['title'])}</a>
+              <div class="doc-meta">{hesc(i.get('pub_date', ''))}
+                {'&middot; <span class="flag">NEW</span>' if flagged else ''}</div>
+            </div>"""
+        body += "</div>"
+    else:
+        body += '<p class="empty">No tattoo-related recalls found yet — watching for the first one.</p>'
+    return card("Australia — Product Safety recalls", "Australia &middot; recall/enforcement radar", body)
 
 
 def card(title, subtitle, body_html):
@@ -390,6 +425,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {mocra_card}
     {uk_reach_card}
     {canada_card}
+    {australia_card}
   </div>
 
   <h2>Commerce — rules on selling it</h2>
@@ -410,6 +446,7 @@ def main():
         mocra_card=mocra_card(),
         uk_reach_card=uk_reach_card(),
         canada_card=canada_card(),
+        australia_card=australia_card(),
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
