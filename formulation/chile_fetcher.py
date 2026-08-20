@@ -14,16 +14,56 @@ request works, no WAF/Incapsula/Cloudflare block encountered (unlike most of
 the other Latin American/harder-to-reach sources in this repo). Hash-diffed
 via PyMuPDF text extraction, same shape as the ECHA and NZ fetchers — a
 legal document that rarely changes.
+
+ispch.cl serves a cert from GlobalSign (GCC R6 AlphaSSL CA 2025, a real,
+publicly-trusted CA) but OMITS the intermediate from its handshake — worked
+fine locally on Windows (which fetches the missing intermediate itself via
+the cert's AIA extension) but failed on the GitHub Actions Ubuntu runner
+with "unable to get local issuer certificate", since Python/OpenSSL on
+Linux won't do that automatically. Same root cause as Klearance's
+dob.texas.gov fix (see that repo's fetcher.py _dob_context). We bundle the
+intermediate and complete the chain ourselves — this is PROPER verification
+against the GlobalSign root in certifi, exactly what a browser does, NOT
+verification disabled.
 """
 
 import hashlib
 import json
 import os
+import ssl
 import urllib.request
 from datetime import datetime, timezone
 from io import BytesIO
 
+import certifi
 import pymupdf
+
+ISP_HOST = "www.ispch.cl"
+ISP_INTERMEDIATE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                 "certs-globalsign-gcc-r6-alphassl-2025.pem")
+# Where to re-fetch the intermediate if the bundled copy is ever missing or
+# the CA rotates it. Safe over HTTP: the cert self-verifies by signature.
+ISP_AIA = "http://secure.globalsign.com/cacert/gsgccr6alphasslca2025.crt"
+_isp_ctx = None
+
+
+def _isp_context():
+    """SSL context that trusts the GlobalSign root (via certifi) AND
+    supplies the intermediate the server omits, so the chain verifies.
+    Built once; auto-heals from the AIA URL if the bundled intermediate is
+    missing (that download is DER, not PEM — converted on the fly)."""
+    global _isp_ctx
+    if _isp_ctx is not None:
+        return _isp_ctx
+    ctx = ssl.create_default_context(cafile=certifi.where())
+    try:
+        ctx.load_verify_locations(ISP_INTERMEDIATE)
+    except (FileNotFoundError, ssl.SSLError):
+        der = urllib.request.urlopen(ISP_AIA, timeout=30).read()
+        cert = ssl.DER_cert_to_PEM_cert(der)
+        ctx.load_verify_locations(cadata=cert)
+    _isp_ctx = ctx
+    return _isp_ctx
 
 PDF_URL = ("https://www.ispch.cl/wp-content/uploads/resoluciones/"
            "35847_RESOL.%20EX.%20E6717-25%20-%20TINTAS%20PARA%20TATUAJES.pdf")
@@ -41,7 +81,7 @@ REPORT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chile_re
 
 def fetch_text(timeout=45):
     req = urllib.request.Request(PDF_URL, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
+    with urllib.request.urlopen(req, timeout=timeout, context=_isp_context()) as r:
         data = r.read()
     doc = pymupdf.open(stream=BytesIO(data), filetype="pdf")
     text = "".join(page.get_text() for page in doc)
