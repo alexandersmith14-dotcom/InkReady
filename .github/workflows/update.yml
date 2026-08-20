@@ -1,0 +1,91 @@
+name: Update trackers
+
+# Runs every fetcher, rebuilds the dashboard, and commits any changes.
+# GitHub Pages here is a plain branch deploy off main (see repo Settings ->
+# Pages) — it rebuilds automatically on push, so this workflow does NOT need
+# a separate deploy step the way Klearance's Actions-based Pages setup does.
+#
+# 07:00 UTC daily — no particular reason for this hour beyond "after most of
+# the tracked agencies' own business day." GitHub schedules are best-effort
+# and can lag under load; fine for a daily tracker.
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}   # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write         # needed to commit the refreshed state files + dashboard
+
+concurrency:
+  group: update-trackers  # never let two runs fight over the same state files
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run all fetchers
+        id: fetch
+        run: |
+          set +e
+          failures=""
+
+          cd formulation
+          for f in echa_fetcher prop65_fetcher mocra_fetcher uk_reach_fetcher \
+                   canada_fetcher australia_fetcher brazil_fetcher korea_fetcher \
+                   newzealand_fetcher chile_fetcher global_recalls_fetcher; do
+            echo "::group::formulation/$f"
+            python "$f.py"
+            if [ $? -ne 0 ]; then failures="$failures formulation/$f"; fi
+            echo "::endgroup::"
+          done
+          cd ../commerce
+
+          for f in clp_fetcher consumer_rights_fetcher packaging_waste_fetcher \
+                   hazmat_fetcher customs_fetcher; do
+            echo "::group::commerce/$f"
+            python "$f.py"
+            if [ $? -ne 0 ]; then failures="$failures commerce/$f"; fi
+            echo "::endgroup::"
+          done
+          cd ..
+
+          if [ -n "$failures" ]; then
+            echo "Failed:$failures"
+            echo "failures=$failures" >> "$GITHUB_OUTPUT"
+          fi
+          exit 0   # always continue to the dashboard build below, even with partial failures
+
+      - name: Build dashboard
+        run: python dashboard.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Daily fetcher update $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Fail the run if any fetcher errored
+        if: steps.fetch.outputs.failures != ''
+        run: |
+          echo "One or more fetchers failed: ${{ steps.fetch.outputs.failures }}"
+          echo "State/dashboard for the rest were still updated and committed above."
+          exit 1
