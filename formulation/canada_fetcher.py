@@ -24,6 +24,7 @@ somewhere reachable.
 
 import json
 import os
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -44,13 +45,24 @@ def s(x):
     return x or ""
 
 
-def fetch_recalls(timeout=60):
-    req = urllib.request.Request(RECALLS_URL, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = json.loads(r.read().decode("utf-8-sig"))
-    if not isinstance(data, list) or not data:
-        raise RuntimeError("recalls feed returned no usable data — format may have changed")
-    return data
+def fetch_recalls(timeout=60, attempts=5, pause=5):
+    # ~15MB single-shot download — a GitHub Actions run hit IncompleteRead
+    # here (8MB of 15MB before the connection dropped) with no retry logic
+    # at all, so this got the same shape as every other fetcher in this repo.
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            req = urllib.request.Request(RECALLS_URL, headers=UA)
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                data = json.loads(r.read().decode("utf-8-sig"))
+            if not isinstance(data, list) or not data:
+                raise RuntimeError("recalls feed returned no usable data — format may have changed")
+            return data
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
 
 
 def filter_tattoo(recalls):

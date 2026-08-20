@@ -27,6 +27,7 @@ import hashlib
 import json
 import os
 import re
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -57,11 +58,23 @@ def text_of(html):
     return " ".join(re.sub(TAG, " ", html).split())
 
 
+def fetch_with_retry(req, timeout, attempts=5, pause=5):
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
+
+
 def fetch_doc(celex, timeout=45):
     url = CELEX_RESOLVER.format(celex=celex)
     req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        html = r.read().decode("utf-8", "ignore")
+    html = fetch_with_retry(req, timeout).decode("utf-8", "ignore")
     if "1272/2008" not in html and "classification" not in html.lower():
         raise RuntimeError(f"CELEX {celex}: fetched content doesn't look right (page layout may have changed)")
     return text_of(html)

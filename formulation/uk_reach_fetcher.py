@@ -24,6 +24,7 @@ Two things worth tracking, both ungated (no WAF, plain requests work):
 import json
 import os
 import re
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -51,10 +52,18 @@ def text_of(html):
     return " ".join(re.sub(TAG, " ", html).split())
 
 
-def get(url, timeout=45):
+def get(url, timeout=45, attempts=5, pause=5):
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "ignore")
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read().decode("utf-8", "ignore")
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
 
 
 def fetch_hse_status():

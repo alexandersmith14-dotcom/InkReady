@@ -15,6 +15,7 @@ pigment manufacturer: a newly listed chemical might be in the formulation.
 
 import json
 import os
+import time
 import urllib.request
 from datetime import datetime, timezone
 from io import BytesIO
@@ -41,10 +42,22 @@ HEADER_ROW = 12
 COLUMNS = ["chemical", "type_of_toxicity", "listing_mechanism", "cas_no", "date_listed", "nsrl_madl"]
 
 
+def fetch_with_retry(req, timeout, attempts=5, pause=5):
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
+
+
 def fetch_workbook(timeout=60):
     req = urllib.request.Request(XLSX_URL, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = r.read()
+    data = fetch_with_retry(req, timeout)
     return openpyxl.load_workbook(BytesIO(data), read_only=True, data_only=True)
 
 

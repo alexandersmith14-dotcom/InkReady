@@ -27,6 +27,7 @@ failure — the value is catching the first one that appears.
 import json
 import os
 import re
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -50,10 +51,18 @@ PUBDATE = re.compile(r"<pubDate>(.*?)</pubDate>", re.S)
 DESC = re.compile(r"<description>(.*?)</description>", re.S)
 
 
-def get(url, timeout=45):
+def get(url, timeout=45, attempts=5, pause=5):
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "ignore")
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read().decode("utf-8", "ignore")
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
 
 
 def fetch_recalls():

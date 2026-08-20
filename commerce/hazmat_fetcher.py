@@ -17,6 +17,7 @@ worked around.
 
 import json
 import os
+import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -35,6 +36,19 @@ STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hazmat_st
 REPORT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hazmat_report.json")
 
 
+def fetch_with_retry(url, timeout, attempts=5, pause=5):
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(url, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
+
+
 def fetch_items(timeout=45):
     query = {
         "conditions[agencies][]": AGENCY,
@@ -44,8 +58,7 @@ def fetch_items(timeout=45):
         "fields[]": FEDREG_FIELDS,
     }
     url = FEDREG_API + "?" + urllib.parse.urlencode(query, doseq=True)
-    with urllib.request.urlopen(url, timeout=timeout) as r:
-        data = json.loads(r.read().decode("utf-8"))
+    data = json.loads(fetch_with_retry(url, timeout).decode("utf-8"))
     results = data.get("results") or []
     if not results:
         raise RuntimeError("0 results — API or query may be broken")

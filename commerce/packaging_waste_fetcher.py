@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -34,10 +35,22 @@ def text_of(html):
     return " ".join(re.sub(TAG, " ", html).split())
 
 
+def fetch_with_retry(req, timeout, attempts=5, pause=5):
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
+
+
 def fetch_doc(timeout=45):
     req = urllib.request.Request(CELEX_RESOLVER, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        html = r.read().decode("utf-8", "ignore")
+    html = fetch_with_retry(req, timeout).decode("utf-8", "ignore")
     if "packaging" not in html.lower():
         raise RuntimeError("fetched content doesn't look right (page layout may have changed)")
     return text_of(html)

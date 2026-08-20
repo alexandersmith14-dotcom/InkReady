@@ -17,6 +17,7 @@ accidentally.
 
 import json
 import os
+import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -31,10 +32,22 @@ STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "customs_s
 REPORT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "customs_report.json")
 
 
+def fetch_with_retry(url, timeout, attempts=5, pause=5):
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(url, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
+
+
 def fetch_query(keyword, timeout=30):
     url = SEARCH_API + "?" + urllib.parse.urlencode({"keyword": keyword, "type": "HTS"})
-    with urllib.request.urlopen(url, timeout=timeout) as r:
-        return json.loads(r.read().decode("utf-8"))
+    return json.loads(fetch_with_retry(url, timeout).decode("utf-8"))
 
 
 def fetch_all():

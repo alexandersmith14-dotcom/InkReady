@@ -27,6 +27,7 @@ extraction (PyMuPDF) rather than HTML parsing.
 import hashlib
 import json
 import os
+import time
 import urllib.request
 from datetime import datetime, timezone
 from io import BytesIO
@@ -47,10 +48,22 @@ STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "newzealan
 REPORT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "newzealand_report.json")
 
 
+def fetch_with_retry(req, timeout, attempts=5, pause=5):
+    last_err = None
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:
+            last_err = e
+            if attempt < attempts - 1:
+                time.sleep(pause * (2 ** attempt))
+    raise RuntimeError(f"failed after {attempts} attempts: {last_err}")
+
+
 def fetch_text(timeout=45):
     req = urllib.request.Request(PDF_URL, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = r.read()
+    data = fetch_with_retry(req, timeout)
     doc = pymupdf.open(stream=BytesIO(data), filetype="pdf")
     text = "".join(page.get_text() for page in doc)
     if "tattoo" not in text.lower() or "HSNO" not in text:
