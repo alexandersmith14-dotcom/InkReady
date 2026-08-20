@@ -1,0 +1,359 @@
+"""Generate a self-contained HTML dashboard from the formulation/ fetcher
+state files and the commerce/ checklist.
+
+    python dashboard.py            # writes dashboard.html
+
+No server, no network calls — regenerate after running the fetchers. Brand
+mimics thesolidink.com (see assets/brand.md): black nav, off-white body,
+orange for flagged/changed items, Abel for display type.
+"""
+
+import json
+import os
+import re
+from datetime import datetime, timezone
+from html import escape as hesc
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+OUT_PATH = os.path.join(ROOT, "dashboard.html")
+
+ECHA_STATE = os.path.join(ROOT, "formulation", "echa_state.json")
+ECHA_REPORT = os.path.join(ROOT, "formulation", "echa_report.json")
+PROP65_STATE = os.path.join(ROOT, "formulation", "prop65_state.json")
+PROP65_REPORT = os.path.join(ROOT, "formulation", "prop65_report.json")
+MOCRA_STATE = os.path.join(ROOT, "formulation", "mocra_state.json")
+MOCRA_REPORT = os.path.join(ROOT, "formulation", "mocra_report.json")
+CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
+
+CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
+BOLD_DASH = re.compile(r"^\*\*(.+?)\*\*\s*(?:—|--|-)\s*(.*)$")
+
+
+def load_json(path):
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def parse_checklist(path):
+    """Sections of {title, items: [{title, desc, checked}], notes: [str]}."""
+    if not os.path.exists(path):
+        return []
+    sections = []
+    current = None
+    for line in open(path, encoding="utf-8"):
+        line = line.rstrip("\n")
+        if line.startswith("## "):
+            current = {"title": line[3:].strip(), "items": [], "notes": []}
+            sections.append(current)
+            continue
+        if current is None:
+            continue
+        m = CHECK_ITEM.match(line.strip())
+        if m:
+            checked = m.group(1).lower() == "x"
+            body = m.group(2)
+            bm = BOLD_DASH.match(body)
+            if bm:
+                current["items"].append({"title": bm.group(1), "desc": bm.group(2), "checked": checked})
+            else:
+                current["items"].append({"title": body, "desc": "", "checked": checked})
+            continue
+        stripped = line.strip()
+        if stripped.startswith("- "):
+            current["notes"].append(stripped[2:])
+    return sections
+
+
+def echa_card():
+    state = load_json(ECHA_STATE) or {}
+    report = load_json(ECHA_REPORT) or {}
+    changes = report.get("changes", [])
+    rows = []
+    for celex, rec in state.items():
+        flagged = any(c["celex"] == celex for c in changes)
+        rows.append(f"""
+        <div class="doc-row{' flagged' if flagged else ''}">
+          <div class="doc-title">{hesc(rec['title'])}</div>
+          <div class="doc-meta">CELEX {hesc(celex)} &middot; checked {hesc(rec['checked_at'])}
+            {'&middot; <span class="flag">CHANGED — review</span>' if flagged else ''}</div>
+        </div>""")
+    return card("ECHA REACH — Annex XVII Entry 75", "EU &middot; formulation restriction",
+                "".join(rows) or '<p class="empty">No data yet — run formulation/echa_fetcher.py</p>')
+
+
+def prop65_card():
+    state = load_json(PROP65_STATE) or {}
+    report = load_json(PROP65_REPORT) or {}
+    added, removed = report.get("added", []), report.get("removed", [])
+    body = f'<p class="stat">{len(state)} chemicals tracked</p>'
+    if added or removed:
+        body += '<div class="changes">'
+        for r in added:
+            body += (f'<div class="change-row added">+ {hesc(r["chemical"])} '
+                      f'(CAS {hesc(r.get("cas_no") or "—")}, listed {hesc(r.get("date_listed") or "—")})</div>')
+        for r in removed:
+            body += f'<div class="change-row removed">&minus; {hesc(r["chemical"])} (CAS {hesc(r.get("cas_no") or "—")})</div>'
+        body += "</div>"
+    else:
+        checked = report.get("checked_at", "—")
+        body += f'<p class="empty">No changes since last check ({hesc(checked)})</p>'
+    return card("California Prop 65", "US (state) &middot; formulation restriction", body)
+
+
+def mocra_card():
+    state = load_json(MOCRA_STATE) or {}
+    report = load_json(MOCRA_REPORT) or {}
+    new_items = report.get("new_items", [])
+    items = sorted(state.values(), key=lambda x: x.get("date", ""), reverse=True)[:10]
+    body = f'<p class="stat">{len(state)} documents tracked, {len(new_items)} new since last check</p>'
+    body += '<div class="doc-list">'
+    for i in items:
+        flagged = i["document_number"] in {n["document_number"] for n in new_items}
+        url = hesc(i.get("url", ""))
+        body += f"""
+        <div class="doc-row{' flagged' if flagged else ''}">
+          <a class="doc-title" href="{url}" target="_blank" rel="noopener">{hesc(i['title'])}</a>
+          <div class="doc-meta">{hesc(i.get('date', ''))} &middot; {hesc(i.get('type', ''))}
+            {'&middot; <span class="flag">NEW</span>' if flagged else ''}</div>
+        </div>"""
+    body += "</div>"
+    return card("MOCRA / FDA guidance", "US &middot; formulation + registration thread", body)
+
+
+def card(title, subtitle, body_html):
+    return f"""
+    <section class="card">
+      <h3>{hesc(title)}</h3>
+      <div class="subtitle">{subtitle}</div>
+      {body_html}
+    </section>"""
+
+
+def commerce_section():
+    sections = parse_checklist(CHECKLIST_PATH)
+    out = []
+    for s in sections:
+        if s["title"].lower() == "notes":
+            notes = "".join(f"<li>{hesc(n)}</li>" for n in s["notes"])
+            out.append(f'<div class="commerce-notes"><h4>Notes</h4><ul>{notes}</ul></div>')
+            continue
+        items = "".join(f"""
+          <label class="checklist-item">
+            <input type="checkbox" {"checked" if it["checked"] else ""} disabled>
+            <span><strong>{hesc(it['title'])}</strong> — {hesc(it['desc'])}</span>
+          </label>""" for it in s["items"])
+        out.append(f'<div class="commerce-group"><h4>{hesc(s["title"])}</h4>{items}</div>')
+    return "".join(out)
+
+
+PAGE_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InkReady</title>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<style>
+  :root {{
+    --black: #000000;
+    --offwhite: #f4f4f4;
+    --white: #ffffff;
+    --orange: #ff6700;
+    --border: #d8d8d8;
+  }}
+  * {{ box-sizing: border-box; }}
+  html {{ overflow-x: hidden; }}
+  body {{
+    margin: 0;
+    background: var(--offwhite);
+    color: #1a1a1a;
+    font-family: Abel, Oswald, 'Bebas Neue', sans-serif;
+    overflow-x: hidden;
+  }}
+  header {{
+    background: var(--black);
+    color: var(--white);
+    padding: 28px 32px;
+  }}
+  header .brand {{
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }}
+  header .tagline {{
+    color: #b8b8b8;
+    margin-top: 4px;
+    font-size: 15px;
+  }}
+  main {{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px;
+  }}
+  h2 {{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 8px;
+    margin-top: 40px;
+  }}
+  .grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }}
+  .card {{
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 20px;
+  }}
+  .card h3 {{
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+  }}
+  .subtitle {{
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }}
+  .stat {{
+    font-size: 15px;
+    margin: 0 0 10px 0;
+  }}
+  .empty {{
+    color: #999;
+    font-style: italic;
+  }}
+  .doc-row {{
+    padding: 8px 0;
+    border-top: 1px solid var(--border);
+  }}
+  .doc-row:first-child {{ border-top: none; }}
+  .doc-row.flagged {{
+    background: #fff3ea;
+    padding-left: 8px;
+    border-left: 3px solid var(--orange);
+  }}
+  .doc-title {{
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    word-break: break-word;
+  }}
+  a.doc-title:hover {{ color: var(--orange); }}
+  .doc-meta {{
+    font-size: 12px;
+    color: #777;
+  }}
+  .flag {{
+    color: var(--orange);
+    font-weight: bold;
+  }}
+  .change-row {{
+    font-size: 13px;
+    padding: 4px 0;
+  }}
+  .change-row.added {{ color: #2a7a2a; }}
+  .change-row.removed {{ color: #b02a2a; }}
+  .commerce-group {{
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 16px 20px;
+    margin-top: 16px;
+  }}
+  .commerce-group h4 {{
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }}
+  .checklist-item {{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 0;
+    font-size: 14px;
+  }}
+  .commerce-notes {{
+    background: var(--black);
+    color: var(--white);
+    padding: 16px 20px;
+    margin-top: 16px;
+  }}
+  .commerce-notes h4 {{
+    margin-top: 0;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 14px;
+  }}
+  .commerce-notes ul {{
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #ddd;
+  }}
+  footer {{
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    padding: 32px;
+  }}
+
+  @media (max-width: 640px) {{
+    header {{ padding: 20px 16px; }}
+    header .brand {{ font-size: 24px; }}
+    header .tagline {{ font-size: 13px; }}
+    main {{ padding: 16px; }}
+    h2 {{ font-size: 18px; margin-top: 28px; }}
+    .grid {{ grid-template-columns: 1fr; gap: 14px; }}
+    .card, .commerce-group, .commerce-notes {{ padding: 14px; }}
+    .checklist-item {{ font-size: 13px; }}
+    .doc-title {{ font-size: 14px; }}
+  }}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">InkReady</div>
+  <div class="tagline">Tattoo ink regulatory compliance — formulation &amp; sale, EU + US + global. Updated {generated_at}.</div>
+</header>
+<main>
+  <h2>Formulation — what's allowed in the ink</h2>
+  <div class="grid">
+    {echa_card}
+    {prop65_card}
+    {mocra_card}
+  </div>
+
+  <h2>Commerce — rules on selling it</h2>
+  {commerce}
+</main>
+<footer>InkReady &middot; internal use &middot; github.com/alexandersmith14-dotcom/InkReady</footer>
+</body>
+</html>
+"""
+
+
+def main():
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    page = PAGE_TEMPLATE.format(
+        generated_at=generated_at,
+        echa_card=echa_card(),
+        prop65_card=prop65_card(),
+        mocra_card=mocra_card(),
+        commerce=commerce_section(),
+    )
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
+        f.write(page)
+    print(f"wrote {OUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

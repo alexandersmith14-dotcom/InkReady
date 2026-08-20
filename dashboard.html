@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InkReady</title>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --offwhite: #f4f4f4;
+    --white: #ffffff;
+    --orange: #ff6700;
+    --border: #d8d8d8;
+  }
+  * { box-sizing: border-box; }
+  html { overflow-x: hidden; }
+  body {
+    margin: 0;
+    background: var(--offwhite);
+    color: #1a1a1a;
+    font-family: Abel, Oswald, 'Bebas Neue', sans-serif;
+    overflow-x: hidden;
+  }
+  header {
+    background: var(--black);
+    color: var(--white);
+    padding: 28px 32px;
+  }
+  header .brand {
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  header .tagline {
+    color: #b8b8b8;
+    margin-top: 4px;
+    font-size: 15px;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 8px;
+    margin-top: 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 20px;
+  }
+  .card h3 {
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .stat {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+  }
+  .empty {
+    color: #999;
+    font-style: italic;
+  }
+  .doc-row {
+    padding: 8px 0;
+    border-top: 1px solid var(--border);
+  }
+  .doc-row:first-child { border-top: none; }
+  .doc-row.flagged {
+    background: #fff3ea;
+    padding-left: 8px;
+    border-left: 3px solid var(--orange);
+  }
+  .doc-title {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    word-break: break-word;
+  }
+  a.doc-title:hover { color: var(--orange); }
+  .doc-meta {
+    font-size: 12px;
+    color: #777;
+  }
+  .flag {
+    color: var(--orange);
+    font-weight: bold;
+  }
+  .change-row {
+    font-size: 13px;
+    padding: 4px 0;
+  }
+  .change-row.added { color: #2a7a2a; }
+  .change-row.removed { color: #b02a2a; }
+  .commerce-group {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 16px 20px;
+    margin-top: 16px;
+  }
+  .commerce-group h4 {
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .checklist-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  .commerce-notes {
+    background: var(--black);
+    color: var(--white);
+    padding: 16px 20px;
+    margin-top: 16px;
+  }
+  .commerce-notes h4 {
+    margin-top: 0;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .commerce-notes ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #ddd;
+  }
+  footer {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    padding: 32px;
+  }
+
+  @media (max-width: 640px) {
+    header { padding: 20px 16px; }
+    header .brand { font-size: 24px; }
+    header .tagline { font-size: 13px; }
+    main { padding: 16px; }
+    h2 { font-size: 18px; margin-top: 28px; }
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+    .card, .commerce-group, .commerce-notes { padding: 14px; }
+    .checklist-item { font-size: 13px; }
+    .doc-title { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">InkReady</div>
+  <div class="tagline">Tattoo ink regulatory compliance — formulation &amp; sale, EU + US + global. Updated 2026-08-20 12:27 UTC.</div>
+</header>
+<main>
+  <h2>Formulation — what's allowed in the ink</h2>
+  <div class="grid">
+    
+    <section class="card">
+      <h3>ECHA REACH — Annex XVII Entry 75</h3>
+      <div class="subtitle">EU &middot; formulation restriction</div>
+      
+        <div class="doc-row">
+          <div class="doc-title">Commission Regulation (EU) 2020/2081 — REACH Annex XVII Entry 75, substances in tattoo inks and permanent make-up</div>
+          <div class="doc-meta">CELEX 32020R2081 &middot; checked 2026-08-20T12:09:22+00:00
+            </div>
+        </div>
+    </section>
+    
+    <section class="card">
+      <h3>California Prop 65</h3>
+      <div class="subtitle">US (state) &middot; formulation restriction</div>
+      <p class="stat">826 chemicals tracked</p><p class="empty">No changes since last check (2026-08-20T12:17:01+00:00)</p>
+    </section>
+    
+    <section class="card">
+      <h3>MOCRA / FDA guidance</h3>
+      <div class="subtitle">US &middot; formulation + registration thread</div>
+      <p class="stat">120 documents tracked, 0 new since last check</p><div class="doc-list">
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/08/14/2026-16650/reauthorization-of-the-prescription-drug-user-fee-act-public-meeting-request-for-comments" target="_blank" rel="noopener">Reauthorization of the Prescription Drug User Fee Act; Public Meeting; Request for Comments</a>
+          <div class="doc-meta">2026-08-14 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/08/11/2026-16353/reauthorization-of-the-generic-drug-user-fee-amendments-public-meeting-request-for-comments" target="_blank" rel="noopener">Reauthorization of the Generic Drug User Fee Amendments; Public Meeting; Request for Comments</a>
+          <div class="doc-meta">2026-08-11 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/07/30/2026-15335/medical-device-user-fee-rates-for-fiscal-year-2027" target="_blank" rel="noopener">Medical Device User Fee Rates for Fiscal Year 2027</a>
+          <div class="doc-meta">2026-07-30 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/07/30/2026-15342/outsourcing-facility-fee-rates-for-fiscal-year-2027" target="_blank" rel="noopener">Outsourcing Facility Fee Rates for Fiscal Year 2027</a>
+          <div class="doc-meta">2026-07-30 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/07/30/2026-15344/over-the-counter-monograph-drug-user-fee-rates-for-fiscal-year-2027" target="_blank" rel="noopener">Over-the-Counter Monograph Drug User Fee Rates for Fiscal Year 2027</a>
+          <div class="doc-meta">2026-07-30 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/07/29/2026-15297/statement-of-organization-functions-and-delegations-of-authority" target="_blank" rel="noopener">Statement of Organization, Functions, and Delegations of Authority</a>
+          <div class="doc-meta">2026-07-29 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/07/17/2026-14434/agency-information-collection-activities-proposed-collection-comment-request-requirements-for" target="_blank" rel="noopener">Agency Information Collection Activities; Proposed Collection; Comment Request; Requirements for Cosmetic Products</a>
+          <div class="doc-meta">2026-07-17 &middot; Notice
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/07/13/2026-14073/drug-establishment-registration-and-drug-listing-requirements-for-establishments-engaged-in" target="_blank" rel="noopener">Drug Establishment Registration and Drug Listing Requirements for Establishments Engaged in Distributed Manufacturing and Certain Foreign Establishments</a>
+          <div class="doc-meta">2026-07-13 &middot; Proposed Rule
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/06/29/2026-13047/establishment-registration-and-product-listing-for-tobacco-products" target="_blank" rel="noopener">Establishment Registration and Product Listing for Tobacco Products</a>
+          <div class="doc-meta">2026-06-29 &middot; Proposed Rule
+            </div>
+        </div>
+        <div class="doc-row">
+          <a class="doc-title" href="https://www.federalregister.gov/documents/2026/05/26/2026-10372/agency-information-collection-activities-proposed-collection-comment-request-human-drug-compounding" target="_blank" rel="noopener">Agency Information Collection Activities; Proposed Collection; Comment Request; Human Drug Compounding Under Sections 503A and 503B of the Federal Food, Drug, and Cosmetic Act</a>
+          <div class="doc-meta">2026-05-26 &middot; Notice
+            </div>
+        </div></div>
+    </section>
+  </div>
+
+  <h2>Commerce — rules on selling it</h2>
+  <div class="commerce-group"><h4>Registration &amp; importer obligations</h4>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>REACH Title II</strong> — EU importer registration duty if importing &gt;1 tonne/year, separate from Annex XVII formulation compliance.</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>MOCRA facility registration + product listing</strong> — required for anyone selling under their own brand in the US, not just formulators.</span>
+          </label></div><div class="commerce-group"><h4>Sale restrictions</h4>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>Professional-only sale</strong> — some jurisdictions restrict ink sale to licensed tattoo artists/studios, blocking direct-to-consumer. Check per-market, not uniform.</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>Age-restricted sale</strong> — applies in some states/countries, same logic as other restricted chemicals.</span>
+          </label></div><div class="commerce-group"><h4>Cross-border shipping</h4>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>**Hazmat classification** (DOT/IATA/IMDG) — some pigments classify as dangerous goods for transport, independent of formulation legality.</strong> — </span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>Customs/HS code + import duty</strong> — per-destination, affects landed cost and clearance.</span>
+          </label></div><div class="commerce-group"><h4>Labeling &amp; documentation</h4>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>**CLP labeling** (EU) — substance classification/labeling duty, distinct from the Annex XVII restriction itself.</strong> — </span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>SDS provision</strong> — safety data sheet required for B2B sale to studios/distributors in most markets.</span>
+          </label></div><div class="commerce-group"><h4>Consumer protection (if selling direct-to-consumer online)</h4>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>**Distance-selling rules** (EU Consumer Rights Directive) — returns/cooling-off period.</strong> — </span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox"  disabled>
+            <span><strong>**EPR / packaging waste fees** (EU) — several member states charge sellers for packaging waste (bottles/tubes).</strong> — </span>
+          </label></div><div class="commerce-notes"><h4>Notes</h4><ul><li>Solid Ink&#x27;s site (as of 2026-08-20) shows no visible compliance claims (REACH/MOCRA/ingredient disclosure) — real gap, since MOCRA registration is now mandatory, not optional marketing.</li><li>UK REACH diverged from EU REACH post-Brexit — do not assume UK obligations mirror the EU checklist above.</li></ul></div>
+</main>
+<footer>InkReady &middot; internal use &middot; github.com/alexandersmith14-dotcom/InkReady</footer>
+</body>
+</html>
