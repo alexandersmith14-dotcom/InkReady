@@ -18,5 +18,7 @@ Tracks what's legally allowed *in* tattoo ink — substance restriction lists. T
 | [Japan](sources/japan.md) | Japan | Confirmed gap | No tattoo ink law found via e-Gov full-text search (authoritative, ungated) |
 | [China](sources/china.md) | China | Confirmed gap | No tattoo ink regulation under cosmetics or customs frameworks; law database not fully searchable (JS SPA) |
 | [Global recalls (OECD)](global_recalls_fetcher.py) | Multi-country | Tracked | Aggregates recall notices from many national systems into one search — the scalable answer for markets without a dedicated fetcher |
+| [Chile](sources/chile.md) | Chile | Tracked | Real, new (2025-08-28) ISP Sanitary Control Regime for tattoo inks — found during the full-world-sweep pass |
+| [World survey](sources/world_survey.md) | ~143 other countries | Secondary-source notes only, NOT independently verified | Explains why most countries can't have a dedicated tracker — most genuinely have no regulation |
 
 "Status-only" sources show as a tracked/not-tracked flag rather than a monitored feed until built out.

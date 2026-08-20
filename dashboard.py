@@ -47,6 +47,8 @@ GLOBAL_RECALLS_STATE = os.path.join(ROOT, "formulation", "global_recalls_state.j
 GLOBAL_RECALLS_REPORT = os.path.join(ROOT, "formulation", "global_recalls_report.json")
 NZ_STATE = os.path.join(ROOT, "formulation", "newzealand_state.json")
 NZ_REPORT = os.path.join(ROOT, "formulation", "newzealand_report.json")
+CHILE_STATE = os.path.join(ROOT, "formulation", "chile_state.json")
+CHILE_REPORT = os.path.join(ROOT, "formulation", "chile_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CLP_STATE = os.path.join(ROOT, "commerce", "clp_state.json")
@@ -124,8 +126,92 @@ EU_COUNTRIES = ["at", "be", "bg", "hr", "cy", "cz", "dk", "ee", "fi", "fr", "de"
 TRACKER_MAP = {c: "eu" for c in EU_COUNTRIES}
 TRACKER_MAP.update({
     "us": "us", "gb": "gb", "ca": "ca", "au": "au", "nz": "nz",
-    "br": "br", "kr": "kr", "jp": "jp", "cn": "cn",
+    "br": "br", "kr": "kr", "jp": "jp", "cn": "cn", "cl": "cl",
 })
+
+# Secondary-source survey notes for countries with no dedicated tracker —
+# from a "181-nation" comparative writeup (xtremeinks.com/blogs/artists-corner,
+# a tattoo-ink retailer's blog, not a primary government source). Genuinely
+# useful as a starting signal (most entries land on "no comprehensive
+# framework," consistent with what verified per-country research found for
+# Japan/China), but NOT independently confirmed against primary law the way
+# the dedicated trackers are — every panel using this says so explicitly.
+# Compiled 2026-08-20 during the "full sweep on the rest of the world" pass.
+SURVEY_NOTES = {
+    "al": "Trending toward European norms.",
+    "ar": "Local health departments oversee tattoo studios; sanitary licenses required, but ink-specific regulation is less stringent.",
+    "bd": "Emerging industry; urban centers tend to follow international ink standards.",
+    "bn": "Limited framework; general health standards apply.",
+    "bt": "No strict ink regulations; traditional/cultural context.",
+    "bw": "No specific ink regulations; general health standards apply.",
+    "bz": "Not stringent; general guidelines enforced.",
+    "cd": "No standardized acceptable-ingredients list.",
+    "ci": "No comprehensive framework.",
+    "cm": "No robust framework; growing emphasis on standards.",
+    "co": "Local health departments regulate; trend toward imported (internationally compliant) inks.",
+    "dm": "No comprehensive system.",
+    "eg": "Ministry of Health sets regulations, but no comprehensive banned-substance list.",
+    "et": "No specific regulations; general sanitary guidelines apply.",
+    "fk": "Likely aligns with UK guidelines (no direct source).",
+    "ga": "Lacks a robust framework; general health guidelines only.",
+    "gh": "Not heavily regulated; traditional practice context.",
+    "gl": "Aligns with Danish/European guidelines.",
+    "gm": "Not well-defined; traditional practice context.",
+    "gn": "No detailed framework; traditional practice context.",
+    "hn": "No robust framework; health department oversight.",
+    "id": "No specific regulations found.",
+    "in": "Largely unregulated; some state governments issue guidelines.",
+    "ir": "No specific national regulations; imported inks preferred.",
+    "is": "Adheres to European guidelines.",
+    "jm": "No specific regulations; general health/sanitation guidelines.",
+    "jo": "No detailed framework; health oversight of cleanliness/safety.",
+    "kh": "No exhaustive framework; emphasis on cleanliness.",
+    "lb": "No comprehensive system; subject to general health/sanitation checks.",
+    "lc": "Not stringent; general guidelines apply.",
+    "ls": "No specific ink regulations; traditional practice context.",
+    "ly": "Lacks detailed regulations.",
+    "me": "No stringent framework dedicated to inks specifically.",
+    "mg": "Not heavily regulated; general standards emphasized.",
+    "mk": "European alignment likely (no direct source).",
+    "ml": "No robust framework; general guidelines apply.",
+    "mr": "Not strict; general health standards, traditional practice context.",
+    "mv": "No robust framework; health emphasis concentrated in tourist zones.",
+    "mx": "Ministry of Health guidelines exist; sanitary licenses required for studios, but no strict rule on which ink components are permitted.",
+    "my": "Guidelines exist; imported inks tend to already meet international standards.",
+    "mz": "No specific national regulations found.",
+    "na": "Not well-defined; general health standards enforced.",
+    "nc": "Follows French regulations.",
+    "ne": "Lacks a comprehensive modern framework.",
+    "ng": "No strict national regulation; practices vary widely.",
+    "ni": "No detailed system; many studios use international-standard imports.",
+    "np": "No rigorous framework; hygiene emphasized over ink composition.",
+    "pe": "Local health departments focus on sanitation; market relies on imported inks.",
+    "ph": "Department of Health has issued guidelines/standards.",
+    "pk": "Not heavily regulated; increasing calls for safety standards.",
+    "pr": "Subject to health/safety regulation aligned with the US mainland (see the US panel).",
+    "qa": "Limited regulation; imported inks used.",
+    "ru": "Health/sanitation standards apply, described as less stringent than Western countries.",
+    "rw": "No strict regulations; professionals prefer international-standard imports.",
+    "sl": "Not governed by a specific framework; traditional practice context.",
+    "sn": "No comprehensive framework.",
+    "so": "Tattooing is not mainstream; no robust regulatory system.",
+    "sr": "General health/safety standards apply.",
+    "sv": "Not well-documented; general health/sanitation guidelines apply.",
+    "td": "No specific ink regulations; traditional practice context.",
+    "tg": "Not heavily regulated; traditional practice context.",
+    "tn": "No comprehensive system; subject to general health inspections.",
+    "tr": "Licensed studios must adhere to Ministry of Health regulations.",
+    "tt": "Not well-documented; general guidelines apply.",
+    "tw": "Regulations reportedly being implemented; most studios use compliant imported inks.",
+    "ua": "No exhaustive framework; many studios use European-standard imports.",
+    "ug": "No comprehensive framework; some health ministry guidance exists.",
+    "vc": "No specific framework; general standards enforced.",
+    "ve": "Health/sanitation guidelines apply; international ink brands prevalent.",
+    "vn": "Business license required for studios; no centralized framework for ink composition specifically.",
+    "ye": "No detailed regulations found.",
+    "za": "Regulated at the provincial level; no national guidelines specific to ink, though international practices are generally followed.",
+    "zw": "No specific regulatory focus on inks found.",
+}
 
 
 def load_json(path):
@@ -371,6 +457,24 @@ def newzealand_card():
     return card("New Zealand — EPA Group Standard", "New Zealand &middot; formulation restriction", body)
 
 
+def chile_card():
+    state = load_json(CHILE_STATE)
+    report = load_json(CHILE_REPORT) or {}
+    changed = report.get("changed", False)
+
+    body = ('<p class="stat">Resolución Exenta E6717-25 (ISP), published 2025-08-28 — '
+            'establishes a Sanitary Control Regime for tattoo inks. Registration-based model, '
+            'similar in spirit to Brazil\'s ANVISA. Found during the "full sweep" pass — '
+            'genuinely new (evaluation dated July 2025), not a long-standing law that was missed.</p>')
+    if changed:
+        body += '<p class="change-row added">Resolution changed since last check — review, may mean an amendment.</p>'
+    elif state:
+        body += f'<p class="empty">Unchanged since {hesc(state.get("checked_at", "—"))}</p>'
+    else:
+        body += '<p class="empty">No data yet — run formulation/chile_fetcher.py</p>'
+    return card("Chile — ISP Sanitary Control Regime", "Chile &middot; formulation restriction", body)
+
+
 def global_recalls_card():
     state = load_json(GLOBAL_RECALLS_STATE)
     report = load_json(GLOBAL_RECALLS_REPORT) or {}
@@ -578,7 +682,11 @@ def build_country_browser(tracker_cards, global_recalls_state):
             body = "".join(tracker_cards.get(tracker, []))
         else:
             hits = recalls_by_country.get(name, [])
-            body = (f'<p class="empty">No dedicated tracker for {hesc(name)} in InkReady.</p>')
+            body = f'<p class="empty">No dedicated tracker for {hesc(name)} in InkReady.</p>'
+            survey_note = SURVEY_NOTES.get(code)
+            if survey_note:
+                body += (f'<p class="stat">Unverified secondary-source note (not confirmed '
+                          f'against primary law, unlike the dedicated trackers): {hesc(survey_note)}</p>')
             if hits:
                 body += (f'<p class="stat">{len(hits)} tattoo-related recall(s) for {hesc(name)} '
                           f'in the global recalls feed:</p><div class="doc-list">')
@@ -919,6 +1027,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {newzealand_card}
     {brazil_card}
     {korea_card}
+    {chile_card}
     {global_recalls_card}
   </div>
 
@@ -944,6 +1053,7 @@ def main():
     echa, prop65, mocra = echa_card(), prop65_card(), mocra_card()
     uk_reach, canada, australia = uk_reach_card(), canada_card(), australia_card()
     newzealand, brazil, korea = newzealand_card(), brazil_card(), korea_card()
+    chile = chile_card()
     global_recalls = global_recalls_card()
     clp, consumer_rights = clp_card(), consumer_rights_card()
     packaging_waste, hazmat, customs = packaging_waste_card(), hazmat_card(), customs_card()
@@ -957,6 +1067,7 @@ def main():
         "nz": [newzealand],
         "br": [brazil],
         "kr": [korea],
+        "cl": [chile],
         "jp": [japan_panel()],
         "cn": [china_panel()],
     }
@@ -974,6 +1085,7 @@ def main():
         newzealand_card=newzealand,
         brazil_card=brazil,
         korea_card=korea,
+        chile_card=chile,
         global_recalls_card=global_recalls,
         clp_card=clp,
         consumer_rights_card=consumer_rights,
