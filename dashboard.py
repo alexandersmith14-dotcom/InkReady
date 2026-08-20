@@ -1,11 +1,18 @@
 """Generate a self-contained HTML dashboard from the formulation/ fetcher
 state files and the commerce/ checklist.
 
-    python dashboard.py            # writes dashboard.html
+    python dashboard.py            # writes dashboard.html and index.html
 
 No server, no network calls — regenerate after running the fetchers. Brand
 mimics thesolidink.com (see assets/brand.md): black nav, off-white body,
 orange for flagged/changed items, Abel for display type.
+
+Includes an interactive "Browse by country" section: a clickable world map
+(assets/world-map.svg, CC BY-SA 3.0) plus a synced dropdown. Countries with
+a dedicated tracker (EU bloc, US, UK, Canada, Australia, NZ, Brazil, Korea,
+Japan, China) show their existing card content in a side panel; every other
+country falls back to a generic message cross-referenced against the global
+recalls feed by country name.
 """
 
 import json
@@ -55,6 +62,70 @@ CUSTOMS_REPORT = os.path.join(ROOT, "commerce", "customs_report.json")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
 BOLD_DASH = re.compile(r"^\*\*(.+?)\*\*\s*(?:—|--|-)\s*(.*)$")
+
+WORLD_MAP_SVG_PATH = os.path.join(ROOT, "assets", "world-map.svg")
+
+# ISO 3166-1 alpha-2 -> display name, for every country present in
+# assets/world-map.svg (Simple World Map, Al MacDonald / Fritz Lekschas,
+# CC BY-SA 3.0 — see the file's own <desc> for the license).
+COUNTRY_NAMES = {
+    "ae": "United Arab Emirates", "af": "Afghanistan", "al": "Albania", "am": "Armenia",
+    "ao": "Angola", "ar": "Argentina", "at": "Austria", "au": "Australia", "az": "Azerbaijan",
+    "ba": "Bosnia and Herzegovina", "bd": "Bangladesh", "be": "Belgium", "bf": "Burkina Faso",
+    "bg": "Bulgaria", "bi": "Burundi", "bj": "Benin", "bn": "Brunei", "bo": "Bolivia",
+    "br": "Brazil", "bs": "Bahamas", "bt": "Bhutan", "bw": "Botswana", "by": "Belarus",
+    "bz": "Belize", "ca": "Canada", "cd": "DR Congo", "cf": "Central African Republic",
+    "cg": "Republic of Congo", "ch": "Switzerland", "ci": "Côte d'Ivoire", "cl": "Chile",
+    "cm": "Cameroon", "cn": "China", "co": "Colombia", "cr": "Costa Rica", "cu": "Cuba",
+    "cv": "Cabo Verde", "cy": "Cyprus", "cz": "Czechia", "de": "Germany", "dj": "Djibouti",
+    "dk": "Denmark", "dm": "Dominica", "do": "Dominican Republic", "dz": "Algeria",
+    "ec": "Ecuador", "ee": "Estonia", "eg": "Egypt", "er": "Eritrea", "es": "Spain",
+    "et": "Ethiopia", "fi": "Finland", "fk": "Falkland Islands", "fr": "France",
+    "ga": "Gabon", "gb": "United Kingdom", "ge": "Georgia", "gh": "Ghana",
+    "gl": "Greenland", "gm": "Gambia", "gn": "Guinea", "gq": "Equatorial Guinea",
+    "gr": "Greece", "gt": "Guatemala", "gw": "Guinea-Bissau", "gy": "Guyana",
+    "hn": "Honduras", "hr": "Croatia", "ht": "Haiti", "hu": "Hungary", "id": "Indonesia",
+    "ie": "Ireland", "il": "Israel", "in": "India", "iq": "Iraq", "ir": "Iran",
+    "is": "Iceland", "it": "Italy", "jm": "Jamaica", "jo": "Jordan", "jp": "Japan",
+    "ke": "Kenya", "kg": "Kyrgyzstan", "kh": "Cambodia", "km": "Comoros",
+    "kp": "North Korea", "kr": "South Korea", "kw": "Kuwait", "kz": "Kazakhstan",
+    "la": "Laos", "lb": "Lebanon", "lc": "Saint Lucia", "lk": "Sri Lanka",
+    "lr": "Liberia", "ls": "Lesotho", "lt": "Lithuania", "lu": "Luxembourg",
+    "lv": "Latvia", "ly": "Libya", "ma": "Morocco", "md": "Moldova", "me": "Montenegro",
+    "mg": "Madagascar", "mk": "North Macedonia", "ml": "Mali", "mm": "Myanmar",
+    "mn": "Mongolia", "mr": "Mauritania", "mt": "Malta", "mu": "Mauritius",
+    "mv": "Maldives", "mw": "Malawi", "mx": "Mexico", "my": "Malaysia",
+    "mz": "Mozambique", "na": "Namibia", "nc": "New Caledonia", "ne": "Niger",
+    "ng": "Nigeria", "ni": "Nicaragua", "nl": "Netherlands", "no": "Norway",
+    "np": "Nepal", "nz": "New Zealand", "om": "Oman", "pa": "Panama", "pe": "Peru",
+    "pg": "Papua New Guinea", "ph": "Philippines", "pk": "Pakistan", "pl": "Poland",
+    "pr": "Puerto Rico", "pt": "Portugal", "py": "Paraguay", "qa": "Qatar",
+    "ro": "Romania", "rs": "Serbia", "ru": "Russia", "rw": "Rwanda",
+    "sa": "Saudi Arabia", "sb": "Solomon Islands", "sc": "Seychelles", "sd": "Sudan",
+    "se": "Sweden", "sg": "Singapore", "si": "Slovenia", "sk": "Slovakia",
+    "sl": "Sierra Leone", "sn": "Senegal", "so": "Somalia", "sr": "Suriname",
+    "ss": "South Sudan", "st": "São Tomé and Príncipe", "sv": "El Salvador",
+    "sy": "Syria", "sz": "Eswatini", "td": "Chad", "tg": "Togo", "th": "Thailand",
+    "tj": "Tajikistan", "tm": "Turkmenistan", "tn": "Tunisia", "tr": "Turkey",
+    "tt": "Trinidad and Tobago", "tw": "Taiwan", "tz": "Tanzania", "ua": "Ukraine",
+    "ug": "Uganda", "us": "United States", "uy": "Uruguay", "uz": "Uzbekistan",
+    "vc": "Saint Vincent and the Grenadines", "ve": "Venezuela", "vn": "Vietnam",
+    "vu": "Vanuatu", "ye": "Yemen", "za": "South Africa", "zm": "Zambia", "zw": "Zimbabwe",
+}
+
+EU_COUNTRIES = ["at", "be", "bg", "hr", "cy", "cz", "dk", "ee", "fi", "fr", "de", "gr",
+                "hu", "ie", "it", "lv", "lt", "lu", "mt", "nl", "pl", "pt", "ro", "sk",
+                "si", "es", "se"]
+
+# iso2 -> tracker key. Every EU member state maps to "eu" (one shared panel);
+# everything else is 1:1. Countries not in this dict fall back to a generic
+# "no dedicated tracker" panel, cross-referenced against the global recalls
+# feed by country name.
+TRACKER_MAP = {c: "eu" for c in EU_COUNTRIES}
+TRACKER_MAP.update({
+    "us": "us", "gb": "gb", "ca": "ca", "au": "au", "nz": "nz",
+    "br": "br", "kr": "kr", "jp": "jp", "cn": "cn",
+})
 
 
 def load_json(path):
@@ -441,6 +512,215 @@ def commerce_section():
     return "".join(out)
 
 
+SVG_OUTER = re.compile(r"<svg[^>]*>.*?<desc>.*?</desc>\s*(.*)</svg>", re.S)
+
+
+def get_map_svg_inner():
+    """Strip the XML prolog/DOCTYPE/svg-wrapper/title/desc from the source
+    map file, keeping just the country <path>/<g> elements, so it can be
+    re-wrapped in our own <svg> with our own viewBox/classes."""
+    raw = open(WORLD_MAP_SVG_PATH, encoding="utf-8").read()
+    m = SVG_OUTER.search(raw)
+    if not m:
+        raise RuntimeError("assets/world-map.svg structure changed — SVG_OUTER regex no longer matches")
+    return m.group(1)
+
+
+def japan_panel():
+    body = ('<p class="stat">Confirmed gap, not a reachability problem — searched e-Gov '
+            '(Japan\'s official law database, full-text, ungated) for "tattoo" across 4 '
+            'terms. Zero relevant hits. "入れ墨" (tattoo) only appears in unrelated law '
+            '(anti-yakuza statute, as an identifying-mark description). Tattoo needles/'
+            'machines were excluded from medical device classification in 2022 — the trend '
+            'is toward less oversight, not more.</p>')
+    return card("Japan", "Japan &middot; confirmed gap, no tracker", body)
+
+
+def china_panel():
+    body = ('<p class="stat">Confirmed gap via two independent angles: no tattoo pigment '
+            'coverage under NMPA\'s cosmetics registration/filing framework, and no '
+            'tattoo-specific customs restriction (only generic hazmat import rules that\'d '
+            'apply to any chemical). Less exhaustively confirmed than Japan\'s — China\'s '
+            'law database is a JS SPA not fully searched.</p>')
+    return card("China", "China &middot; confirmed gap, no tracker", body)
+
+
+def build_country_browser(tracker_cards, global_recalls_state):
+    """tracker_cards: dict of tracker_key -> list of pre-rendered card() HTML
+    strings (reusing the exact same output already shown in the grids above,
+    so there's one source of truth per source, not a second copy)."""
+    # The OECD feed's country names don't always match COUNTRY_NAMES exactly
+    # (e.g. "Slovak Republic" vs "Slovakia") — normalize known variants so
+    # the cross-reference below doesn't silently miss a match. Currently
+    # harmless for Slovakia specifically (it's EU-tracked, so the fallback
+    # path never runs for it), but the matching itself needs to be correct
+    # for any future untracked country with a similar name discrepancy.
+    COUNTRY_NAME_ALIASES = {
+        "Slovak Republic": "Slovakia",
+        "Korea, Republic of": "South Korea",
+        "Republic of Korea": "South Korea",
+        "United States of America": "United States",
+        "Czech Republic": "Czechia",
+        "Russian Federation": "Russia",
+    }
+    global_recalls_state = global_recalls_state or {}
+    recalls_by_country = {}
+    for rec in global_recalls_state.values():
+        name = rec.get("country", "")
+        name = COUNTRY_NAME_ALIASES.get(name, name)
+        recalls_by_country.setdefault(name, []).append(rec)
+
+    panels = []
+    tracked_codes = set(TRACKER_MAP.keys())
+    for code, name in sorted(COUNTRY_NAMES.items(), key=lambda x: x[1]):
+        tracker = TRACKER_MAP.get(code)
+        if tracker:
+            body = "".join(tracker_cards.get(tracker, []))
+        else:
+            hits = recalls_by_country.get(name, [])
+            body = (f'<p class="empty">No dedicated tracker for {hesc(name)} in InkReady.</p>')
+            if hits:
+                body += (f'<p class="stat">{len(hits)} tattoo-related recall(s) for {hesc(name)} '
+                          f'in the global recalls feed:</p><div class="doc-list">')
+                for h in sorted(hits, key=lambda x: x.get("date", ""), reverse=True)[:10]:
+                    url = hesc(h.get("url", ""))
+                    body += (f'<div class="doc-row"><a class="doc-title" href="{url}" '
+                              f'target="_blank" rel="noopener">{hesc(h.get("product", ""))}</a>'
+                              f'<div class="doc-meta">{hesc(h.get("date", ""))}</div></div>')
+                body += "</div>"
+        panels.append(f'<div class="country-panel" id="panel-{code}" style="display:none">{body}</div>')
+
+    options = "".join(
+        f'<option value="{code}">{"★ " if code in tracked_codes else ""}{hesc(name)}</option>'
+        for code, name in sorted(COUNTRY_NAMES.items(), key=lambda x: x[1])
+    )
+
+    return f"""
+  <h2>Browse by country</h2>
+  <div class="country-browser">
+    <div class="country-browser-controls">
+      <label for="country-select">Jump to a country (&#9733; = has a dedicated tracker)</label>
+      <select id="country-select" onchange="selectCountry(this.value)">
+        <option value="">— Select a country —</option>
+        {options}
+      </select>
+      <div class="map-wrap">
+        <svg id="world-map-svg" viewBox="30.767 241.591 784.077 458.627" xmlns="http://www.w3.org/2000/svg">
+          {get_map_svg_inner()}
+        </svg>
+      </div>
+      <p class="map-caption">Map: Simple World Map (Al MacDonald / Fritz Lekschas, CC BY-SA 3.0).
+        Colored countries have a dedicated InkReady tracker — click one, or use the dropdown.</p>
+    </div>
+    <div class="country-browser-panel">
+      <div id="panel-empty" class="country-panel-placeholder">Click a country on the map, or pick one from the dropdown.</div>
+      {"".join(panels)}
+    </div>
+  </div>
+  <style>
+    .country-browser {{
+      display: grid;
+      grid-template-columns: minmax(280px, 480px) 1fr;
+      gap: 24px;
+      margin-top: 20px;
+      align-items: start;
+    }}
+    .country-browser-controls label {{
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #777;
+      margin-bottom: 6px;
+    }}
+    #country-select {{
+      width: 100%;
+      padding: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      margin-bottom: 14px;
+    }}
+    .map-wrap {{
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 8px;
+    }}
+    #world-map-svg {{ width: 100%; height: auto; display: block; }}
+    #world-map-svg path, #world-map-svg g {{
+      fill: #e0e0e0;
+      stroke: var(--white);
+      stroke-width: 0.5;
+      transition: fill 0.15s;
+    }}
+    #world-map-svg [id].tracked {{ fill: #ffcda3; cursor: pointer; }}
+    #world-map-svg [id].tracked:hover {{ fill: var(--orange); }}
+    #world-map-svg [id].untracked {{ cursor: pointer; }}
+    #world-map-svg [id].untracked:hover {{ fill: #bbb; }}
+    #world-map-svg [id].selected {{ fill: var(--black) !important; }}
+    .map-caption {{
+      font-size: 12px;
+      color: #999;
+      margin-top: 8px;
+    }}
+    .country-browser-panel {{ min-height: 200px; }}
+    .country-panel-placeholder {{
+      background: var(--white);
+      border: 1px dashed var(--border);
+      padding: 40px 20px;
+      text-align: center;
+      color: #999;
+      font-style: italic;
+    }}
+    .country-panel .card {{ margin-bottom: 16px; }}
+    .country-panel .card:last-child {{ margin-bottom: 0; }}
+    @media (max-width: 800px) {{
+      .country-browser {{ grid-template-columns: 1fr; }}
+    }}
+  </style>
+  <script>
+    (function() {{
+      var trackedCodes = {json.dumps(sorted(tracked_codes))};
+      var svg = document.getElementById('world-map-svg');
+      trackedCodes.forEach(function(code) {{
+        var el = svg.querySelector('[id="' + code + '"]');
+        if (el) el.classList.add('tracked');
+      }});
+      Array.prototype.forEach.call(svg.querySelectorAll('[id]'), function(el) {{
+        if (!el.classList.contains('tracked')) el.classList.add('untracked');
+      }});
+
+      var currentSelected = null;
+
+      window.selectCountry = function(code) {{
+        document.getElementById('panel-empty').style.display = code ? 'none' : '';
+        Array.prototype.forEach.call(document.querySelectorAll('.country-panel'), function(p) {{
+          p.style.display = 'none';
+        }});
+        if (currentSelected) {{
+          var prev = svg.querySelector('[id="' + currentSelected + '"]');
+          if (prev) prev.classList.remove('selected');
+        }}
+        if (!code) {{ currentSelected = null; return; }}
+        var panel = document.getElementById('panel-' + code);
+        if (panel) panel.style.display = '';
+        var el = svg.querySelector('[id="' + code + '"]');
+        if (el) el.classList.add('selected');
+        currentSelected = code;
+        document.getElementById('country-select').value = code;
+      }};
+
+      svg.addEventListener('click', function(ev) {{
+        var target = ev.target.closest('[id]');
+        if (!target || !target.id) return;
+        selectCountry(target.id);
+      }});
+    }})();
+  </script>
+"""
+
+
 PAGE_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
@@ -618,6 +898,8 @@ PAGE_TEMPLATE = """<!doctype html>
   <div class="tagline">Tattoo ink regulatory compliance — formulation &amp; sale, EU + US + global. Updated {generated_at}.</div>
 </header>
 <main>
+  {country_browser}
+
   <h2>Formulation — what's allowed in the ink</h2>
   <div class="grid">
     {echa_card}
@@ -650,23 +932,46 @@ PAGE_TEMPLATE = """<!doctype html>
 
 def main():
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    echa, prop65, mocra = echa_card(), prop65_card(), mocra_card()
+    uk_reach, canada, australia = uk_reach_card(), canada_card(), australia_card()
+    newzealand, brazil, korea = newzealand_card(), brazil_card(), korea_card()
+    global_recalls = global_recalls_card()
+    clp, consumer_rights = clp_card(), consumer_rights_card()
+    packaging_waste, hazmat, customs = packaging_waste_card(), hazmat_card(), customs_card()
+
+    tracker_cards = {
+        "eu": [echa, clp, consumer_rights, packaging_waste],
+        "us": [prop65, mocra, hazmat, customs],
+        "gb": [uk_reach],
+        "ca": [canada],
+        "au": [australia],
+        "nz": [newzealand],
+        "br": [brazil],
+        "kr": [korea],
+        "jp": [japan_panel()],
+        "cn": [china_panel()],
+    }
+    country_browser = build_country_browser(tracker_cards, load_json(GLOBAL_RECALLS_STATE))
+
     page = PAGE_TEMPLATE.format(
         generated_at=generated_at,
-        echa_card=echa_card(),
-        prop65_card=prop65_card(),
-        mocra_card=mocra_card(),
-        uk_reach_card=uk_reach_card(),
-        canada_card=canada_card(),
-        australia_card=australia_card(),
-        newzealand_card=newzealand_card(),
-        brazil_card=brazil_card(),
-        korea_card=korea_card(),
-        global_recalls_card=global_recalls_card(),
-        clp_card=clp_card(),
-        consumer_rights_card=consumer_rights_card(),
-        packaging_waste_card=packaging_waste_card(),
-        hazmat_card=hazmat_card(),
-        customs_card=customs_card(),
+        country_browser=country_browser,
+        echa_card=echa,
+        prop65_card=prop65,
+        mocra_card=mocra,
+        uk_reach_card=uk_reach,
+        canada_card=canada,
+        australia_card=australia,
+        newzealand_card=newzealand,
+        brazil_card=brazil,
+        korea_card=korea,
+        global_recalls_card=global_recalls,
+        clp_card=clp,
+        consumer_rights_card=consumer_rights,
+        packaging_waste_card=packaging_waste,
+        hazmat_card=hazmat,
+        customs_card=customs,
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
