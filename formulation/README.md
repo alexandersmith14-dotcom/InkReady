@@ -9,7 +9,7 @@ Tracks what's legally allowed *in* tattoo ink — substance restriction lists. T
 | [ECHA REACH Annex XVII Entry 75](sources/echa_annex_xvii.md) | EU | Primary, tracked | No API — scrape ECHA table page + EUR-Lex consolidated text |
 | [MOCRA](sources/mocra.md) | US | Primary, tracked | FDA guidance/registration pages — scrape/monitor |
 | [California Prop 65](sources/prop65.md) | US (state) | Secondary, tracked | OEHHA structured list |
-| UK REACH | UK | Planned | Diverged from EU REACH post-Brexit — do not assume mirrors EU Annex XVII |
+| [UK REACH](sources/uk_reach.md) | UK | Tracked (no restriction in force) | HSE status page (hash-diff) + legislation.gov.uk REACH SI watch |
 | Health Canada Cosmetic Ingredient Hotlist | Canada | Status-only | Not yet built |
 | AICIS | Australia/NZ | Status-only | Not yet built |
 | ANVISA | Brazil | Status-only | Weaker enforcement data available |

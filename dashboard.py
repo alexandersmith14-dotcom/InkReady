@@ -23,6 +23,8 @@ PROP65_STATE = os.path.join(ROOT, "formulation", "prop65_state.json")
 PROP65_REPORT = os.path.join(ROOT, "formulation", "prop65_report.json")
 MOCRA_STATE = os.path.join(ROOT, "formulation", "mocra_state.json")
 MOCRA_REPORT = os.path.join(ROOT, "formulation", "mocra_report.json")
+UK_REACH_STATE = os.path.join(ROOT, "formulation", "uk_reach_state.json")
+UK_REACH_REPORT = os.path.join(ROOT, "formulation", "uk_reach_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
@@ -120,6 +122,31 @@ def mocra_card():
         </div>"""
     body += "</div>"
     return card("MOCRA / FDA guidance", "US &middot; formulation + registration thread", body)
+
+
+def uk_reach_card():
+    state = load_json(UK_REACH_STATE) or {}
+    report = load_json(UK_REACH_REPORT) or {}
+    changed = report.get("hse_status_changed", False)
+    new_uksi = report.get("new_uksi", [])
+    known = state.get("known_uksi", {})
+
+    body = f"""<p class="stat">No restriction currently in force — HSE's 2023 recommendation is
+      still awaiting a Defra ministerial decision. Do not assume this mirrors the EU restriction.</p>"""
+    if changed:
+        body += '<p class="change-row added">HSE status page changed since last check — review for a possible decision.</p>'
+    else:
+        checked = state.get("hse_checked_at", "—")
+        body += f'<p class="empty">HSE status page unchanged (checked {hesc(checked)})</p>'
+
+    body += f'<p class="stat">{len(known)} REACH-titled UK SIs tracked, {len(new_uksi)} new since last check</p>'
+    if new_uksi:
+        body += '<div class="doc-list">'
+        for i in new_uksi:
+            flag = ' <span class="flag">MENTIONS TATTOO</span>' if i.get("mentions_tattoo") else ""
+            body += f'<div class="doc-row flagged"><div class="doc-title">{hesc(i["title"])}</div>{flag}</div>'
+        body += "</div>"
+    return card("UK REACH — tattoo ink restriction status", "UK &middot; NOT in force, watch only", body)
 
 
 def card(title, subtitle, body_html):
@@ -330,6 +357,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {echa_card}
     {prop65_card}
     {mocra_card}
+    {uk_reach_card}
   </div>
 
   <h2>Commerce — rules on selling it</h2>
@@ -348,6 +376,7 @@ def main():
         echa_card=echa_card(),
         prop65_card=prop65_card(),
         mocra_card=mocra_card(),
+        uk_reach_card=uk_reach_card(),
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
