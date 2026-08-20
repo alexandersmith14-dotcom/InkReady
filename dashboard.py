@@ -25,6 +25,8 @@ MOCRA_STATE = os.path.join(ROOT, "formulation", "mocra_state.json")
 MOCRA_REPORT = os.path.join(ROOT, "formulation", "mocra_report.json")
 UK_REACH_STATE = os.path.join(ROOT, "formulation", "uk_reach_state.json")
 UK_REACH_REPORT = os.path.join(ROOT, "formulation", "uk_reach_report.json")
+CANADA_STATE = os.path.join(ROOT, "formulation", "canada_state.json")
+CANADA_REPORT = os.path.join(ROOT, "formulation", "canada_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
@@ -147,6 +149,35 @@ def uk_reach_card():
             body += f'<div class="doc-row flagged"><div class="doc-title">{hesc(i["title"])}</div>{flag}</div>'
         body += "</div>"
     return card("UK REACH — tattoo ink restriction status", "UK &middot; NOT in force, watch only", body)
+
+
+def canada_card():
+    state = load_json(CANADA_STATE) or {}
+    report = load_json(CANADA_REPORT) or {}
+    new_items = report.get("new_items", [])
+    total_scanned = report.get("total_recalls_scanned")
+
+    body = ('<p class="stat">Cosmetic Ingredient Hotlist (the substance restriction list) is NOT '
+            'machine-accessible — canada.ca blocks automated access. Documented gap, not tracked here.</p>')
+    body += f'<p class="stat">{len(state)} tattoo-related recalls tracked'
+    if total_scanned:
+        body += f' (of {total_scanned:,} recalls scanned)'
+    body += f', {len(new_items)} new since last check</p>'
+
+    items = sorted(state.values(), key=lambda x: x.get("last_updated", ""), reverse=True)
+    if items:
+        body += '<div class="doc-list">'
+        for i in items:
+            flagged = i["nid"] in {n["nid"] for n in new_items}
+            url = hesc(i.get("url", ""))
+            body += f"""
+            <div class="doc-row{' flagged' if flagged else ''}">
+              <a class="doc-title" href="{url}" target="_blank" rel="noopener">{hesc(i['title'])}</a>
+              <div class="doc-meta">{hesc(i.get('last_updated', ''))}
+                {'&middot; <span class="flag">NEW</span>' if flagged else ''}</div>
+            </div>"""
+        body += "</div>"
+    return card("Canada — Health Canada recalls", "Canada &middot; recall/enforcement radar", body)
 
 
 def card(title, subtitle, body_html):
@@ -358,6 +389,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {prop65_card}
     {mocra_card}
     {uk_reach_card}
+    {canada_card}
   </div>
 
   <h2>Commerce — rules on selling it</h2>
@@ -377,6 +409,7 @@ def main():
         prop65_card=prop65_card(),
         mocra_card=mocra_card(),
         uk_reach_card=uk_reach_card(),
+        canada_card=canada_card(),
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
