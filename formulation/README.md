@@ -12,6 +12,7 @@ Tracks what's legally allowed *in* tattoo ink — substance restriction lists. T
 | [UK REACH](sources/uk_reach.md) | UK | Tracked (no restriction in force) | HSE status page (hash-diff) + legislation.gov.uk REACH SI watch |
 | [Health Canada](sources/canada.md) | Canada | Partial — recalls tracked, Hotlist unreachable | Recalls & Safety Alerts open JSON (tattoo-filtered); Hotlist substance list is blocked at the source, not machine-accessible |
 | [AICIS / Product Safety Australia](sources/australia.md) | Australia | Partial — recalls tracked, no binding restriction exists | Product Safety Australia recall RSS (tattoo-filtered); AICIS/Queensland sources unreachable |
+| [NZ EPA](sources/newzealand.md) | New Zealand | Tracked | Real in-force restriction (Group Standard 2020, HSR100580) — separate regulator from Australia's AICIS, was missed in original scoping |
 | [ANVISA](sources/brazil.md) | Brazil | Tracked (via DOU search, no direct API) | ANVISA registry/legal-text hosts unreachable; DOU search for ANVISA resolutions instead |
 | [South Korea](sources/korea.md) | Korea | Tracked (law passed, not yet in force) | Tattooist Act (문신사법), law.go.kr hash-diff, effective 2027-10-29 |
 | [Japan](sources/japan.md) | Japan | Confirmed gap | No tattoo ink law found via e-Gov full-text search (authoritative, ungated) |

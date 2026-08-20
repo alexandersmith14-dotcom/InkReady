@@ -35,6 +35,8 @@ KOREA_STATE = os.path.join(ROOT, "formulation", "korea_state.json")
 KOREA_REPORT = os.path.join(ROOT, "formulation", "korea_report.json")
 GLOBAL_RECALLS_STATE = os.path.join(ROOT, "formulation", "global_recalls_state.json")
 GLOBAL_RECALLS_REPORT = os.path.join(ROOT, "formulation", "global_recalls_report.json")
+NZ_STATE = os.path.join(ROOT, "formulation", "newzealand_state.json")
+NZ_REPORT = os.path.join(ROOT, "formulation", "newzealand_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CLP_STATE = os.path.join(ROOT, "commerce", "clp_state.json")
@@ -275,6 +277,24 @@ def korea_card():
     else:
         body += '<p class="empty">No data yet — run formulation/korea_fetcher.py</p>'
     return card("South Korea — Tattooist Act", "Korea &middot; passed, not yet in force", body)
+
+
+def newzealand_card():
+    state = load_json(NZ_STATE)
+    report = load_json(NZ_REPORT) or {}
+    changed = report.get("changed", False)
+
+    body = ('<p class="stat">Tattoo and Permanent Makeup Substances Group Standard 2020 '
+            '(HSR100580, amended 2022-11-24) — in force. Concentration limits on PAHs, heavy '
+            'metals, aromatic amines (&lt;5ppm), colouring agents (&lt;0.1% by weight). Separate '
+            'regulator from Australia\'s AICIS — was missed in original project scoping.</p>')
+    if changed:
+        body += '<p class="change-row added">Standard changed since last check — review, may mean an amendment.</p>'
+    elif state:
+        body += f'<p class="empty">Unchanged since {hesc(state.get("checked_at", "—"))}</p>'
+    else:
+        body += '<p class="empty">No data yet — run formulation/newzealand_fetcher.py</p>'
+    return card("New Zealand — EPA Group Standard", "New Zealand &middot; formulation restriction", body)
 
 
 def global_recalls_card():
@@ -603,6 +623,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {uk_reach_card}
     {canada_card}
     {australia_card}
+    {newzealand_card}
     {brazil_card}
     {korea_card}
     {global_recalls_card}
@@ -634,6 +655,7 @@ def main():
         uk_reach_card=uk_reach_card(),
         canada_card=canada_card(),
         australia_card=australia_card(),
+        newzealand_card=newzealand_card(),
         brazil_card=brazil_card(),
         korea_card=korea_card(),
         global_recalls_card=global_recalls_card(),
