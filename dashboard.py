@@ -63,7 +63,12 @@ CUSTOMS_STATE = os.path.join(ROOT, "commerce", "customs_state.json")
 CUSTOMS_REPORT = os.path.join(ROOT, "commerce", "customs_report.json")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
-BOLD_DASH = re.compile(r"^\*\*(.+?)\*\*\s*(?:—|--|-)\s*(.*)$")
+# Optional "(aside)" between the bold title and the dash — e.g.
+# "**Hazmat classification** (DOT/IATA/IMDG) — some pigments...". Without
+# the optional group, those three checklist items silently fell through to
+# the plain-text branch below and rendered as literal "**Title**" asterisks
+# instead of bold — found by eyeballing the live site's rendered text.
+BOLD_DASH = re.compile(r"^\*\*(.+?)\*\*(\s*\([^)]*\))?\s*(?:—|--|-)\s*(.*)$")
 
 WORLD_MAP_SVG_PATH = os.path.join(ROOT, "assets", "world-map.svg")
 
@@ -241,7 +246,8 @@ def parse_checklist(path):
             body = m.group(2)
             bm = BOLD_DASH.match(body)
             if bm:
-                current["items"].append({"title": bm.group(1), "desc": bm.group(2), "checked": checked})
+                title = bm.group(1) + (bm.group(2) or "")
+                current["items"].append({"title": title, "desc": bm.group(3), "checked": checked})
             else:
                 current["items"].append({"title": body, "desc": "", "checked": checked})
             continue
