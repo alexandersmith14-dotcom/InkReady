@@ -5,3 +5,7 @@ venv/
 .env
 node_modules/
 .DS_Store
+
+# Timestamped every run — committing it would produce a commit on every fetch
+# even with zero changes. echa_state.json (the actual hash ledger) IS committed.
+formulation/echa_report.json
