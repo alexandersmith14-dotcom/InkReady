@@ -1,0 +1,464 @@
+{
+  "3204.15": {
+    "description": "Vat dyes (including those usable in that state as pigments) and preparations based thereon:",
+    "general_duty": null,
+    "htsno": "3204.15",
+    "other_duty": null,
+    "special_duty": null
+  },
+  "3204.15.10.00": {
+    "description": "Vat blue 1 (synthetic indigo),\"Colour Index No. 73000\"",
+    "general_duty": "6.5%",
+    "htsno": "3204.15.10.00",
+    "other_duty": "6.6\u00a2/kg + 29%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL, JO,KR, MA,OM, P,PA,PE,S,SG)"
+  },
+  "3204.15.20.00": {
+    "description": "Vat brown 3; Vat orange 2, 7; and Vat violet 9, 13",
+    "general_duty": "6.5%",
+    "htsno": "3204.15.20.00",
+    "other_duty": "64.5%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL, JO,KR, MA,OM, P,PA,PE,S,SG)"
+  },
+  "3204.15.25.00": {
+    "description": "Vat red 1",
+    "general_duty": "Free",
+    "htsno": "3204.15.25.00",
+    "other_duty": "75.3%",
+    "special_duty": ""
+  },
+  "3204.15.30.00": {
+    "description": "Solubilized vat blue 5; Solubilized vat orange 1; Solubilized vat yellow 7, 45, 47; Vat black 19, 30, 31; Vat blue 5, 16, 19, 21, 66, 67; Vat brown 33, 50, 57; Vat green 28, 48; Vat orange 5, 13; Vat red 10, 15, 32, 41; and Vat yellow 46",
+    "general_duty": "6.5%",
+    "htsno": "3204.15.30.00",
+    "other_duty": "48.1%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL, JO,KR, MA,OM, P,PA,PE,S,SG)"
+  },
+  "3204.15.35.00": {
+    "description": "Solubilized vat orange 3; Vat blue 2; Vat red 44; and Vat yellow 4, 20",
+    "general_duty": "6.5%",
+    "htsno": "3204.15.35.00",
+    "other_duty": "52.3%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL, JO,KR, MA,OM, P,PA,PE,S,SG)"
+  },
+  "3204.15.40.00": {
+    "description": "Products described in additional U.S. note 3 to section VI",
+    "general_duty": "6.5%",
+    "htsno": "3204.15.40.00",
+    "other_duty": "75.3%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL, JO,KR, MA,OM, P,PA,PE,S,SG)"
+  },
+  "3204.15.80.00": {
+    "description": "Other",
+    "general_duty": "6.5%",
+    "htsno": "3204.15.80.00",
+    "other_duty": "75.3%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL, JO,KR, MA,OM, P,PA,PE,S,SG)"
+  },
+  "3204.17": {
+    "description": "Pigments and preparations based thereon:",
+    "general_duty": null,
+    "htsno": "3204.17",
+    "other_duty": null,
+    "special_duty": null
+  },
+  "3204.17.04": {
+    "description": "Pigment black 1; Pigment blue 16, 18; Pigment brown 22, 23, 25, 32; Pigment green 8; Pigment orange 31, 34, 36, 51; Pigment red 9, 14, 34, 48:3, 52, 68, 112, 139, 144, 146, 151, 166, 169,170, 171, 175, 176, 177, 180, 185, 188, 192, 199, 208, 209, 216, 220, 221; Pigment violet 32; and Pigment yellow 16, 24, 49, 62:1, 81, 93, 95, 97, 108, 109, 110, 113, 117, 127, 153",
+    "general_duty": "6.5%",
+    "htsno": "3204.17.04",
+    "other_duty": "46.8%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL,JO,KR,MA,OM,P,PA,PE,S,SG)"
+  },
+  "3204.17.04.05": {
+    "description": "Pigment blue 16",
+    "general_duty": "",
+    "htsno": "3204.17.04.05",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.04.15": {
+    "description": "Pigment orange 31",
+    "general_duty": "",
+    "htsno": "3204.17.04.15",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.04.20": {
+    "description": "Pigment orange 36",
+    "general_duty": "",
+    "htsno": "3204.17.04.20",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.04.25": {
+    "description": "Pigment red 144",
+    "general_duty": "",
+    "htsno": "3204.17.04.25",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.04.30": {
+    "description": "Pigment red 166",
+    "general_duty": "",
+    "htsno": "3204.17.04.30",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.04.35": {
+    "description": "Pigment red 177",
+    "general_duty": "",
+    "htsno": "3204.17.04.35",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.04.85": {
+    "description": "Other",
+    "general_duty": "",
+    "htsno": "3204.17.04.85",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.08.00": {
+    "description": "Pigment red 178; Pigment yellow 101, 138",
+    "general_duty": "Free",
+    "htsno": "3204.17.08.00",
+    "other_duty": "46.8%",
+    "special_duty": ""
+  },
+  "3204.17.20.00": {
+    "description": "Copper phthalocyanine ([Phthalocyanato(2-)]- copper), not ready for use as a pigment",
+    "general_duty": "6.5%",
+    "htsno": "3204.17.20.00",
+    "other_duty": "15.4\u00a2/kg + 48%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL,JO,KR,MA,OM,P,PA,PE,S,SG)"
+  },
+  "3204.17.40": {
+    "description": "Isoindolenine red pigment; Pigment red 214, 242, 254; Pigment red 149 dry and pigment red 149 presscake; and Pigment yellow 155, 183",
+    "general_duty": "Free",
+    "htsno": "3204.17.40",
+    "other_duty": "72%",
+    "special_duty": ""
+  },
+  "3204.17.40.15": {
+    "description": "Pigment red 149",
+    "general_duty": "",
+    "htsno": "3204.17.40.15",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.40.30": {
+    "description": "Pigment red 214",
+    "general_duty": "",
+    "htsno": "3204.17.40.30",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.40.90": {
+    "description": "Other",
+    "general_duty": "",
+    "htsno": "3204.17.40.90",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.60": {
+    "description": "Products described in additional U.S. note 3 to section VI",
+    "general_duty": "6.5%",
+    "htsno": "3204.17.60",
+    "other_duty": "72%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL,JO,KR,MA,OM,P,PA,PE,S,SG)"
+  },
+  "3204.17.60.05": {
+    "description": "Pigment blue 15",
+    "general_duty": "",
+    "htsno": "3204.17.60.05",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.60.10": {
+    "description": "Pigment blue 15:1",
+    "general_duty": "",
+    "htsno": "3204.17.60.10",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.60.15": {
+    "description": "Pigment blue 15:2",
+    "general_duty": "",
+    "htsno": "3204.17.60.15",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.60.20": {
+    "description": "Pigment blue 15:4",
+    "general_duty": "",
+    "htsno": "3204.17.60.20",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.60.85": {
+    "description": "Other",
+    "general_duty": "",
+    "htsno": "3204.17.60.85",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90": {
+    "description": "Other",
+    "general_duty": "6.5%",
+    "htsno": "3204.17.90",
+    "other_duty": "72%",
+    "special_duty": "Free (A+,AU,BH,CL,CO,D,E,IL,JO,KR,L,MA,OM,P,PA,PE,S,SG)"
+  },
+  "3204.17.90.02": {
+    "description": "Pigment blue 15:3, dry, presscake or aqueous slurry",
+    "general_duty": "",
+    "htsno": "3204.17.90.02",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.03": {
+    "description": "Preparations based on pigment blue 15:3",
+    "general_duty": "",
+    "htsno": "3204.17.90.03",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.06": {
+    "description": "Pigment blue 61",
+    "general_duty": "",
+    "htsno": "3204.17.90.06",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.10": {
+    "description": "Pigment green 7",
+    "general_duty": "",
+    "htsno": "3204.17.90.10",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.15": {
+    "description": "Pigment green 36",
+    "general_duty": "",
+    "htsno": "3204.17.90.15",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.18": {
+    "description": "Pigment red 57:1, dry, presscake or aqueous slurry",
+    "general_duty": null,
+    "htsno": "3204.17.90.18",
+    "other_duty": null,
+    "special_duty": null
+  },
+  "3204.17.90.19": {
+    "description": "Preparations based on pigment <il>red 57:1</il>",
+    "general_duty": "",
+    "htsno": "3204.17.90.19",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.21": {
+    "description": "Pigment red 122",
+    "general_duty": "",
+    "htsno": "3204.17.90.21",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.25": {
+    "description": "Pigment red 149",
+    "general_duty": "",
+    "htsno": "3204.17.90.25",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.30": {
+    "description": "Pigment red 179",
+    "general_duty": "",
+    "htsno": "3204.17.90.30",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.35": {
+    "description": "Pigment violet 19",
+    "general_duty": "",
+    "htsno": "3204.17.90.35",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.40": {
+    "description": "Pigment violet 23",
+    "general_duty": "",
+    "htsno": "3204.17.90.40",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.46": {
+    "description": "Pigment yellow 12, dry, presscake or aqueous slurry",
+    "general_duty": null,
+    "htsno": "3204.17.90.46",
+    "other_duty": null,
+    "special_duty": null
+  },
+  "3204.17.90.47": {
+    "description": "Preparations based on pigment <il>yellow 12</il>",
+    "general_duty": "",
+    "htsno": "3204.17.90.47",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.50": {
+    "description": "Pigment yellow 13",
+    "general_duty": "",
+    "htsno": "3204.17.90.50",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.55": {
+    "description": "Pigment yellow 74",
+    "general_duty": "",
+    "htsno": "3204.17.90.55",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.60": {
+    "description": "Pigment yellow 75",
+    "general_duty": "",
+    "htsno": "3204.17.90.60",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.17.90.86": {
+    "description": "Other",
+    "general_duty": "",
+    "htsno": "3204.17.90.86",
+    "other_duty": "",
+    "special_duty": ""
+  },
+  "3204.90.00.00": {
+    "description": "Other",
+    "general_duty": "5.9%",
+    "htsno": "3204.90.00.00",
+    "other_duty": "50.8%",
+    "special_duty": "Free (A,AU,BH,CL,CO,D,E,IL,JO,K,KR,MA,OM,P,PA,PE,S,SG)"
+  },
+  "9902.08.39": {
+    "description": "Vat blue 1 (synthetic indigo) (2-(1,3-dihydro-3-oxo-2H-indazol-2-ylidene)-1,2-dihydro-3H-indol-3-one) (CAS No. 482-89-3) (provided for in subheading 3204.15.10)",
+    "general_duty": "Free",
+    "htsno": "9902.08.39",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.40": {
+    "description": "Pigment Orange 43/Vat Orange 7 (bisbenzimidazo[2,1-b:2',1'-i]benzo[lmn][3,8]phenanthroline-8,17-dione) (CAS No. 4424-06-0) (provided for in subheading 3204.15.20)",
+    "general_duty": "Free",
+    "htsno": "9902.08.40",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.41": {
+    "description": "Vat Red 15 (bisbenzimidazo[2,1-b:1',2'-j]benzo[lmn][3,8]phenanthroline-6,9-dione) (CAS No. 4216-02-8) (provided for in subheading 3204.15.30)",
+    "general_duty": "Free",
+    "htsno": "9902.08.41",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.42": {
+    "description": "Vat blue 66 (9,10-Anthracenedione,1,1\u02b9-[(6-phenyl- 1,3,5-triazine-2,4-diyl)diimino]bis(3\u02ba-acetyl-4-amino-)) (CAS No. 32220-82-9) (provided for in subheading 3204.15.30).",
+    "general_duty": "Free",
+    "htsno": "9902.08.42",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.43": {
+    "description": "Vat Blue 19 (Anthra[9,1,2-cde]benzo[rst]pentaphene-5,10-dione, bromo derivatives) (CAS No. 1328-18-3) (provided for in subheading 3204.15.30)",
+    "general_duty": "Free",
+    "htsno": "9902.08.43",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.44": {
+    "description": "Reduced Vat Blue 43 (CAS No. 85737-02-6) (provided for in subheading 3204.15.40)",
+    "general_duty": "Free",
+    "htsno": "9902.08.44",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.45": {
+    "description": "Reduced Vat Blue 1 ([2,2'-Bi-1H-indole]-3,3'-diol, potassium sodium salt) (CAS No. 207692-02-2) (provided for in subheading 3204.15.40)",
+    "general_duty": "Free",
+    "htsno": "9902.08.45",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.46": {
+    "description": "Isoviolanthrone (C.I. Vat Violet 10) (CAS No. 128-64-3) (provided for in subheading 3204.15.80)",
+    "general_duty": "Free",
+    "htsno": "9902.08.46",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.47": {
+    "description": "Vat Blue 4 (6,15-dihydro-5,9,14,18-anthrazinetetrone) (CAS No. 81-77-6) (provided for in subheading 3204.15.80)",
+    "general_duty": "Free",
+    "htsno": "9902.08.47",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.59": {
+    "description": "Copper phthalocyanine ((Phthalocyanato(2-))-copper), not ready for use as pigment (PCN Blue Crude) (CAS No 147-14-8) (provided for in subheading 3204.17.20)",
+    "general_duty": "3.3%",
+    "htsno": "9902.08.59",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.60": {
+    "description": "Copper phthalocyanine monosulfonate (hydrogen [29H,31H-phthalocyaninesulphonato (3-)-N29, N30, N31, N32]cuprate(1-)), not ready for use as pigment (CAS No. 28901-96-4) (provided for in subheading 3204.17.60)",
+    "general_duty": "Free",
+    "htsno": "9902.08.60",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.61": {
+    "description": "Copper chlorophthalocyanine (30 to 35 percent pure) not ready for use as pigment (CAS Nos. 16040-69-0 (65-70 percent by weight) and 12239-87-1 (30-35 percent by weight)) (provided for in subheading 3204.17.60)",
+    "general_duty": "Free",
+    "htsno": "9902.08.61",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.62": {
+    "description": "Mixture of nonchlorinated copper phthalocyanine blue crude not ready for use as pigment (CAS No. 147-14-8) (30\u201340 percent by weight) and chlorinated copper phthalocyanine blue crude not ready for use as pigment (CAS No. 68987-63-3) (60\u201370 percent by weight) (provided for in subheading 3204.17.60)",
+    "general_duty": "Free",
+    "htsno": "9902.08.62",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.63": {
+    "description": "[1,2,3,4,8,9,10,11,15,16,17,18,22,23,25 - Pentadecachloro - 29,31-dihydro-5H, 26H-phthalocyaninato (2-) -\u03ba2 N29, N31] copper (CAS No. 1328-53-6) (provided for in subheading 3204.17.90)",
+    "general_duty": "Free",
+    "htsno": "9902.08.63",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.64": {
+    "description": "Copper chlorophthalocyanine, crude not ready for use as pigment (CAS No. 12239-87-1) (provided for in subheading 3204.17.90)",
+    "general_duty": "Free",
+    "htsno": "9902.08.64",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.86": {
+    "description": "N, N-Dimethyl-N-octadecyl-1-octadecanaminium-(Sp-4-2)- [29H, 31H-phthalocyanine-2- sulfonato- N29, N30,N31, N32] cuprate (phthalocyanine blue additive) (CAS No. 70750-63-9) (provided for in subheading 3204.90.00)",
+    "general_duty": "Free",
+    "htsno": "9902.08.86",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  },
+  "9902.08.87": {
+    "description": "Organic luminescent pigments and dyes for security applications (provided for in subheading 3204.90.00), the foregoing excluding daylight fluorescent pigments and dyes and excluding the dyestuff bearing the CAS No. 6359-10-0",
+    "general_duty": "Free",
+    "htsno": "9902.08.87",
+    "other_duty": "No change",
+    "special_duty": "No change"
+  }
+}

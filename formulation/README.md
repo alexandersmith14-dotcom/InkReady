@@ -16,5 +16,6 @@ Tracks what's legally allowed *in* tattoo ink — substance restriction lists. T
 | [South Korea](sources/korea.md) | Korea | Tracked (law passed, not yet in force) | Tattooist Act (문신사법), law.go.kr hash-diff, effective 2027-10-29 |
 | [Japan](sources/japan.md) | Japan | Confirmed gap | No tattoo ink law found via e-Gov full-text search (authoritative, ungated) |
 | [China](sources/china.md) | China | Confirmed gap | No tattoo ink regulation under cosmetics or customs frameworks; law database not fully searchable (JS SPA) |
+| [Global recalls (OECD)](global_recalls_fetcher.py) | Multi-country | Tracked | Aggregates recall notices from many national systems into one search — the scalable answer for markets without a dedicated fetcher |
 
 "Status-only" sources show as a tracked/not-tracked flag rather than a monitored feed until built out.

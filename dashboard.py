@@ -33,7 +33,20 @@ BRAZIL_STATE = os.path.join(ROOT, "formulation", "brazil_state.json")
 BRAZIL_REPORT = os.path.join(ROOT, "formulation", "brazil_report.json")
 KOREA_STATE = os.path.join(ROOT, "formulation", "korea_state.json")
 KOREA_REPORT = os.path.join(ROOT, "formulation", "korea_report.json")
+GLOBAL_RECALLS_STATE = os.path.join(ROOT, "formulation", "global_recalls_state.json")
+GLOBAL_RECALLS_REPORT = os.path.join(ROOT, "formulation", "global_recalls_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
+
+CLP_STATE = os.path.join(ROOT, "commerce", "clp_state.json")
+CLP_REPORT = os.path.join(ROOT, "commerce", "clp_report.json")
+CONSUMER_RIGHTS_STATE = os.path.join(ROOT, "commerce", "consumer_rights_state.json")
+CONSUMER_RIGHTS_REPORT = os.path.join(ROOT, "commerce", "consumer_rights_report.json")
+PACKAGING_WASTE_STATE = os.path.join(ROOT, "commerce", "packaging_waste_state.json")
+PACKAGING_WASTE_REPORT = os.path.join(ROOT, "commerce", "packaging_waste_report.json")
+HAZMAT_STATE = os.path.join(ROOT, "commerce", "hazmat_state.json")
+HAZMAT_REPORT = os.path.join(ROOT, "commerce", "hazmat_report.json")
+CUSTOMS_STATE = os.path.join(ROOT, "commerce", "customs_state.json")
+CUSTOMS_REPORT = os.path.join(ROOT, "commerce", "customs_report.json")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
 BOLD_DASH = re.compile(r"^\*\*(.+?)\*\*\s*(?:—|--|-)\s*(.*)$")
@@ -264,6 +277,121 @@ def korea_card():
     return card("South Korea — Tattooist Act", "Korea &middot; passed, not yet in force", body)
 
 
+def global_recalls_card():
+    state = load_json(GLOBAL_RECALLS_STATE)
+    report = load_json(GLOBAL_RECALLS_REPORT) or {}
+    state = state if state is not None else {}
+    new_items = report.get("new_items", [])
+
+    body = ('<p class="stat">Aggregates recall notices across many national systems (EU Safety '
+            'Gate and others feed into this) into one search — covers far more markets than any '
+            'single-country fetcher here.</p>')
+    body += f'<p class="stat">{len(state)} tattoo-related recalls tracked, {len(new_items)} new since last check</p>'
+
+    items = sorted(state.values(), key=lambda x: x.get("date", ""), reverse=True)[:15]
+    if items:
+        body += '<div class="doc-list">'
+        for i in items:
+            flagged = i["id"] in {n["id"] for n in new_items}
+            url = hesc(i.get("url", ""))
+            body += f"""
+            <div class="doc-row{' flagged' if flagged else ''}">
+              <a class="doc-title" href="{url}" target="_blank" rel="noopener">{hesc(i['country'])}: {hesc(i['product'])}</a>
+              <div class="doc-meta">{hesc(i.get('date', ''))}
+                {'&middot; <span class="flag">NEW</span>' if flagged else ''}</div>
+            </div>"""
+        body += "</div>"
+    return card("Global recalls (OECD)", "Multi-country &middot; recall/enforcement radar", body)
+
+
+def simple_doc_card(title, subtitle, note, state, report, changed_key="changed", label="document"):
+    """Small helper for the single-document hash-diff commerce cards (CLP,
+    Consumer Rights, PPWR) — they all share the same shape."""
+    changed = report.get(changed_key, False) if report else False
+    body = f'<p class="stat">{note}</p>'
+    if changed:
+        body += '<p class="change-row added">Changed since last check — review.</p>'
+    elif state:
+        body += f'<p class="empty">Unchanged since {hesc(state.get("checked_at", "—"))}</p>'
+    else:
+        body += f'<p class="empty">No data yet — run {hesc(label)}</p>'
+    return card(title, subtitle, body)
+
+
+def clp_card():
+    state = load_json(CLP_STATE) or {}
+    report = load_json(CLP_REPORT) or {}
+    changes = report.get("changes", [])
+    rows = []
+    for celex, rec in state.items():
+        flagged = any(c["celex"] == celex for c in changes)
+        rows.append(f"""
+        <div class="doc-row{' flagged' if flagged else ''}">
+          <div class="doc-title">{hesc(rec['title'])}</div>
+          <div class="doc-meta">CELEX {hesc(celex)} &middot; checked {hesc(rec['checked_at'])}
+            {'&middot; <span class="flag">CHANGED — review</span>' if flagged else ''}</div>
+        </div>""")
+    body = '<p class="stat">Substance classification/labeling duty at point of sale — distinct from the Annex XVII formulation restriction.</p>'
+    body += "".join(rows) or '<p class="empty">No data yet — run commerce/clp_fetcher.py</p>'
+    return card("EU CLP Annex VI", "EU &middot; labeling duty", body)
+
+
+def consumer_rights_card():
+    state = load_json(CONSUMER_RIGHTS_STATE)
+    report = load_json(CONSUMER_RIGHTS_REPORT) or {}
+    note = "Return/cooling-off period and pre-contract info duties for direct-to-consumer online sale into the EU."
+    return simple_doc_card("EU Consumer Rights Directive", "EU &middot; distance-selling rules",
+                            note, state, report, label="commerce/consumer_rights_fetcher.py")
+
+
+def packaging_waste_card():
+    state = load_json(PACKAGING_WASTE_STATE)
+    report = load_json(PACKAGING_WASTE_REPORT) or {}
+    note = "EPR packaging waste fees — Regulation (EU) 2025/40 (PPWR), actively being implemented."
+    return simple_doc_card("EU Packaging Waste Regulation", "EU &middot; EPR fees",
+                            note, state, report, label="commerce/packaging_waste_fetcher.py")
+
+
+def hazmat_card():
+    state = load_json(HAZMAT_STATE) or {}
+    report = load_json(HAZMAT_REPORT) or {}
+    new_items = report.get("new_items", [])
+    body = ('<p class="stat">US (PHMSA/DOT) only — some pigments classify as dangerous goods for '
+            'transport. IATA DGR / IMO IMDG Code have no open API, reference-only.</p>')
+    body += f'<p class="stat">{len(state)} documents tracked, {len(new_items)} new since last check</p>'
+    items = sorted(state.values(), key=lambda x: x.get("date", ""), reverse=True)[:8]
+    if items:
+        body += '<div class="doc-list">'
+        for i in items:
+            flagged = i["document_number"] in {n["document_number"] for n in new_items}
+            url = hesc(i.get("url", ""))
+            body += f"""
+            <div class="doc-row{' flagged' if flagged else ''}">
+              <a class="doc-title" href="{url}" target="_blank" rel="noopener">{hesc(i['title'])}</a>
+              <div class="doc-meta">{hesc(i.get('date', ''))}
+                {'&middot; <span class="flag">NEW</span>' if flagged else ''}</div>
+            </div>"""
+        body += "</div>"
+    return card("US Hazmat (PHMSA)", "US &middot; shipping classification", body)
+
+
+def customs_card():
+    state = load_json(CUSTOMS_STATE) or {}
+    report = load_json(CUSTOMS_REPORT) or {}
+    changes = report.get("changes", [])
+    new_codes = report.get("new_codes", [])
+    body = ('<p class="stat">US only — HS/customs classification and duty rates are per-country, '
+            'no single global source. Tracks HTS Chapter 32 dye/pigment codes.</p>')
+    body += f'<p class="stat">{len(state)} codes tracked, {len(changes)} changed, {len(new_codes)} new</p>'
+    if changes:
+        body += '<div class="changes">'
+        for c in changes:
+            body += (f'<div class="change-row added">~ {hesc(c["htsno"])}: '
+                      f'{hesc(c["before"]["general_duty"])} &rarr; {hesc(c["after"]["general_duty"])}</div>')
+        body += "</div>"
+    return card("US Customs/HTS", "US &middot; import duty", body)
+
+
 def card(title, subtitle, body_html):
     return f"""
     <section class="card">
@@ -477,9 +605,17 @@ PAGE_TEMPLATE = """<!doctype html>
     {australia_card}
     {brazil_card}
     {korea_card}
+    {global_recalls_card}
   </div>
 
   <h2>Commerce — rules on selling it</h2>
+  <div class="grid">
+    {clp_card}
+    {consumer_rights_card}
+    {packaging_waste_card}
+    {hazmat_card}
+    {customs_card}
+  </div>
   {commerce}
 </main>
 <footer>InkReady &middot; internal use &middot; github.com/alexandersmith14-dotcom/InkReady</footer>
@@ -500,6 +636,12 @@ def main():
         australia_card=australia_card(),
         brazil_card=brazil_card(),
         korea_card=korea_card(),
+        global_recalls_card=global_recalls_card(),
+        clp_card=clp_card(),
+        consumer_rights_card=consumer_rights_card(),
+        packaging_waste_card=packaging_waste_card(),
+        hazmat_card=hazmat_card(),
+        customs_card=customs_card(),
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
