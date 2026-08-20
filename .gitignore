@@ -9,7 +9,7 @@ node_modules/
 # Timestamped every run — committing it would produce a commit on every fetch
 # even with zero changes. echa_state.json / prop65_state.json / mocra_state.json
 # / uk_reach_state.json / canada_state.json / australia_state.json /
-# brazil_state.json (the actual ledgers) ARE committed.
+# brazil_state.json / korea_state.json (the actual ledgers) ARE committed.
 formulation/echa_report.json
 formulation/prop65_report.json
 formulation/mocra_report.json
@@ -17,3 +17,4 @@ formulation/uk_reach_report.json
 formulation/canada_report.json
 formulation/australia_report.json
 formulation/brazil_report.json
+formulation/korea_report.json

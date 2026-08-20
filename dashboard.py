@@ -31,6 +31,8 @@ AUSTRALIA_STATE = os.path.join(ROOT, "formulation", "australia_state.json")
 AUSTRALIA_REPORT = os.path.join(ROOT, "formulation", "australia_report.json")
 BRAZIL_STATE = os.path.join(ROOT, "formulation", "brazil_state.json")
 BRAZIL_REPORT = os.path.join(ROOT, "formulation", "brazil_report.json")
+KOREA_STATE = os.path.join(ROOT, "formulation", "korea_state.json")
+KOREA_REPORT = os.path.join(ROOT, "formulation", "korea_report.json")
 CHECKLIST_PATH = os.path.join(ROOT, "commerce", "checklist.md")
 
 CHECK_ITEM = re.compile(r"^-\s*\[([ xX])\]\s*(.+)$")
@@ -245,6 +247,23 @@ def brazil_card():
     return card("Brazil — ANVISA (via Diário Oficial)", "Brazil &middot; registration regime", body)
 
 
+def korea_card():
+    state = load_json(KOREA_STATE)
+    report = load_json(KOREA_REPORT) or {}
+    changed = report.get("changed", False)
+
+    body = ('<p class="stat">Tattooist Act (Law No. 21070, promulgated 2025-10-28) legalizes and '
+            'licenses non-medical tattooists. Not a substance restriction list, and not yet in '
+            'force — takes effect 2027-10-29.</p>')
+    if changed:
+        body += '<p class="change-row added">Law page changed since last check — review for an amendment or the in-force transition.</p>'
+    elif state:
+        body += f'<p class="empty">Unchanged since {hesc(state.get("checked_at", "—"))}</p>'
+    else:
+        body += '<p class="empty">No data yet — run formulation/korea_fetcher.py</p>'
+    return card("South Korea — Tattooist Act", "Korea &middot; passed, not yet in force", body)
+
+
 def card(title, subtitle, body_html):
     return f"""
     <section class="card">
@@ -457,6 +476,7 @@ PAGE_TEMPLATE = """<!doctype html>
     {canada_card}
     {australia_card}
     {brazil_card}
+    {korea_card}
   </div>
 
   <h2>Commerce — rules on selling it</h2>
@@ -479,6 +499,7 @@ def main():
         canada_card=canada_card(),
         australia_card=australia_card(),
         brazil_card=brazil_card(),
+        korea_card=korea_card(),
         commerce=commerce_section(),
     )
     with open(OUT_PATH, "w", encoding="utf-8") as f:
