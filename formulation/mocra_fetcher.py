@@ -28,9 +28,15 @@ FEDREG_FIELDS = ["title", "publication_date", "type", "html_url", "abstract", "d
 # Two angles: tattoo-ink-specific guidance, and the broader MOCRA facility
 # registration/listing thread that applies to Solid Ink as a brand seller
 # even when a given notice never says "tattoo".
+#
+# The multi-word term is quoted deliberately: the Federal Register API treats
+# an unquoted multi-word term as an OR of individual words, not a phrase, so
+# "cosmetic product facility registration" unquoted matched drug/device user
+# fee schedules and tobacco product registration notices on "facility" or
+# "registration" alone — pure noise. Quoting forces an exact-phrase match.
 SEARCH_TERMS = [
     "tattoo",
-    "cosmetic product facility registration",
+    '"cosmetic product facility registration"',
     "MOCRA",
 ]
 
