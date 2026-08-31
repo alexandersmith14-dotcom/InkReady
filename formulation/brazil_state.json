@@ -1,18 +1,4 @@
 {
-  "710492224": {
-    "class_pk": "710492224",
-    "hierarchy": "Minist\u00e9rio da Sa\u00fade/Ag\u00eancia Nacional de Vigil\u00e2ncia Sanit\u00e1ria/3\u00aa Diretoria/Ger\u00eancia-Geral de Tecnologia de Produtos para Sa\u00fade",
-    "pub_date": "08/06/2026",
-    "title": "RESOLU\u00c7\u00c3O-RE n\u00ba 2.261, DE 2 DE JUNHO DE 2026",
-    "url": "https://www.in.gov.br/web/dou/-/resolucao-re-n-2.261-de-2-de-junho-de-2026-710492222"
-  },
-  "712082867": {
-    "class_pk": "712082867",
-    "hierarchy": "Minist\u00e9rio da Sa\u00fade/Ag\u00eancia Nacional de Vigil\u00e2ncia Sanit\u00e1ria/3\u00aa Diretoria/Ger\u00eancia-Geral de Tecnologia de Produtos para Sa\u00fade",
-    "pub_date": "15/06/2026",
-    "title": "RESOLU\u00c7\u00c3O-RE n\u00ba2.332, DE 11 DE JUNHO DE 2026",
-    "url": "https://www.in.gov.br/web/dou/-/resolucao-re-n2.332-de-11-de-junho-de-2026-712082865"
-  },
   "713594426": {
     "class_pk": "713594426",
     "hierarchy": "Minist\u00e9rio da Sa\u00fade/Ag\u00eancia Nacional de Vigil\u00e2ncia Sanit\u00e1ria/3\u00aa Diretoria/Ger\u00eancia-Geral de Tecnologia de Produtos para Sa\u00fade",
@@ -96,5 +82,26 @@
     "pub_date": "10/08/2026",
     "title": "RESOLU\u00c7\u00c3O-RE n\u00ba 3.088, DE 6 DE AGOSTO DE 2026",
     "url": "https://www.in.gov.br/web/dou/-/resolucao-re-n-3.088-de-6-de-agosto-de-2026-724214129"
+  },
+  "729106618": {
+    "class_pk": "729106618",
+    "hierarchy": "Minist\u00e9rio da Sa\u00fade/Ag\u00eancia Nacional de Vigil\u00e2ncia Sanit\u00e1ria/3\u00aa Diretoria/Ger\u00eancia-Geral de Tecnologia de Produtos para Sa\u00fade",
+    "pub_date": "31/08/2026",
+    "title": "RESOLU\u00c7\u00c3O-RE n\u00ba 3.381, DE 27 de AGOSTO DE 2026",
+    "url": "https://www.in.gov.br/web/dou/-/resolucao-re-n-3.381-de-27-de-agosto-de-2026-729106616"
+  },
+  "729108062": {
+    "class_pk": "729108062",
+    "hierarchy": "Minist\u00e9rio da Sa\u00fade/Ag\u00eancia Nacional de Vigil\u00e2ncia Sanit\u00e1ria/3\u00aa Diretoria/Ger\u00eancia-Geral de Tecnologia de Produtos para Sa\u00fade",
+    "pub_date": "31/08/2026",
+    "title": "RESOLU\u00c7\u00c3O-RE n\u00ba 3.392, DE 27 DE AGOSTO DE 2026",
+    "url": "https://www.in.gov.br/web/dou/-/resolucao-re-n-3.392-de-27-de-agosto-de-2026-729108060"
+  },
+  "729108782": {
+    "class_pk": "729108782",
+    "hierarchy": "Minist\u00e9rio da Sa\u00fade/Ag\u00eancia Nacional de Vigil\u00e2ncia Sanit\u00e1ria/3\u00aa Diretoria/Ger\u00eancia-Geral de Tecnologia de Produtos para Sa\u00fade",
+    "pub_date": "31/08/2026",
+    "title": "RESOLU\u00c7\u00c3O-RE n\u00ba 3.380, DE 27 DE AGOSTO DE 2026",
+    "url": "https://www.in.gov.br/web/dou/-/resolucao-re-n-3.380-de-27-de-agosto-de-2026-729108780"
   }
 }
