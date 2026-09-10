@@ -1,11 +1,4 @@
 {
-  "2015-01263": {
-    "date": "2015-01-30",
-    "document_number": "2015-01263",
-    "title": "Hazardous Materials: Adoption of Special Permits (MAP-21) (RRR)",
-    "type": "Proposed Rule",
-    "url": "https://www.federalregister.gov/documents/2015/01/30/2015-01263/hazardous-materials-adoption-of-special-permits-map-21-rrr"
-  },
   "2015-02977": {
     "date": "2015-02-20",
     "document_number": "2015-02977",
@@ -698,5 +691,12 @@
     "title": "Hazardous Materials: Allowing Fireworks Certification Agencies (FCAs) To Approve Professional Fireworks",
     "type": "Rule",
     "url": "https://www.federalregister.gov/documents/2026/08/07/2026-16111/hazardous-materials-allowing-fireworks-certification-agencies-fcas-to-approve-professional-fireworks"
+  },
+  "2026-18501": {
+    "date": "2026-09-10",
+    "document_number": "2026-18501",
+    "title": "Hazardous Materials: California's Reusability Mandate for Propane Cylinders",
+    "type": "Notice",
+    "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18501/hazardous-materials-californias-reusability-mandate-for-propane-cylinders"
   }
 }
