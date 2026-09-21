@@ -1,11 +1,4 @@
 {
-  "2015-02977": {
-    "date": "2015-02-20",
-    "document_number": "2015-02977",
-    "title": "Notice of Application for Special Permits",
-    "type": "Notice",
-    "url": "https://www.federalregister.gov/documents/2015/02/20/2015-02977/notice-of-application-for-special-permits"
-  },
   "2015-02984": {
     "date": "2015-02-20",
     "document_number": "2015-02984",
@@ -698,5 +691,12 @@
     "title": "Hazardous Materials: California's Reusability Mandate for Propane Cylinders",
     "type": "Notice",
     "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18501/hazardous-materials-californias-reusability-mandate-for-propane-cylinders"
+  },
+  "2026-19276": {
+    "date": "2026-09-21",
+    "document_number": "2026-19276",
+    "title": "Hazardous Materials: Information Collection Activities",
+    "type": "Notice",
+    "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19276/hazardous-materials-information-collection-activities"
   }
 }
